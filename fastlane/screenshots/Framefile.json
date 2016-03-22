@@ -1,0 +1,38 @@
+{
+    "default": {
+        "keyword": {
+            "font": "../../OpenShop/Fonts/Roboto-Medium.ttf",
+            "fontSize": 10,
+            "color": "#ffffff"
+        },
+        "title": {
+            "font": "../../OpenShop/Fonts/Roboto-Regular.ttf",
+            "fontSize": 10,
+            "color": "#ffffff"
+        },
+        "background": "./background-gray.jpg",
+        "padding": 100
+    },
+    "data": [
+             {
+                 "filter": "Banners",
+                 "background": "./background-gray.jpg"
+             },
+             {
+                "filter": "Login",
+                "background": "./background-lynch.jpg"
+             },
+             {
+                "filter": "Product Detail",
+                "background": "./background-silversand.jpg"
+             },
+             {
+                "filter": "Products",
+                "background": "./background-iron.jpg"
+             },
+             {
+                "filter": "Cart",
+                "background": "./background-pumice.jpg"
+             }
+        ]
+}

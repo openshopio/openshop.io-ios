@@ -1,0 +1,383 @@
+/* http://www.regexr.com/3aodb
+ * expression   = ([0-9]+)\s(.+)
+ * substitution = \/* $2 *\/ \n"$1" = "$2" \n
+ */
+
+/* All */
+"0" = "Vše";
+
+/* %@ products */
+"1" = "%@ products";
+
+/* Recommending */
+"2" = "Recommending";
+
+/* About product */
+"3" = "About product";
+
+/* Color and size */
+"4" = "Color and size";
+
+/* Send to a friend */
+"5" = "Send to a friend";
+
+/* Sort by popularity */
+"6" = "Sort by popularity";
+
+/* Newest first */
+"7" = "Newest first";
+
+/* Pricest first */
+"8" = "Pricest first";
+
+/* Cheapest first */
+"9" = "Cheapest first";
+
+/* Filtering off */
+"10" = "Filtering off";
+
+/* Offers */
+"11" = "Offers";
+
+/* Shop */
+"12" = "Shop";
+
+/* Cart */
+"13" = "Cart";
+
+/* Settings */
+"14" = "Settings";
+
+/* My account */
+"15" = "My account";
+
+/* Logged out */
+"16" = "Logged out";
+
+/* My orders */
+"17" = "My orders";
+
+/* Edit account */
+"18" = "Edit account";
+
+/* Logout */
+"19" = "Logout";
+
+/* Edit */
+"20" = "Edit";
+
+/* Delete */
+"21" = "Delete";
+
+/* Order */
+"22" = "Order";
+
+/* %@ product in cart */
+"23" = "%@ product in cart";
+
+/* %@ products in cart */
+"24" = "%@ products in cart";
+
+/* Total */
+"25" = "Total";
+
+/* About us */
+"26" = "About us";
+
+/* Order detail */
+"27" = "Order detail";
+
+/* Order */
+"28" = "Order";
+
+/* Name */
+"29" = "Name";
+
+/* Date created */
+"30" = "Date created";
+
+/* Total */
+"31" = "Total: %@";
+
+/* Shipping  */
+"32" = "Shipping ";
+
+/* Shipping price */
+"33" = "Shipping price";
+
+/* Products list */
+"34" = "Products list";
+
+/* Loading */
+"35" = "Loading";
+
+/* Add to cart */
+"36" = "Add to cart";
+
+/* Adding to cart */
+"37" = "Adding to cart";
+
+/* Adding to cart failed */
+"38" = "Adding to cart failed";
+
+/* Added to cart */
+"39" = "Added to cart";
+
+/* Color */
+"40" = "Color";
+
+/* Size */
+"41" = "Size";
+
+/* Amount */
+"42" = "Amount";
+
+/* Any */
+"43" = "Any";
+
+/* Brand */
+"44" = "Brand";
+
+/* Send order */
+"45" = "Send order";
+
+/* Order detail */
+"46" = "Order detail";
+
+/* Shipping information */
+"47" = "Shipping information";
+
+/* Payment */
+"48" = "Payment";
+
+/* Shipping  */
+"49" = "Shipping ";
+
+/* Shipping & Payment */
+"50" = "Shipping & Payment";
+
+/* Name */
+"51" = "Name";
+
+/* Street */
+"52" = "Street";
+
+/* Email */
+"53" = "Email";
+
+/* House no. */
+"54" = "House no.";
+
+/* Phone number */
+"55" = "Phone number";
+
+/* City */
+"56" = "City";
+
+/* Postal code */
+"57" = "Postal code";
+
+/* Note */
+"58" = "Note";
+
+/* Really order? */
+"59" = "Really order?";
+
+/* By ordering, you agree with our terms and conditions. */
+"60" = "By ordering, you agree with our terms and conditions.";
+
+/* Terms & Conditions */
+"61" = "Terms & Conditions";
+
+/* Cancel */
+"62" = "Zrušit";
+
+/* Editing cart */
+"63" = "Editing cart";
+
+/* Changing shop */
+"64" = "Changing shop";
+
+/* Filter */
+"65" = "Filter";
+
+/* Filter off */
+"66" = "Filter off";
+
+/* Filter on */
+"67" = "Filter on";
+
+/* Logging in */
+"68" = "Logging in";
+
+/* Make sure your internet connection is available. The server may also be offline. */
+"69" = "Make sure your internet connection is available. The server may also be offline.";
+
+/* More */
+"70" = "More";
+
+/* Cash on delivery */
+"71" = "Cash on delivery";
+
+/* Please fill in all fields. */
+"72" = "Please fill in all fields.";
+
+/* Price */
+"73" = "Price";
+
+/* Product is unavailable. */
+"74" = "Product is unavailable.";
+
+/* Reset Filter */
+"75" = "Reset Filter";
+
+/* Search */
+"76" = "Search";
+
+/* Search in “%@” */
+"77" = "Search in “%@”";
+
+/* Sending order */
+"78" = "Sending order";
+
+/* Some fields are not filled. */
+"79" = "Some fields are not filled.";
+
+/* Sort */
+"80" = "Sort";
+
+/* Sort by */
+"81" = "Sort by";
+
+/* Your cart is empty. */
+"82" = "Your cart is empty.";
+
+/* Order ID */
+"83" = "Order ID";
+
+/* Information */
+"84" = "Information";
+
+/* Not Logged In */
+"85" = "Not Logged In";
+
+/* Orders */
+"86" = "Orders";
+
+/* Error */
+"87" = "Error";
+
+/* User Details */
+"88" = "User Details";
+
+/* There was an error while processing your request. */
+"89" = "There was an error while processing your request.";
+
+/* Sort by newest */
+"90" = "Sort by newest";
+
+/* Sort by highest price */
+"91" = "Sort by highest price";
+
+/* Sort by lowest price */
+"92" = "Sort by lowest price";
+
+/* Order #%@ */
+"93" = "Order #%@";
+
+/* Order! */
+"94" = "Order!";
+
+/* Order sent */
+"95" = "Order sent";
+
+/* Popularity */
+"96" = "Popularity";
+
+/* Hide */
+"97" = "Hide";
+
+/* Browse here! */
+"98" = "Browse here!";
+
+/* Product Detail */
+"99" = "Product Detail";
+
+/* Log in with Facebook */
+"100" = "PŘIHLÁSIT SE PŘES FACEBOOK";
+
+/* Log in later */
+"101" = "POKRAČOVAT BEZ PŘIHLÁŠENÍ";
+
+/* Please fill in email */
+"102" = "Please fill in email";
+
+/* Confirm email */
+"103" = "Confirm email";
+
+/* Confirm email and email fields must match */
+"104" = "Confirm email and email fields must match";
+
+/* Discounts */
+"105" = "Discounts";
+
+/* Discounts */
+"106" = "DO OpenShopu";
+
+/* Language */
+"107" = "Vyberte zemi";
+
+/* Please select your language */
+"108" = "Prosím vyberte zemi";
+
+/* Select a shop */
+"109" = "Vyberte zemi";
+
+/* Log in with Facebook and gain access to all functions. */
+"110" = "Log in with Facebook and gain access to all functions.";
+
+/* Done */
+"111" = "Hotovo";
+
+/* No offers headline */
+"112" = "Žádné aktuální nabídky";
+
+/* No categories headline */
+"113" = "Žádné kategorie";
+
+/* Tap to refresh */
+"114" = "Klikni pro aktualizaci";
+
+/* No products in cart */
+"115" = "Prádný košík";
+
+/* No products */
+"116" = "Žádné produkty";
+
+/* Selection - Clear all */
+"117" = "Odznačit vše";
+
+/* Filter - Size */
+"118" = "Velikost";
+
+/* Filter - Color */
+"119" = "Barva";
+
+/* Filter - Brand */
+"120" = "Značka";
+
+/* Filter - Search */
+"121" = "Hledat";
+
+/* Filter - Cancel search */
+"122" = "Zrušit";
+
+/* Filter - No filters */
+"123" = "Žádné filtry";
+
+/* Filter - Update filter */
+"124" = "Upravit filtr";
+
+/* Alert View - Default Button Title */
+"125" = "OK";
+

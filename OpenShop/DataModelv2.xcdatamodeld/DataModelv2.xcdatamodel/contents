@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 4.3">
+    <entity name="Banner" representedClassName="BFBanner" syncable="YES">
+        <attribute name="bannerID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="image_url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="target" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="bannerID"/>
+        </userInfo>
+    </entity>
+    <entity name="Branch" representedClassName="BFBranch" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="branchID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="coordinates.lat"/>
+            </userInfo>
+        </attribute>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="coordinates.lon"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="delivery" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartDelivery" inverseName="branch" inverseEntity="CartDelivery" syncable="YES"/>
+        <relationship name="openingHours" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BranchOpeningHours" inverseName="branch" inverseEntity="BranchOpeningHours" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="opening_hours"/>
+            </userInfo>
+        </relationship>
+        <relationship name="transports" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BranchTransport" inverseName="branch" inverseEntity="BranchTransport" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="branchID"/>
+        </userInfo>
+    </entity>
+    <entity name="BranchOpeningHours" representedClassName="BFBranchOpeningHours" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opening" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openingHoursID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="branch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Branch" inverseName="openingHours" inverseEntity="Branch" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="openingHoursID"/>
+        </userInfo>
+    </entity>
+    <entity name="BranchTransport" representedClassName="BFBranchTransport" syncable="YES">
+        <attribute name="iconURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="icon"/>
+            </userInfo>
+        </attribute>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transportID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="branch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Branch" inverseName="transports" inverseEntity="Branch" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="transportID"/>
+        </userInfo>
+    </entity>
+    <entity name="Cart" representedClassName="BFCart" syncable="YES">
+        <attribute name="cartID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="product_count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_price_formatted"/>
+            </userInfo>
+        </attribute>
+        <relationship name="discounts" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CartDiscountItem" inverseName="cart" inverseEntity="CartDiscountItem" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CartProductItem" inverseName="cart" inverseEntity="CartProductItem" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="items"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="cartID"/>
+        </userInfo>
+    </entity>
+    <entity name="CartDelivery" representedClassName="BFCartDelivery" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="deliveryID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="minCartAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="min_cart_amount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalPickup" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="personal_pickup"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_price_formatted"/>
+            </userInfo>
+        </attribute>
+        <relationship name="branch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Branch" inverseName="delivery" inverseEntity="Branch" syncable="YES"/>
+        <relationship name="deliveryInfoPersonalPickup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeliveryInfo" inverseName="personalPickupArray" inverseEntity="DeliveryInfo" syncable="YES"/>
+        <relationship name="deliveryInfoShipping" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeliveryInfo" inverseName="shippingArray" inverseEntity="DeliveryInfo" syncable="YES"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartPayment" inverseName="delivery" inverseEntity="CartPayment" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="payment"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="deliveryID"/>
+        </userInfo>
+    </entity>
+    <entity name="CartDiscountItem" representedClassName="BFCartDiscountItem" syncable="YES">
+        <attribute name="discountID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="minCartAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount.min_cart_amount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount.name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount.type"/>
+            </userInfo>
+        </attribute>
+        <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount.value"/>
+            </userInfo>
+        </attribute>
+        <attribute name="valueFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount.value_formatted"/>
+            </userInfo>
+        </attribute>
+        <relationship name="cart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cart" inverseName="discounts" inverseEntity="Cart" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="discountID"/>
+        </userInfo>
+    </entity>
+    <entity name="CartPayment" representedClassName="BFCartPayment" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="paymentID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPrice" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_price_formatted"/>
+            </userInfo>
+        </attribute>
+        <relationship name="delivery" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartDelivery" inverseName="payments" inverseEntity="CartDelivery" syncable="YES"/>
+        <relationship name="shipping" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderShipping" inverseName="payments" inverseEntity="OrderShipping" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="paymentID"/>
+        </userInfo>
+    </entity>
+    <entity name="CartProductItem" representedClassName="BFCartProductItem" syncable="YES">
+        <attribute name="cartItemID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="expiration" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isReservation" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="is_reservation"/>
+            </userInfo>
+        </attribute>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="remoteID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="remote_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPrice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_item_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_item_price_formatted"/>
+            </userInfo>
+        </attribute>
+        <relationship name="cart" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Cart" inverseName="products" inverseEntity="Cart" syncable="YES"/>
+        <relationship name="productVariant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductVariant" inverseName="inCart" inverseEntity="ProductVariant" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="variant"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="cartItemID"/>
+        </userInfo>
+    </entity>
+    <entity name="Category" representedClassName="BFCategory" syncable="YES">
+        <attribute name="categoryID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isCategory" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="is_category"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="original_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Category" inverseName="parent" inverseEntity="Category" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="children"/>
+            </userInfo>
+        </relationship>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="children" inverseEntity="Category" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="categoryID"/>
+        </userInfo>
+    </entity>
+    <entity name="DeliveryInfo" representedClassName="BFDeliveryInfo" syncable="YES">
+        <relationship name="personalPickupArray" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartDelivery" inverseName="deliveryInfoPersonalPickup" inverseEntity="CartDelivery" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="personal_pickup"/>
+            </userInfo>
+        </relationship>
+        <relationship name="shippingArray" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartDelivery" inverseName="deliveryInfoShipping" inverseEntity="CartDelivery" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="shipping"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="InfoPage" representedClassName="BFInfoPage" syncable="YES">
+        <attribute name="pageID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="pageID"/>
+        </userInfo>
+    </entity>
+    <entity name="Order" representedClassName="BFOrder" syncable="YES">
+        <attribute name="clientName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="date_created"/>
+            </userInfo>
+        </attribute>
+        <attribute name="orderID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="orderRemoteID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="remote_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPrice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="total_formatted"/>
+            </userInfo>
+        </attribute>
+        <relationship name="orderItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OrderItem" inverseName="inOrder" inverseEntity="OrderItem" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="items"/>
+            </userInfo>
+        </relationship>
+        <relationship name="shipping" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderShipping" inverseName="orders" inverseEntity="OrderShipping" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="orderID"/>
+        </userInfo>
+    </entity>
+    <entity name="OrderItem" representedClassName="BFOrderItem" syncable="YES">
+        <attribute name="orderItemID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="priceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="inOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="orderItems" inverseEntity="Order" syncable="YES"/>
+        <relationship name="productVariant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductVariant" inverseName="inOrders" inverseEntity="ProductVariant" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="variant"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="orderItemID"/>
+        </userInfo>
+    </entity>
+    <entity name="OrderShipping" representedClassName="BFOrderShipping" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minCartAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="min_cart_amount"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalPickup" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="personal_pickup"/>
+            </userInfo>
+        </attribute>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="priceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="shippingID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="shipping" inverseEntity="Order" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="order"/>
+            </userInfo>
+        </relationship>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartPayment" inverseName="shipping" inverseEntity="CartPayment" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="payment"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="shippingID"/>
+        </userInfo>
+    </entity>
+    <entity name="Product" representedClassName="BFProduct" syncable="YES">
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="category"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discountPrice" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="discountPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount_price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="main_image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURLHighRes" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="main_image_high_res"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="priceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="remoteID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="remote_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="productVariants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProductVariant" inverseName="product" inverseEntity="ProductVariant" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="variants"/>
+            </userInfo>
+        </relationship>
+        <relationship name="relatedProducts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="relatedTo" inverseEntity="Product" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="related"/>
+            </userInfo>
+        </relationship>
+        <relationship name="relatedTo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="relatedProducts" inverseEntity="Product" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="productID"/>
+        </userInfo>
+    </entity>
+    <entity name="ProductVariant" representedClassName="BFProductVariant" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discountPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="discountPriceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="discount_price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="images" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="main_image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="priceFormatted" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="price_formatted"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="product_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productVariantDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="productVariantID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="remoteID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="remote_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="color" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductVariantColor" inverseName="productVariants" inverseEntity="ProductVariantColor" syncable="YES"/>
+        <relationship name="inCart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CartProductItem" inverseName="productVariant" inverseEntity="CartProductItem" syncable="YES"/>
+        <relationship name="inOrders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OrderItem" inverseName="productVariant" inverseEntity="OrderItem" syncable="YES"/>
+        <relationship name="inWishlist" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="WishlistItem" inverseName="productVariant" inverseEntity="WishlistItem" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="productVariants" inverseEntity="Product" syncable="YES"/>
+        <relationship name="size" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductVariantSize" inverseName="productVariants" inverseEntity="ProductVariantSize" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="productVariantID"/>
+        </userInfo>
+    </entity>
+    <entity name="ProductVariantColor" representedClassName="BFProductVariantColor" syncable="YES">
+        <attribute name="colorID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="hexValue" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="code"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="img"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="value"/>
+            </userInfo>
+        </attribute>
+        <relationship name="productVariants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductVariant" inverseName="color" inverseEntity="ProductVariant" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="colorID"/>
+        </userInfo>
+    </entity>
+    <entity name="ProductVariantSize" representedClassName="BFProductVariantSize" syncable="YES">
+        <attribute name="sizeID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productVariants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductVariant" inverseName="size" inverseEntity="ProductVariant" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="sizeID"/>
+        </userInfo>
+    </entity>
+    <entity name="Region" representedClassName="BFRegion" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="regionID"/>
+        </userInfo>
+    </entity>
+    <entity name="SearchQuery" representedClassName="BFSearchQuery" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="query" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchQueryID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="searchQueryID"/>
+        </userInfo>
+    </entity>
+    <entity name="SearchSuggestion" representedClassName="BFSearchSuggestion" syncable="YES">
+        <attribute name="searchSuggestionID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="suggestion" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="searchSuggestionID"/>
+        </userInfo>
+    </entity>
+    <entity name="Shop" representedClassName="BFShop" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="flagIcon" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="flag_icon"/>
+            </userInfo>
+        </attribute>
+        <attribute name="googleUA" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="google_ua"/>
+            </userInfo>
+        </attribute>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shopID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="shopID"/>
+        </userInfo>
+    </entity>
+    <entity name="Translation" representedClassName="BFTranslation" syncable="YES">
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stringID" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WishlistItem" representedClassName="BFWishlistItem" syncable="YES">
+        <attribute name="wishlistItemID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="productVariant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductVariant" inverseName="inWishlist" inverseEntity="ProductVariant" syncable="YES">
+            <userInfo>
+                <entry key="MMRecordAttributeAlternateNameKey" value="variant"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="MMRecordEntityPrimaryAttributeKey" value="wishlistItemID"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="Banner" positionX="-864" positionY="108" width="128" height="105"/>
+        <element name="Branch" positionX="-452" positionY="126" width="128" height="180"/>
+        <element name="BranchOpeningHours" positionX="-657" positionY="-117" width="128" height="105"/>
+        <element name="BranchTransport" positionX="-450" positionY="444" width="128" height="105"/>
+        <element name="Cart" positionX="-657" positionY="-117" width="128" height="150"/>
+        <element name="CartDelivery" positionX="-227" positionY="-6" width="128" height="255"/>
+        <element name="CartDiscountItem" positionX="-425" positionY="-180" width="128" height="165"/>
+        <element name="CartPayment" positionX="7" positionY="-219" width="128" height="30"/>
+        <element name="CartProductItem" positionX="-270" positionY="-180" width="128" height="180"/>
+        <element name="Category" positionX="-866" positionY="237" width="128" height="150"/>
+        <element name="DeliveryInfo" positionX="-657" positionY="-117" width="128" height="75"/>
+        <element name="InfoPage" positionX="-864" positionY="-207" width="128" height="90"/>
+        <element name="Order" positionX="-191" positionY="369" width="128" height="195"/>
+        <element name="OrderItem" positionX="-27" positionY="369" width="128" height="135"/>
+        <element name="OrderShipping" positionX="295" positionY="351" width="128" height="180"/>
+        <element name="Product" positionX="-612" positionY="-270" width="128" height="300"/>
+        <element name="ProductVariant" positionX="-9" positionY="81" width="128" height="345"/>
+        <element name="ProductVariantColor" positionX="304" positionY="-108" width="128" height="120"/>
+        <element name="ProductVariantSize" positionX="297" positionY="54" width="128" height="90"/>
+        <element name="Region" positionX="-666" positionY="-126" width="128" height="75"/>
+        <element name="SearchQuery" positionX="-657" positionY="-117" width="128" height="105"/>
+        <element name="Shop" positionX="-864" positionY="-90" width="128" height="180"/>
+        <element name="Translation" positionX="-666" positionY="-126" width="128" height="90"/>
+        <element name="WishlistItem" positionX="-657" positionY="321" width="128" height="75"/>
+        <element name="SearchSuggestion" positionX="-657" positionY="-117" width="128" height="75"/>
+    </elements>
+</model>

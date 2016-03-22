@@ -1,0 +1,145 @@
+# ENV["SLACK_URL"] ||= "https://hooks.slack.com/services/..."
+fastlane_version "1.64.0"
+
+def build_app
+    project_file = './OpenShop.xcodeproj'
+
+    increment_build_number(xcodeproj: project_file) # version bump
+
+    # Get the latest provisionnig profiles from the Dev Portal and
+    # More information about code signing: https://github.com/KrauseFx/fastlane/blob/master/docs/CodeSigning.md
+
+    udid = sigh(
+                username: 'appledev@b.cz',
+                app_identifier: "businessfactory.openshop",
+                output_path: "/tmp"
+            )
+    ENV["PROJECT_UDID"] = udid
+
+    gym(
+        workspace: 'OpenShop.xcworkspace',
+        scheme: 'OpenShop'
+    )
+
+    commit_version_bump(
+        message: 'Version Bump by fastlane',
+        xcodeproj: project_file,
+        force: true
+    )
+
+    push_to_git_remote
+end
+
+################
+# All the lanes:
+################
+
+before_all do
+
+end
+
+    desc "Run iOS Tests"
+
+    lane :test do
+
+end
+
+
+desc "Build the project including dependencies"
+lane :build do
+    cocoapods
+end
+
+
+desc "Run the static analyzer on the iOS project"
+lane :analyze do
+    analyze
+end
+
+desc "Create new screenshots for the App Store in all languages and device types"
+desc "Additionally, this will add device frames around the screenshots and add the correct titles"
+lane :screenshots do
+    snapshot
+    frameit(white: true, path: './fastlane/screenshots')
+end
+
+desc "Create new app on both iTunes Connect and the Apple Developer Portal"
+lane :create_app do
+    produce(
+        username: 'appledev@b.cz',
+        app_identifier: 'businessfactory.openshop',
+        app_name: 'OpenShop',
+        language: 'English',
+        app_version: '1.0',
+        sku: 'businessfactory.openshop'
+    )
+
+    deliver
+end
+
+
+desc "Uploads metadata only - no ipa file will be uploaded"
+desc "You'll get a summary of the collected metadata before it's uploaded"
+lane :upload_metadata do
+    deliver(skip_binary_upload: true)
+end
+
+
+desc "Build, sign and upload a new beta build to Apple TestFlight"
+desc "This will **not** send an email to all testers, it will only be uploaded to the new TestFlight. "
+lane :beta do
+    build_app
+    deliver(
+        skip_deploy: true,
+        beta: true
+    )
+end
+
+desc "Build, sign and upload a new build to the App Store."
+desc "This will do the following:"
+desc ""
+desc "- Create new screenshots and store them in `./fastlane/screenshots`"
+desc "- Collect the app metadata from `./fastlane/metadata`"
+desc "- Upload screenshots + app metadata"
+desc "- Build, sign and upload the app"
+desc ""
+desc "This will **not** submit the app for review."
+
+lane :appstore do
+    cocoapods
+    build_app
+    snapshot
+    frameit(
+        silver: true,
+        path: './fastlane/screenshots'
+    )
+    deliver
+end
+
+
+################
+# Success/Error:
+################
+
+after_all do |lane|
+# This block is called, only if the executed lane was successful
+    if ENV["SLACK_URL"]
+        slack(
+        message: nil,
+        success: true,
+        default_payloads: [:test_result, :git_branch]
+        )
+    end
+
+    clean_build_artifacts
+end
+
+
+error do |lane, exception|
+    if ENV["SLACK_URL"]
+        slack(
+        message: exception.to_s,
+        success: false
+        )
+    end
+end
