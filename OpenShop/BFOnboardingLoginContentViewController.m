@@ -21,15 +21,15 @@
 /**
  * Content height.
  */
-static CGFloat const contentHeight = 260.0f;
+static CGFloat const contentHeight = 260.0;
 /**
  * Content view fade out animation duration.
  */
-static CGFloat const contentViewFadeOutDuration = 0.5f;
+static CGFloat const contentViewFadeOutDuration = 0.5;
 /**
  * Content view fade in animation duration.
  */
-static CGFloat const contentViewFadeInDuration = 0.5f;
+static CGFloat const contentViewFadeInDuration = 0.5;
 
 @interface BFOnboardingLoginContentViewController ()
     
@@ -130,6 +130,9 @@ static CGFloat const contentViewFadeInDuration = 0.5f;
         else {
             [strongSelf.view.window showIndeterminateSmallProgressOverlayWithTitle:BFLocalizedString(kTranslationLoggingIn, @"Logging in") animated:YES];
             
+            // logout current user
+            [[User sharedUser] logout];
+
             // user info
             BFAPIRequestUserInfo *userInfo = [[BFAPIRequestUserInfo alloc]init];
             userInfo.facebookID = [response objectForKey:@"id"];

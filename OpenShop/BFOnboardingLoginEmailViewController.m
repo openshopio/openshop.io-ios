@@ -18,7 +18,7 @@
 /**
  * Content view layout change animation duration.
  */
-static CGFloat const layoutChangeAnimationDuration = 0.4f;
+static CGFloat const layoutChangeAnimationDuration = 0.4;
 
 
 @interface BFOnboardingLoginEmailViewController ()
@@ -254,7 +254,7 @@ static CGFloat const layoutChangeAnimationDuration = 0.4f;
     // contraints update
     self.passwordTextFieldHeightConstraint.constant = emailLogin ? self.passwordTextFieldHeightValue : 0;
     self.passwordTextFieldTopConstraint.constant = emailLogin ? self.passwordTextFieldTopValue : 0;
-    self.passwordTextField.alpha = emailLogin ? 1.0f : 0.0f;
+    self.passwordTextField.alpha = emailLogin ? 1.0 : 0.0;
     
     // view must shrink after all constraints have been minimized
     if(!emailLogin) {
@@ -345,6 +345,9 @@ static CGFloat const layoutChangeAnimationDuration = 0.4f;
 - (void)tryToLogin {
     if (self.emailTextField.text.length && self.passwordTextField.text.length && [self.emailTextField.text isValidEmail]) {
         [self.view.window showIndeterminateSmallProgressOverlayWithTitle:BFLocalizedString(kTranslationLoggingIn, @"Logging in") animated:YES];
+        
+        // logout current user
+        [[User sharedUser] logout];
         
         // user info
         BFAPIRequestUserInfo *userInfo = [[BFAPIRequestUserInfo alloc]initWithEmail:self.emailTextField.text password:self.passwordTextField.text];

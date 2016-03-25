@@ -28,9 +28,13 @@ static NSInteger const textParagraphLineSpacing = 5;
  */
 static NSString *const shakeAnimationKey = @"viewShakeAnimationKey";
 /**
- * Content height.
+ * Content height on the first launch.
  */
-static CGFloat const contentHeight = 200.0f;
+static CGFloat const contentHeightFirstLaunch = 220.0;
+/**
+ * Content height on the normal launch.
+ */
+static CGFloat const contentHeight = 200.0;
 
 @interface BFOnboardingLanguageContentViewController ()
 
@@ -63,7 +67,12 @@ static CGFloat const contentHeight = 200.0f;
 - (void)setDefaults {
     [self.selectLanguageButton setTitle:BFLocalizedString(kTranslationCountry, @"Country") forState:UIControlStateNormal];
     [self.continueButton setTitle:[BFLocalizedString(kTranslationContinue, @"Continue") uppercaseString] forState:UIControlStateNormal];
-    self.contentHeight = contentHeight;
+    if ([[BFAppSessionInfo sharedInfo]firstLaunch]) {
+        self.contentHeight = contentHeightFirstLaunch;
+    }
+    else {
+        self.contentHeight = contentHeight;
+    }
 }
 
 - (void)viewDidLoad {
@@ -76,6 +85,12 @@ static CGFloat const contentHeight = 200.0f;
     [self.subheaderLabel setAttributedText:[self subheaderText]];
 }
 
+#pragma mark - Custom getters & setters
+
+- (void)setSelectedShop:(BFShop *)selectedShop {
+    _selectedShop = selectedShop;
+    [self.selectLanguageButton setTitle:_selectedShop.name forState:UIControlStateNormal];
+}
 
 #pragma mark - Translations & Dynamic Content
 
@@ -86,10 +101,14 @@ static CGFloat const contentHeight = 200.0f;
     [[BFAPIManager sharedManager] findShopsWithCompletionBlock:^(NSArray * _Nullable records, id  _Nullable customResponse, NSError * _Nullable error) {
         weakSelf.loading = NO;
         if (!error) {
-            self.languageItems = records;
+            // set data source
+            weakSelf.languageItems = records;
+            // preselect first shop
+            weakSelf.selectedShop = [records firstObject];
+            // dismiss overlays
             [weakSelf.view.window dismissAllOverlaysWithCompletion:^{
                 __typeof__(weakSelf) strongSelf = weakSelf;
-                [strongSelf showLanguagesActionSheetPicker:self.selectLanguageButton];
+                [strongSelf showLanguagesActionSheetPicker:weakSelf.selectLanguageButton];
             } animated:YES];
         }
         else {
@@ -158,13 +177,11 @@ static CGFloat const contentHeight = 200.0f;
     }
     
     // selection completion block
-    __weak UIButton *weakSender = (UIButton *)sender;
     __weak __typeof(self)weakSelf = self;
     
     BFNActionDoneBlock doneBlock = ^(BFActionSheetPicker *picker, NSInteger selectedIndex, id<BFNSelection> selectedValue) {
         if(selectedValue && [selectedValue isKindOfClass:[BFShop class]]) {
             weakSelf.selectedShop = (BFShop *)selectedValue;
-            [weakSender setTitle:weakSelf.selectedShop.name forState:UIControlStateNormal];
         }
     };
     

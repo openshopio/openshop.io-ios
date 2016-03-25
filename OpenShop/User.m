@@ -186,7 +186,7 @@ static NSString *const UserDefaultsUserAddressPostalCodeKey          = @"UserAdd
     // notify with changes
     dispatch_async(dispatch_get_main_queue(), ^{
         [[NSNotificationCenter defaultCenter] BFN_postAsyncNotificationName:BFCartWillSynchronizeNotification];
-        [[NSNotificationCenter defaultCenter] BFN_postAsyncNotificationName:BFUserDidChangeNotification];//postNotificationName:BFUserDidChangeNotification object:nil];
+        [[NSNotificationCenter defaultCenter] BFN_postAsyncNotificationName:BFUserDidChangeNotification];
     });
 }
 

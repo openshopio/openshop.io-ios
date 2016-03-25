@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vZ9-CD-CPE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vZ9-CD-CPE">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -588,7 +588,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-3j-XaB" customClass="BFAlignedImageButton">
-                                <rect key="frame" x="30" y="200" width="540" height="40"/>
+                                <rect key="frame" x="30" y="350" width="540" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="K9y-Lv-sCe"/>
                                 </constraints>
@@ -609,7 +609,7 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-Tm-mb7" userLabel="Top Spacing">
-                                <rect key="frame" x="295" y="0.0" width="10" height="150"/>
+                                <rect key="frame" x="295" y="0.0" width="10" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9yI-a0-cIF"/>
@@ -624,7 +624,7 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVm-3n-dEe" userLabel="Top Middle Spacing">
-                                <rect key="frame" x="295" y="190" width="10" height="10"/>
+                                <rect key="frame" x="295" y="340" width="10" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Nhw-c5-4oa"/>
@@ -638,7 +638,7 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRi-W4-M3m" userLabel="Bottom Middle Spacing">
-                                <rect key="frame" x="290" y="240" width="20" height="10"/>
+                                <rect key="frame" x="290" y="390" width="20" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Ege-19-vcn"/>
@@ -653,7 +653,7 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2i-1X-JZ9" userLabel="Bottom Spacing">
-                                <rect key="frame" x="290" y="300" width="20" height="300"/>
+                                <rect key="frame" x="290" y="450" width="20" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0X5-UE-b4J"/>
@@ -668,7 +668,7 @@
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="540" translatesAutoresizingMaskIntoConstraints="NO" id="4RT-4C-7Lq">
-                                <rect key="frame" x="30" y="150" width="540" height="40"/>
+                                <rect key="frame" x="30" y="300" width="540" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1y3-Av-A4T"/>
                                     <constraint firstAttribute="height" constant="70" id="lgz-ha-M4x"/>
@@ -686,7 +686,7 @@ kde chcete nakupovat</string>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-0d-x2e">
-                                <rect key="frame" x="30" y="250" width="540" height="50"/>
+                                <rect key="frame" x="30" y="400" width="540" height="50"/>
                                 <color key="backgroundColor" red="0.93929904699325562" green="0.058065511286258698" blue="0.38389852643013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="E7c-qx-NES"/>
@@ -703,7 +703,7 @@ kde chcete nakupovat</string>
                         <constraints>
                             <constraint firstItem="zRi-W4-M3m" firstAttribute="top" secondItem="ZJi-3j-XaB" secondAttribute="bottom" id="5Wt-P8-jWn"/>
                             <constraint firstItem="ZJi-3j-XaB" firstAttribute="top" secondItem="4RT-4C-7Lq" secondAttribute="bottom" constant="5" id="9Ei-uk-RwW"/>
-                            <constraint firstItem="gs7-Tm-mb7" firstAttribute="height" secondItem="c2i-1X-JZ9" secondAttribute="height" multiplier="1:2" id="AYD-eI-ygL"/>
+                            <constraint firstItem="gs7-Tm-mb7" firstAttribute="height" secondItem="c2i-1X-JZ9" secondAttribute="height" multiplier="2:1" id="AYD-eI-ygL"/>
                             <constraint firstItem="s2X-0d-x2e" firstAttribute="leading" secondItem="ZJi-3j-XaB" secondAttribute="leading" id="DF9-za-V8T"/>
                             <constraint firstItem="c2i-1X-JZ9" firstAttribute="top" secondItem="s2X-0d-x2e" secondAttribute="bottom" id="FqV-gd-WKE"/>
                             <constraint firstItem="4RT-4C-7Lq" firstAttribute="top" secondItem="gs7-Tm-mb7" secondAttribute="bottom" id="GcX-Rb-x9b"/>
@@ -4473,7 +4473,7 @@ kde chcete nakupovat</string>
                                                             <rect key="frame" x="16" y="-1.5" width="130" height="173"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="173"/>
+                                                                <rect key="frame" x="0.0" y="-1" width="130" height="175"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EQx-9U-GU7" customClass="BFProductImageView">
                                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="123"/>

@@ -241,7 +241,7 @@ static NSString *const pageControllerSegueIdentifier = @"pageControllerSegue";
     CGFloat percentage = fabs(scrollView.contentOffset.x - self.view.frame.size.width) / self.view.frame.size.width;
     
     // no progress
-    if (percentage == 0.0f) {
+    if (percentage == 0.0) {
         return;
     }
     
@@ -264,7 +264,7 @@ static NSString *const pageControllerSegueIdentifier = @"pageControllerSegue";
     BFOnboardingContentViewController *currentController = [self.viewControllers objectAtIndex:self.currentPageIndex];
     BFOnboardingContentViewController *upcomingController = [self.viewControllers objectAtIndex:movingForward ? self.currentPageIndex+1 : self.currentPageIndex-1];
     if([currentController respondsToSelector:@selector(visibilityChangedWithPercentage:)]) {
-        [currentController visibilityChangedWithPercentage:1.0f - percentage];
+        [currentController visibilityChangedWithPercentage:1.0 - percentage];
     }
     if([upcomingController respondsToSelector:@selector(visibilityChangedWithPercentage:)]) {
         [upcomingController visibilityChangedWithPercentage:percentage];

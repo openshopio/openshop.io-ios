@@ -360,6 +360,7 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
         // parse and save received response data
         if([[User sharedUser]updateWithJSONDictionary:response error:&updateError]) {
             if([BFKeystore setAccessToken:token error:&updateError]) {
+                [self setAccessToken:token];
                 [[User sharedUser]saveUser];
                 [BFPushNotificationHandler registerDeviceWithApnsID:[[BFAppPreferences sharedPreferences] APNIdentification]];
                 // update shopping cart badge value
