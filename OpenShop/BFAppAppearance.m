@@ -64,6 +64,7 @@
     [[MRProgressOverlayView appearance] setTintColor:[UIColor BFN_pinkColor]];
     // tab bar appearance
     [self customizeTabBarTintColor:[UIColor blackColor] selectedImageTintColor:[UIColor whiteColor] backgroundColor:[UIColor whiteColor]];
+    [self customizeTabBarItemTitleTextColor:[UIColor whiteColor] selectionColor:[UIColor whiteColor] font:[UIFont BFN_robotoMediumWithSize:10] shadowColor:[UIColor clearColor] shadowOffset:CGSizeZero];
     // navigation bar appearance
     [self customizeNavBarTintColor:[UIColor BFN_greyColor] backgroundColor:nil translucent:false];
     // navigation bar title text

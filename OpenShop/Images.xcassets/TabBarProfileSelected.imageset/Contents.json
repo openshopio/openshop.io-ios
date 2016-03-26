@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "TabBarProfileSelected@2x.png",
+      "filename" : "Account_selected_smaller.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "TabBarProfileSelected@3x.png",
+      "filename" : "Account_selected.png",
       "scale" : "3x"
     }
   ],

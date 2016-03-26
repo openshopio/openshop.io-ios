@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "TabBarShopSelected@2x.png",
+      "filename" : "Shop_selected_smaller.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "TabBarShopSelected@3x.png",
+      "filename" : "Shop_selected.png",
       "scale" : "3x"
     }
   ],
