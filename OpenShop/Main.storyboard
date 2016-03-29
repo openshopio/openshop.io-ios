@@ -2258,7 +2258,7 @@ kde chcete nakupovat</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-uQ-RJg">
                                                     <rect key="frame" x="23" y="37" width="44" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.93929904699325562" green="0.058065511286258698" blue="0.38389852643013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -5608,26 +5608,26 @@ kde chcete nakupovat</string>
         <image name="MenuSaleIcon" width="20" height="20"/>
         <image name="OnboardBackground" width="640" height="960"/>
         <image name="OpeningHoursIcon" width="26" height="26"/>
-        <image name="TabBarCartSelected" width="26" height="26"/>
-        <image name="TabBarCartUnselected" width="26" height="26"/>
-        <image name="TabBarOffersSelected" width="26" height="26"/>
-        <image name="TabBarOffersUnselected" width="26" height="26"/>
-        <image name="TabBarProfileSelected" width="26" height="26"/>
-        <image name="TabBarProfileUnselected" width="26" height="26"/>
-        <image name="TabBarSearchSelected" width="26" height="26"/>
-        <image name="TabBarSearchUnselected" width="26" height="26"/>
-        <image name="TabBarShopSelected" width="26" height="26"/>
-        <image name="TabBarShopUnselected" width="26" height="26"/>
+        <image name="TabBarCartSelected" width="22" height="22"/>
+        <image name="TabBarCartUnselected" width="22" height="22"/>
+        <image name="TabBarOffersSelected" width="22" height="22"/>
+        <image name="TabBarOffersUnselected" width="22" height="22"/>
+        <image name="TabBarProfileSelected" width="22" height="22"/>
+        <image name="TabBarProfileUnselected" width="22" height="22"/>
+        <image name="TabBarSearchSelected" width="22" height="22"/>
+        <image name="TabBarSearchUnselected" width="22" height="22"/>
+        <image name="TabBarShopSelected" width="22" height="22"/>
+        <image name="TabBarShopUnselected" width="22" height="22"/>
         <image name="WishlistIconSelected" width="22" height="22"/>
         <image name="WishlistIconUnselected" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="x9Y-Xo-xZt"/>
         <segue reference="ZUG-IV-99L"/>
+        <segue reference="DJj-sJ-oEP"/>
+        <segue reference="Os9-gY-Yxf"/>
+        <segue reference="z3D-vf-cds"/>
         <segue reference="QUD-HK-yGf"/>
         <segue reference="dv6-rf-L8H"/>
-        <segue reference="Bb7-Ti-bLG"/>
-        <segue reference="DJj-sJ-oEP"/>
-        <segue reference="Lsj-ov-Wp8"/>
     </inferredMetricsTieBreakers>
 </document>

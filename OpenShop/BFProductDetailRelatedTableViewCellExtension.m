@@ -17,11 +17,11 @@
 /**
  *  Related products empty header view height.
  */
-static CGFloat const productDetailRelatedProductsEmptyHeaderFooterViewHeight = 2.0f;
+static CGFloat const productDetailRelatedProductsEmptyHeaderFooterViewHeight = 2.0;
 /**
  * Related products table view cell height.
  */
-static CGFloat const productDetailRelatedProductsCellHeight                  = 220.0f;
+static CGFloat const productDetailRelatedProductsCellHeight                  = 220.0;
 /**
  * Related products table view cell reuse identifier.
  */

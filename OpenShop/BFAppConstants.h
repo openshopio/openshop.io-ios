@@ -167,6 +167,7 @@ extern NSString *const kTranslationApplyingDiscountCode;
 extern NSString *const kTranslationApplyDiscountCode;
 extern NSString *const kTranslationEnterDiscountCode;
 extern NSString *const kTranslationDiscountCode;
+extern NSString *const kTranslationProceedToShipping;
 
 /**
  * Edit product in shopping cart

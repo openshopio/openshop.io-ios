@@ -149,6 +149,7 @@ NSString *const kTranslationApplyingDiscountCode           = @"";
 NSString *const kTranslationApplyDiscountCode              = @"";
 NSString *const kTranslationEnterDiscountCode              = @"";
 NSString *const kTranslationDiscountCode                   = @"";
+NSString *const kTranslationProceedToShipping              = @"";
 
 /**
  * Edit product in shopping cart

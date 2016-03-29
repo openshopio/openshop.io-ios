@@ -139,7 +139,9 @@ static NSString *const segueParameterInitialBranch                 = @"initialBr
 - (void)accessoryButtonTappedForIndex:(NSInteger)index {
     BFCartDelivery *delivery = [self.personalPickupItems objectAtIndex:index];
     BFBranch *branch = delivery.branch;
-    [self.tableViewController performSegueWithViewController:[BFBranchViewController class] params:@{ segueParameterInitialBranch : branch }];
+    if (branch) {
+        [self.tableViewController performSegueWithViewController:[BFBranchViewController class] params:@{ segueParameterInitialBranch : branch }];
+    }
 }
 
 #pragma mark - Branch selection

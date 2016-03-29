@@ -40,19 +40,19 @@ static NSString *const buttonFooterViewNibName                     = @"BFTableVi
 /**
  * Extension table view product cell height.
  */
-static CGFloat const extensionProductCellHeight                    = 37.0f;
+static CGFloat const extensionProductCellHeight                    = 37.0;
 /**
  * Extension table view total price cell height.
  */
-static CGFloat const extensionTotalPriceCellHeight                 = 42.0f;
+static CGFloat const extensionTotalPriceCellHeight                 = 42.0;
 /**
  * Extension header view height.
  */
-static CGFloat const extensionHeaderViewHeight                     = 50.0f;
+static CGFloat const extensionHeaderViewHeight                     = 50.0;
 /**
  * Extension footer view height.
  */
-static CGFloat const extensionEmptyFooterViewHeight                = 15.0f;
+static CGFloat const extensionEmptyFooterViewHeight                = 15.0;
 
 @interface BFOrderSummaryProductsTableViewCellExtension ()
 

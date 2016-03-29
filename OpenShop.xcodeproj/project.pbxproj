@@ -177,6 +177,7 @@
 		ADAFBAD21C995449009750EE /* BFSearchSuggestionsTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFBAD11C995449009750EE /* BFSearchSuggestionsTableViewCellExtension.m */; };
 		ADAFBADD1C99673F009750EE /* BFSearchSuggestion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFBADA1C99673F009750EE /* BFSearchSuggestion+CoreDataProperties.m */; };
 		ADAFBADE1C99673F009750EE /* BFSearchSuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFBADC1C99673F009750EE /* BFSearchSuggestion.m */; };
+		ADB124AB1CA957FC0002647A /* NSString+BFFitsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB124AA1CA957FC0002647A /* NSString+BFFitsLabel.m */; };
 		ADB2ADE51C64C9D300023033 /* BFShop+BFNSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB2ADE41C64C9D300023033 /* BFShop+BFNSelection.m */; };
 		ADB676E51C7C51FD007C96DA /* NSNumber+BFNSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB676E41C7C51FD007C96DA /* NSNumber+BFNSelection.m */; };
 		ADBEC40D1C8577750058D97B /* BFCrashLoggerService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBEC40C1C8577750058D97B /* BFCrashLoggerService.m */; };
@@ -635,6 +636,8 @@
 		ADAFBADA1C99673F009750EE /* BFSearchSuggestion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFSearchSuggestion+CoreDataProperties.m"; sourceTree = "<group>"; };
 		ADAFBADB1C99673F009750EE /* BFSearchSuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSearchSuggestion.h; sourceTree = "<group>"; };
 		ADAFBADC1C99673F009750EE /* BFSearchSuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFSearchSuggestion.m; sourceTree = "<group>"; };
+		ADB124A91CA957FC0002647A /* NSString+BFFitsLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BFFitsLabel.h"; sourceTree = "<group>"; };
+		ADB124AA1CA957FC0002647A /* NSString+BFFitsLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BFFitsLabel.m"; sourceTree = "<group>"; };
 		ADB2ADE31C64C9D300023033 /* BFShop+BFNSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BFShop+BFNSelection.h"; sourceTree = "<group>"; };
 		ADB2ADE41C64C9D300023033 /* BFShop+BFNSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFShop+BFNSelection.m"; sourceTree = "<group>"; };
 		ADB676E31C7C51FD007C96DA /* NSNumber+BFNSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+BFNSelection.h"; sourceTree = "<group>"; };
@@ -1202,6 +1205,8 @@
 				BB0266AA1C5A9491005E5E98 /* UIWindow+BFOverlays.m */,
 				AD0A813B1C635B6500348FAE /* MGSwipeTableCell+BFNSwipeGestureTutorial.h */,
 				AD0A813C1C635B6500348FAE /* MGSwipeTableCell+BFNSwipeGestureTutorial.m */,
+				ADB124A91CA957FC0002647A /* NSString+BFFitsLabel.h */,
+				ADB124AA1CA957FC0002647A /* NSString+BFFitsLabel.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -2299,6 +2304,7 @@
 				BBC022191C5B98650052A6C8 /* BFOrderDetailsParsingOperation.m in Sources */,
 				5BD993DB1BE7D95C00AE12C0 /* BFKeystore.m in Sources */,
 				5B1229AA1C29B6EE004F6B55 /* BFStoryboardNoAnimationSegue.m in Sources */,
+				ADB124AB1CA957FC0002647A /* NSString+BFFitsLabel.m in Sources */,
 				ADFA0D391C4E7A19002771A1 /* BFAddressTableViewCellExtension.m in Sources */,
 				5B22EE511C15749200B575A4 /* BFInitViewController.m in Sources */,
 				BBA41C401C4EB5AF00CCAC8F /* BFWishlistProductsParsingOperation.m in Sources */,

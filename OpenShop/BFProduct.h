@@ -25,6 +25,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSAttributedString *)priceAndDiscountFormattedWithPercentage:(BOOL)percentage;
 
+/**
+ * Returns formatted product discount price information.
+ *
+ * @param color The color used for the discount foreground
+ * @return The formatted discount.
+ */
+- (NSAttributedString *)discountFormattedWithColor:(UIColor *)color;
 
 @end
 

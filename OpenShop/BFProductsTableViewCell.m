@@ -12,6 +12,8 @@
 #import "BFCollectionViewCell.h"
 #import <UIImageView+AFNetworking.h>
 #import "BFProductVariant.h"
+#import "NSString+BFFitsLabel.h"
+#import "UIColor+BFColor.h"
 
 /**
  * Product collection view cell reuse identifier.
@@ -76,8 +78,16 @@ static NSString *const productContainerCellReuseIdentifier = @"BFProductSmallCol
         BFProduct *product = (BFProduct *)item;
         
         cell.headerlabel.text = product.name;
-        cell.subheaderLabel.attributedText = [product priceAndDiscountFormattedWithPercentage:NO];
-
+        
+        NSAttributedString *priceAndDiscountFormatted = [product priceAndDiscountFormattedWithPercentage:NO];
+        NSAttributedString *discountFormatted = [product discountFormattedWithColor:[UIColor BFN_pinkColor]];
+        if ([[priceAndDiscountFormatted string] fitsLabel:cell.subheaderLabel]) {
+            cell.subheaderLabel.attributedText = priceAndDiscountFormatted;
+        }
+        else {
+            cell.subheaderLabel.attributedText = discountFormatted;
+        }
+        
         if(product.imageURL) {
             NSURL *productImage = [NSURL URLWithString:(NSString *)product.imageURL];
             [cell.imageContentView setImageWithURL:productImage placeholderImage:cell.imageContentView.placeholderImage];

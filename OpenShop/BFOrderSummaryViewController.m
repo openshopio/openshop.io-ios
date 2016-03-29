@@ -24,11 +24,11 @@
 /**
  * Delay in seconds for presenting success overlay.
  */
-static CGFloat const orderSuccessDismissDelay = 1.0f;
+static CGFloat const orderSuccessDismissDelay = 1.0;
 /**
  * Delay in seconds for presenting failure overlay.
  */
-static CGFloat const orderFailureDismissDelay = 2.0f;
+static CGFloat const orderFailureDismissDelay = 2.0;
 /**
  * Storyboard unwind to cart segue identifier.
  */

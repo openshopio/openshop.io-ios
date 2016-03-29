@@ -47,24 +47,24 @@ static NSString *const productInfoIncludeRelatedProductsValue = @"related";
 /**
  * Navigation item title view update delay.
  */
-static CGFloat const navigationItemTitleViewUpdateDelay       = 0.5f;
+static CGFloat const navigationItemTitleViewUpdateDelay       = 0.5;
 /**
  * Toast notification message padding.
  */
-static CGFloat const toastNotificationPadding                 = 16.0f;
+static CGFloat const toastNotificationPadding                 = 16.0;
 /**
  * Toast notification image size.
  */
-static CGFloat const toastNotificationImageSize               = 14.0f;
+static CGFloat const toastNotificationImageSize               = 14.0;
 
 /**
  * Product detail table view header height.
  */
-#define productDetailHeaderHeight CGRectGetHeight([[UIScreen mainScreen] applicationFrame]) * 0.6f
+#define productDetailHeaderHeight CGRectGetHeight([[UIScreen mainScreen] applicationFrame]) * 0.6
 /**
  * Product detail table view footer height.
  */
-#define productDetailFooterHeight CGRectGetHeight([[UIScreen mainScreen] applicationFrame]) * 0.2f
+#define productDetailFooterHeight CGRectGetHeight([[UIScreen mainScreen] applicationFrame]) * 0.2
 
 
 

@@ -55,7 +55,7 @@
     
     // Set the width of the views according to the text size
     NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
-    style.lineHeightMultiple = 1.2f;
+    style.lineHeightMultiple = 1.2;
     style.lineBreakMode = NSLineBreakByTruncatingTail;
     style.alignment = NSTextAlignmentCenter;
     

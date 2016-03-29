@@ -45,6 +45,7 @@ static NSString *const UserAddressPostalCodePropertyJSONMapping      = @"zip";
  * User gender type.
  */
 typedef NS_ENUM(NSInteger, UserGender) {
+    UserGenderUnkown,
     UserGenderMale,
     UserGenderFemale
 };

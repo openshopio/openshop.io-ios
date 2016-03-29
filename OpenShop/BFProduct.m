@@ -129,7 +129,7 @@ static NSString *const BFProductRemoteIDPropertyJSONMapping               = @"re
     NSAttributedString *spaceAttributedString = [[NSAttributedString alloc] initWithString:@" "];
     [priceAttributedString appendAttributedString:spaceAttributedString];
     // discount percentage
-    CGFloat discountPercent = (1.0-(self.discountPrice.floatValue/self.price.floatValue))*100;
+    CGFloat discountPercent = (1.0-(self.discountPrice.doubleValue/self.price.doubleValue))*100;
     // \u00A0 represents non-break space
     NSString *discountPercentString = [NSString stringWithFormat:@"\u00A0-%.0f%%\u00A0", discountPercent];
     // discount percent attributed string
@@ -170,5 +170,11 @@ static NSString *const BFProductRemoteIDPropertyJSONMapping               = @"re
     }
 }
 
+- (NSAttributedString *)discountFormattedWithColor:(UIColor *)color {
+    NSString *priceString = self.discountPriceFormatted ?: @"";
+    NSAttributedString *priceAttributedString = [[NSAttributedString alloc] initWithString:priceString
+                                                                                attributes:@{NSForegroundColorAttributeName: color}];
+    return priceAttributedString;
+}
 
 @end

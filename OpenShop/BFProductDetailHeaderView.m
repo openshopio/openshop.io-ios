@@ -23,22 +23,22 @@
 /**
  * The page control scale animation velocity.
  */
-static CGFloat const pageControlScaleAnimationVelocityX  = 5.0f;
-static CGFloat const pageControlScaleAnimationVelocityY  = 5.0f;
+static CGFloat const pageControlScaleAnimationVelocityX  = 5.0;
+static CGFloat const pageControlScaleAnimationVelocityY  = 5.0;
 /**
  * The page control scale animation starting size.
  */
-static CGFloat const pageControlScaleAnimationStartX     = 0.4f;
-static CGFloat const pageControlScaleAnimationStartY     = 0.4f;
+static CGFloat const pageControlScaleAnimationStartX     = 0.4;
+static CGFloat const pageControlScaleAnimationStartY     = 0.4;
 /**
  * The page control scale animation final size.
  */
-static CGFloat const pageControlScaleAnimationEndX       = 1.0f;
-static CGFloat const pageControlScaleAnimationEndY       = 1.0f;
+static CGFloat const pageControlScaleAnimationEndX       = 1.0;
+static CGFloat const pageControlScaleAnimationEndY       = 1.0;
 /**
  * The page control scale animation bounciness.
  */
-static CGFloat const pageControlScaleAnimationBounciness = 20.0f;
+static CGFloat const pageControlScaleAnimationBounciness = 20.0;
 /**
  * The page control scale animation identification.
  */
@@ -46,7 +46,7 @@ static NSString *const pageControlScaleAnimationKey      = @"pageControlScaleSpr
 /**
  * The swipe view images scroll animation duration.
  */
-static CGFloat const swipeViewScrollAnimationDuration    = 1.0f;
+static CGFloat const swipeViewScrollAnimationDuration    = 1.0;
 
 
 

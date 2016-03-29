@@ -131,11 +131,20 @@ static NSString *const UserDefaultsUserAddressPostalCodeKey          = @"UserAdd
                                                                           }];
 }
 
+- (void)setNilValueForKey:(NSString *)key {
+    if ([key isEqualToString:UserGenderPropertyJSONMapping]) {
+        self.gender = UserGenderUnkown;
+    }
+    else {
+        [super setNilValueForKey:key];
+    }
+}
 
 #pragma mark - Translation Names
 
 + (NSDictionary *)userGenderAPINames {
-    return @{@(UserGenderMale)   : @"male",
+    return @{@(UserGenderUnkown) : NSNull.null,
+             @(UserGenderMale)   : @"male",
              @(UserGenderFemale) : @"female"
              };
 }

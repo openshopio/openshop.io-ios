@@ -28,7 +28,7 @@ static NSString *const UserDefaultsAppPreferencesPreferredMenuCategory  = @"Pref
 /**
  * Default organization identification.
  */
-static NSInteger const BFAppPreferencesDefaultOrganization        = 2;
+static NSInteger const BFAppPreferencesDefaultOrganization        = 3;
 /**
  * Default shop identification.
  */
