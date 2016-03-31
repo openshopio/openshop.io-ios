@@ -20,10 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param numOfItems The number of visible items.
  * @param maxItemSize The maximum item size.
- * @param resizeRatio The item resize ratio.
+ * @param heightResizeRatio The item height resize ratio.
+ * @param widthResizeRatio The item width resize ratio.
  * @return The newly-initialized `BFCollectionViewLayout`.
  */
-- (id)initWithNumOfItems:(NSUInteger)numOfItems maxItemSize:(CGSize)maxItemSize resizeRatio:(CGFloat)resizeRatio;
+- (id)initWithNumOfItems:(NSUInteger)numOfItems maxItemSize:(CGSize)maxItemSize heightResizeRatio:(CGFloat)heightResizeRatio widthResizeRatio:(CGFloat)widthResizeRatio;
 /**
  * Creates a collection view layout with specified number of visible items and maximum item size.
  *
@@ -51,9 +52,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * Percentage of item size in comparison with available space (0.0f - 1.0f).
+ * Percentage of item size in comparison with available height.
  */
-@property (nonatomic, assign) CGFloat resizeRatio;
+@property (nonatomic, assign) CGFloat heightResizeRatio;
+/**
+ * Percentage of item size in comparison with available width.
+ */
+@property (nonatomic, assign) CGFloat widthResizeRatio;
+
 /**
  * Number of visible items.
  */

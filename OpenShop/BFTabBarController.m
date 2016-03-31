@@ -61,6 +61,12 @@ static CGFloat const tabBarTitleVerticalOffset = 2;
 }
 
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.view updateConstraints];
+ }
+
 #pragma mark - Custom Appearance
 
 + (void)customizeAppearance {

@@ -16,27 +16,31 @@ static NSUInteger const defaultNumOfItems      = 2;
 /**
  * Default minimum spacing to use between items in the same row.
  */
-static CGFloat const defaultInteritemSpacing   = 15.0f;
+static CGFloat const defaultInteritemSpacing   = 15.0;
 /**
  * Default minimum spacing to use between lines of items in the grid.
  */
-static CGFloat const defaultMinimumLineSpacing = 15.0f;
+static CGFloat const defaultMinimumLineSpacing = 15.0;
 /**
- * Default percentage of item size in comparison with available space (0 - 1).
+ * Default percentage of item size in comparison with available height.
  */
-static CGFloat const defaultItemResizeRatio    = 1.0f;
+static CGFloat const defaultHeightResizeRatio    = 1.0;
+/**
+ * Default percentage of item size in comparison with available width.
+ */
+static CGFloat const defaultWidthResizeRatio    = 1.0;
 /**
  * Default section margins.
  */
-static CGFloat const defaultSectionTopInset    = 10.0f;
-static CGFloat const defaultSectionRightInset  = 10.0f;
-static CGFloat const defaultSectionLeftInset   = 10.0f;
-static CGFloat const defaultSectionBottomInset = 10.0f;
+static CGFloat const defaultSectionTopInset    = 10.0;
+static CGFloat const defaultSectionRightInset  = 10.0;
+static CGFloat const defaultSectionLeftInset   = 10.0;
+static CGFloat const defaultSectionBottomInset = 10.0;
 /**
  * Default item size.
  */
-static CGFloat const defaultItemWidth          = 280.0f;
-static CGFloat const defaultItemHeight         = 280.0f;
+static CGFloat const defaultItemWidth          = 280.0;
+static CGFloat const defaultItemHeight         = 280.0;
 
 
 @interface BFCollectionViewLayout ()
@@ -129,7 +133,8 @@ static CGFloat const defaultItemHeight         = 280.0f;
     // number of items
     _numOfItems = defaultNumOfItems;
     // resize ratio
-    _resizeRatio = defaultItemResizeRatio;
+    _heightResizeRatio = defaultHeightResizeRatio;
+    _widthResizeRatio = defaultWidthResizeRatio;
     // maximum item size
     _maxItemSize = CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX);
 }
@@ -138,20 +143,21 @@ static CGFloat const defaultItemHeight         = 280.0f;
 #pragma mark - Custom Initialization
 
 - (id)initWithNumOfItems:(NSUInteger)numOfItems {
-    return [self initWithNumOfItems:numOfItems maxItemSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) resizeRatio:defaultItemResizeRatio];
+    return [self initWithNumOfItems:numOfItems maxItemSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) heightResizeRatio:defaultHeightResizeRatio widthResizeRatio:defaultWidthResizeRatio];
 }
 
 - (id)initWithNumOfItems:(NSUInteger)numOfItems maxItemSize:(CGSize)maxItemSize {
-    return [self initWithNumOfItems:numOfItems maxItemSize:maxItemSize resizeRatio:defaultItemResizeRatio];
+    return [self initWithNumOfItems:numOfItems maxItemSize:maxItemSize heightResizeRatio:defaultHeightResizeRatio widthResizeRatio:defaultWidthResizeRatio];
 }
 
-- (id)initWithNumOfItems:(NSUInteger)numOfItems maxItemSize:(CGSize)maxItemSize resizeRatio:(CGFloat)resizeRatio {
+- (id)initWithNumOfItems:(NSUInteger)numOfItems maxItemSize:(CGSize)maxItemSize heightResizeRatio:(CGFloat)heightResizeRatio widthResizeRatio:(CGFloat)widthResizeRatio {
     self = [super init];
     if (self) {
         // set defaults
         [self setDefaultAttributes];
         // resize ratio
-        _resizeRatio = resizeRatio;
+        _heightResizeRatio = heightResizeRatio;
+        _widthResizeRatio = widthResizeRatio;
         // number of items
         _numOfItems = numOfItems;
         // maximum item size
@@ -168,8 +174,13 @@ static CGFloat const defaultItemHeight         = 280.0f;
     [self invalidateLayout];
 }
 
-- (void)setResizeRatio:(CGFloat)resizeRatio {
-    _resizeRatio = resizeRatio;
+- (void)setHeightResizeRatio:(CGFloat)heightResizeRatio {
+    _heightResizeRatio = heightResizeRatio;
+    [self invalidateLayout];
+}
+
+- (void)setWidthResizeRatio:(CGFloat)widthResizeRatio {
+    _widthResizeRatio = widthResizeRatio;
     [self invalidateLayout];
 }
 
@@ -204,12 +215,12 @@ static CGFloat const defaultItemHeight         = 280.0f;
         CGFloat itemWidth = ({
                 CGFloat totalSpacing = self.sectionInset.left + self.sectionInset.right + (self.minimumInteritemSpacing * (numOfColumns - 1));
                 CGFloat itemWidth = (collectionViewWidth - totalSpacing) / numOfColumns;
-                itemWidth * _resizeRatio;
+                itemWidth * _widthResizeRatio;
             });
         CGFloat itemHeight = ({
             CGFloat totalSpacing = self.sectionInset.top + self.sectionInset.bottom + (self.minimumLineSpacing * (numOfRows - 1));
             CGFloat itemHeight = (collectionViewHeight - totalSpacing) / numOfRows;
-            itemHeight * _resizeRatio;
+            itemHeight * _heightResizeRatio;
         });
         
         return CGSizeMake(MIN(itemWidth, _maxItemSize.width), MIN(itemHeight, _maxItemSize.height));

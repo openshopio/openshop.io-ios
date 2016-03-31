@@ -103,7 +103,7 @@ static NSString *const onboardingSegueIdentifier                     = @"onboard
     
     if(productVariant && productVariant.product) {
         cell.headerlabel.text = productVariant.product.name;
-        cell.subheaderLabel.attributedText = [productVariant.product priceAndDiscountFormattedWithPercentage:YES];
+        cell.subheaderLabel.attributedText = [productVariant.product priceAndDiscountFormattedWithPercentage:NO];
         if(productVariant.product.imageURL) {
            [cell.imageContentView setImageWithURL:(NSURL *)[NSURL URLWithString:(NSString *)productVariant.product.imageURL] placeholderImage:cell.imageContentView.placeholderImage];
         }

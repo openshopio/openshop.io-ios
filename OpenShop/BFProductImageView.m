@@ -12,7 +12,7 @@
 /**
  * Product placeholder image name.
  */
-static NSString *const defaultPlaceholderImage = @"PlaceholderImage";
+static NSString *const defaultPlaceholderImage = @"ProductPlaceholder";
 
 
 @implementation BFProductImageView

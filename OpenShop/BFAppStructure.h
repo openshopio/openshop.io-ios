@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, BFLanguage) {
  * Shops identification.
  */
 typedef NS_ENUM(NSInteger, BFShopIdentification) {
-    BFShopIdentificationOpenShop = 17
+    BFShopIdentificationOpenShop = 18
 };
 
 /**

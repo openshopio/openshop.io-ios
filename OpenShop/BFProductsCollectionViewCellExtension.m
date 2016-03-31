@@ -31,7 +31,7 @@ static NSString *const productsLoadingFooterViewNibName          = @"BFLoadingCo
 /**
  * Products loading footer view height.
  */
-static CGFloat const productsLoadingFooterViewHeight             = 50.0f;
+static CGFloat const productsLoadingFooterViewHeight             = 50.0;
 /**
  * Presenting segue product data model parameter.
  */
@@ -89,7 +89,7 @@ static NSString *const segueParameterProduct                     = @"product";
     BFProduct *product = [self.products objectAtIndex:indexPath.row];
     
     cell.headerlabel.text = product.name;
-    cell.subheaderLabel.attributedText = [product priceAndDiscountFormattedWithPercentage:YES];
+    cell.subheaderLabel.attributedText = [product priceAndDiscountFormattedWithPercentage:NO];
     
     [cell setIsAccessibilityElement:YES];
     [cell setAccessibilityLabel:@"ProductCollectionViewCell"];
@@ -105,6 +105,9 @@ static NSString *const segueParameterProduct                     = @"product";
     else if(viewType == BFViewTypeCollection && product.imageURL) {
         productImage = [NSURL URLWithString:(NSString *)product.imageURL];
     }
+    
+#warning Loading image URL/image URL high res should be based on the available connection (wifi x 3G)
+
     if(productImage) {
         [cell.imageContentView setImageWithURL:productImage placeholderImage:cell.imageContentView.placeholderImage];
     }

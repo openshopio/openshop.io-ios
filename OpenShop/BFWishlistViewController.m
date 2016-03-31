@@ -24,11 +24,11 @@
 /**
  * Maximum width of the wishlist item cell in the collection view.
  */
-static CGFloat const wishlistItemMaxWidth           = 240.0f;
+static CGFloat const wishlistItemMaxWidth           = 240.0;
 /**
  * Maximum height of the wishlist item cell in the collection view.
  */
-static CGFloat const wishlistItemMaxHeight          = 300.0f;
+static CGFloat const wishlistItemMaxHeight          = 300.0;
 /**
  * Number of visible wishlist items in the collection view.
  */

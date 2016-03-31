@@ -30,27 +30,27 @@ static NSUInteger const productsFetchPageSize           = 8;
 /**
  * Products toolbar initial height.
  */
-static CGFloat const productsToolbarHeight              = 50.0f;
+static CGFloat const productsToolbarHeight              = 50.0;
 /**
  * Products toolbar slide animation duration.
  */
-static CGFloat const productsToolbarAnimationDuration   = 0.4f;
+static CGFloat const productsToolbarAnimationDuration   = 0.4;
 /**
  * Maximum width of the product cell in the collection view.
  */
-static CGFloat const productItemMaxWidth                = 240.0f;
+static CGFloat const productItemMaxWidth                = 300.0;
 /**
  * Maximum height of the product cell in the collection view.
  */
-static CGFloat const productItemMaxHeight               = 300.0f;
+static CGFloat const productItemMaxHeight               = 450.0;
 /**
  * Maximum width of the product cell in the collection view on iPad.
  */
-static CGFloat const productItemMaxWidthIPad            = 600.0f;
+static CGFloat const productItemMaxWidthIPad            = 600.0;
 /**
  * Maximum height of the product cell in the collection view on iPad.
  */
-static CGFloat const productItemMaxHeightIPad           = 750.0f;
+static CGFloat const productItemMaxHeightIPad           = 750.0;
 /**
  * Number of visible products in the single view type.
  */
@@ -59,6 +59,14 @@ static NSUInteger const numOfItemsForSingleViewType     = 1;
  * Number of visible products in the collection view type.
  */
 static NSUInteger const numOfItemsForCollectionViewType = 4;
+/**
+ * Item height resize ratio.
+ */
+static CGFloat const itemHeightResizeRatio              = 1.3;
+/**
+ * Item width resize ratio.
+ */
+static CGFloat const itemWidthResizeRatio               = 1.0;
 /**
  * Storyboard product detail segue identifier.
  */
@@ -222,7 +230,7 @@ static NSString *const filterSegueIdentifier            = @"filterSegue";
         collectionViewLayoutMaxItemSize = CGSizeMake(productItemMaxWidth, productItemMaxHeight);
     }
     
-    BFCollectionViewLayout *layout = [[BFCollectionViewLayout alloc]initWithNumOfItems:numOfItems maxItemSize:collectionViewLayoutMaxItemSize];
+    BFCollectionViewLayout *layout = [[BFCollectionViewLayout alloc]initWithNumOfItems:numOfItems maxItemSize:collectionViewLayoutMaxItemSize heightResizeRatio:itemHeightResizeRatio widthResizeRatio:itemWidthResizeRatio];
     self.collectionView.collectionViewLayout = layout;
     
     [self updateCollectionViewLayoutForViewType:viewType];
