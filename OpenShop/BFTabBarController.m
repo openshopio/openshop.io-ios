@@ -9,6 +9,7 @@
 #import "BFTabBarController.h"
 #import "UIFont+BFFont.h"
 #import "UIColor+BFColor.h"
+#import "NSNotificationCenter+BFManagedNotificationObserver.h"
 #import "BFCartViewController.h"
 #import "User.h"
 #import "BFOpenShopOnboardingViewController.h"
@@ -55,16 +56,21 @@ static CGFloat const tabBarTitleVerticalOffset = 2;
     };
     // cart badge change listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateShoppingCartBadgeValue) name:BFCartBadgeValueDidChangeNotification object:nil];
+
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarFrameChanged) name:UIApplicationDidChangeStatusBarFrameNotification  object:nil];
     
     // set initial shopping cart badge value
     [[ShoppingCart sharedCart] synchronizeCart];
 }
 
 
+- (void)statusBarFrameChanged {
+    [self.view setNeedsLayout];
+    [self.view layoutIfNeeded];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    [self.view updateConstraints];
+    [super viewDidAppear:animated];    
  }
 
 #pragma mark - Custom Appearance

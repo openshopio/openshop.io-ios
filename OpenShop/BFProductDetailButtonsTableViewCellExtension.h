@@ -8,7 +8,7 @@
 
 
 #import "BFBaseTableViewCellExtension.h"
-
+#import "BFProductDetailViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,6 +41,11 @@ NS_ASSUME_NONNULL_BEGIN
  * Flag indicating whether the product details are being fetched.
  */
 @property (nonatomic, assign) BOOL finishedLoading;
+/**
+ * Table view controller managing table view presenting contents of this extension
+ * which conforms to the `BFProductVariantSelectionDelegate` protocol.
+ */
+@property (nonatomic, strong) BFTableViewController<BFProductVariantSelectionDelegate> *tableViewController;
 
 
 @end

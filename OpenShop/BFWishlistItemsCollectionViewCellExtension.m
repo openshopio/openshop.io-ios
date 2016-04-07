@@ -39,7 +39,7 @@ static NSString *const wishlistItemsLoadingFooterViewNibName         = @"BFLoadi
 /**
  * Wishlist items loading footer view height.
  */
-static CGFloat const wishlistItemsLoadingFooterViewHeight            = 50.0f;
+static CGFloat const wishlistItemsLoadingFooterViewHeight            = 50.0;
 /**
  * Presenting segue wishlist item parameter.
  */

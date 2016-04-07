@@ -34,6 +34,14 @@ static CGFloat const wishlistItemMaxHeight          = 300.0;
  */
 static NSUInteger const numOfVisibleItems           = 4;
 /**
+ * Item height resize ratio.
+ */
+static CGFloat const itemHeightResizeRatio              = 1.3;
+/**
+ * Item width resize ratio.
+ */
+static CGFloat const itemWidthResizeRatio               = 1.0;
+/**
  * Storyboard product detail segue identifier.
  */
 static NSString *const productDetailSegueIdentifier = @"productDetailSegue";
@@ -106,7 +114,7 @@ static NSString *const segueParameterWishlistItemID = @"wishlistItemID";
 #pragma mark - Content View Layout
 
 - (void)setupCollectionViewLayout {
-    BFCollectionViewLayout *layout = [[BFCollectionViewLayout alloc]initWithNumOfItems:numOfVisibleItems maxItemSize:CGSizeMake(wishlistItemMaxWidth, wishlistItemMaxHeight)];
+    BFCollectionViewLayout *layout = [[BFCollectionViewLayout alloc]initWithNumOfItems:numOfVisibleItems maxItemSize:CGSizeMake(wishlistItemMaxWidth, wishlistItemMaxHeight) heightResizeRatio:itemHeightResizeRatio widthResizeRatio:itemWidthResizeRatio];
     self.collectionView.collectionViewLayout = layout;
     [self updateCollectionViewLayoutForNumOfItems:numOfVisibleItems];
 }

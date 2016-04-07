@@ -175,7 +175,8 @@ static CGFloat const swipeViewScrollAnimationDuration    = 1.0;
 - (void)swipeView:(SwipeView *)swipeView didSelectItemAtIndex:(NSInteger)index {
     IDMPhotoBrowser *browser = [[IDMPhotoBrowser alloc] initWithPhotoURLs:self.images animatedFromView:self.imageSwipeView];
     BFProductImageView *imageView = (BFProductImageView *)[self.imageSwipeView itemViewAtIndex:index];
-   
+
+
     // image browser controller
     browser.scaleImage = imageView.image;
     browser.displayCounterLabel = YES;

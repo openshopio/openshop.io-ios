@@ -305,6 +305,8 @@ NSString *const kTranslationSharePlaceholder               = @"189";
 NSString *const kTranslationShareFacebook                  = @"190";
 NSString *const kTranslationShareTwitter                   = @"191";
 NSString *const kTranslationProperties                     = @"192";
+NSString *const kTranslationCartNoProductError             = @"";
+NSString *const kTranslationNoProductVariantErrorReason    = @"";    
 
 /*
  * Orders.

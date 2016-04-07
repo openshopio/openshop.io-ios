@@ -59,6 +59,7 @@ end
 desc "Create new screenshots for the App Store in all languages and device types"
 desc "Additionally, this will add device frames around the screenshots and add the correct titles"
 lane :screenshots do
+    reset_simulators
     snapshot
     frameit(white: true, path: './fastlane/screenshots')
 end

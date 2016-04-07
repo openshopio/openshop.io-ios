@@ -180,6 +180,7 @@
 		ADB124AB1CA957FC0002647A /* NSString+BFFitsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB124AA1CA957FC0002647A /* NSString+BFFitsLabel.m */; };
 		ADB2ADE51C64C9D300023033 /* BFShop+BFNSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB2ADE41C64C9D300023033 /* BFShop+BFNSelection.m */; };
 		ADB676E51C7C51FD007C96DA /* NSNumber+BFNSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB676E41C7C51FD007C96DA /* NSNumber+BFNSelection.m */; };
+		ADB7529D1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7529C1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.m */; };
 		ADBEC40D1C8577750058D97B /* BFCrashLoggerService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBEC40C1C8577750058D97B /* BFCrashLoggerService.m */; };
 		ADD00FCB1C6C7B5500C762C5 /* BFOrderSentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD00FCA1C6C7B5500C762C5 /* BFOrderSentViewController.m */; };
 		ADD50D571C96AA4B008835B3 /* BFPushNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD50D561C96AA4B008835B3 /* BFPushNotificationViewController.m */; };
@@ -202,7 +203,6 @@
 		BB284CE11C44F7DA00B57737 /* BFProductDetailButtonsTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB284CE01C44F7DA00B57737 /* BFProductDetailButtonsTableViewCellExtension.m */; };
 		BB2B3D771C46517900FDD1FE /* BFWishlistButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B3D761C46517900FDD1FE /* BFWishlistButtonView.m */; };
 		BB2B3D7A1C465BF000FDD1FE /* BFProductImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B3D781C465BF000FDD1FE /* BFProductImageView.m */; };
-		BB2B3D851C46814E00FDD1FE /* BFProduct+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B3D821C46814E00FDD1FE /* BFProduct+CoreDataProperties.m */; };
 		BB2B3D861C46814E00FDD1FE /* BFProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B3D841C46814E00FDD1FE /* BFProduct.m */; };
 		BB31CD371C3D802300F85EAD /* BFUserProfileItemsTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB31CD361C3D802300F85EAD /* BFUserProfileItemsTableViewCellExtension.m */; };
 		BB31CD3A1C3D8F7300F85EAD /* BFInfoSettingsItemsTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB31CD391C3D8F7300F85EAD /* BFInfoSettingsItemsTableViewCellExtension.m */; };
@@ -642,6 +642,8 @@
 		ADB2ADE41C64C9D300023033 /* BFShop+BFNSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFShop+BFNSelection.m"; sourceTree = "<group>"; };
 		ADB676E31C7C51FD007C96DA /* NSNumber+BFNSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+BFNSelection.h"; sourceTree = "<group>"; };
 		ADB676E41C7C51FD007C96DA /* NSNumber+BFNSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+BFNSelection.m"; sourceTree = "<group>"; };
+		ADB7529B1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BFProduct+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ADB7529C1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFProduct+CoreDataProperties.m"; sourceTree = "<group>"; };
 		ADBEC40B1C8577750058D97B /* BFCrashLoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFCrashLoggerService.h; sourceTree = "<group>"; };
 		ADBEC40C1C8577750058D97B /* BFCrashLoggerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFCrashLoggerService.m; sourceTree = "<group>"; };
 		ADCF4FAF1B3D6B1900EEBEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
@@ -688,8 +690,6 @@
 		BB2B3D761C46517900FDD1FE /* BFWishlistButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFWishlistButtonView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		BB2B3D781C465BF000FDD1FE /* BFProductImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFProductImageView.m; sourceTree = "<group>"; };
 		BB2B3D791C465BF000FDD1FE /* BFProductImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFProductImageView.h; sourceTree = "<group>"; };
-		BB2B3D811C46814E00FDD1FE /* BFProduct+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BFProduct+CoreDataProperties.h"; sourceTree = "<group>"; };
-		BB2B3D821C46814E00FDD1FE /* BFProduct+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFProduct+CoreDataProperties.m"; sourceTree = "<group>"; };
 		BB2B3D831C46814E00FDD1FE /* BFProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFProduct.h; sourceTree = "<group>"; };
 		BB2B3D841C46814E00FDD1FE /* BFProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFProduct.m; sourceTree = "<group>"; };
 		BB31CD351C3D802300F85EAD /* BFUserProfileItemsTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFUserProfileItemsTableViewCellExtension.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1038,8 +1038,8 @@
 				5BEDF9A71BEA2184003CB9AC /* BFBanner+CoreDataProperties.m */,
 				BB2B3D831C46814E00FDD1FE /* BFProduct.h */,
 				BB2B3D841C46814E00FDD1FE /* BFProduct.m */,
-				BB2B3D811C46814E00FDD1FE /* BFProduct+CoreDataProperties.h */,
-				BB2B3D821C46814E00FDD1FE /* BFProduct+CoreDataProperties.m */,
+				ADB7529B1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.h */,
+				ADB7529C1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.m */,
 				5BEC72981BF3FB4900239943 /* BFProductVariant.h */,
 				5BEC72991BF3FB4900239943 /* BFProductVariant.m */,
 				5BEC728C1BF3FAE700239943 /* BFProductVariant+CoreDataProperties.h */,
@@ -2061,6 +2061,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBA975B91C3059C0006EDE55 /* BFAlignedImageButton.m in Sources */,
+				ADB7529D1CAEA6DF00F65EFE /* BFProduct+CoreDataProperties.m in Sources */,
 				BB9C26631C4D6B6B00272D13 /* BFCategoryParsedResult.m in Sources */,
 				5B3811FD1C0F22320080B106 /* NSArray+BFObjectFiltering.m in Sources */,
 				5BF51EDA1C2B5F9200088F8F /* UIColor+BFColor.m in Sources */,
@@ -2204,7 +2205,6 @@
 				5BA02F8A1BF3B6FD00BEBA1C /* BFProductVariantColor+CoreDataProperties.m in Sources */,
 				BBBF0A431C5A2E340099F71B /* BFSeparatorLine.m in Sources */,
 				AD3938641C5CDF0F00447E8A /* BFCartDiscountsTableViewCellExtension.m in Sources */,
-				BB2B3D851C46814E00FDD1FE /* BFProduct+CoreDataProperties.m in Sources */,
 				ADB676E51C7C51FD007C96DA /* NSNumber+BFNSelection.m in Sources */,
 				5BD993D11BE7D94800AE12C0 /* BFAppSessionInfo.m in Sources */,
 				BBE779521C33273400B03DF1 /* BFTableViewController.m in Sources */,

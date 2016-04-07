@@ -32,27 +32,27 @@ static NSString *const segueParameterProductInfo              = @"productInfo";
 /**
  * Search query table view cell height.
  */
-static CGFloat const searchQueryCellHeight                    = 42.0f;
+static CGFloat const searchQueryCellHeight                    = 42.0;
 /**
  * Search queries header view height.
  */
-static CGFloat const searchQueriesHeaderViewHeight            = 50.0f;
+static CGFloat const searchQueriesHeaderViewHeight            = 50.0;
 /**
  * Search queries empty footer view height.
  */
-static CGFloat const searchQueriesEmptyFooterViewHeight       = 15.0f;
+static CGFloat const searchQueriesEmptyFooterViewHeight       = 15.0;
 /**
  * Table view cell swipe gesture tutorial offset.
  */
-static CGFloat const cellSwipeOffset                          = -50.0f;
+static CGFloat const cellSwipeOffset                          = -50.0;
 /**
  * Table view cell swipe gesture tutorial duration (seconds).
  */
-static CGFloat const cellSwipeDuration                        = 0.5f;
+static CGFloat const cellSwipeDuration                        = 0.5;
 /**
  * Table view cell swipe gesture tutorial delay (seconds).
  */
-static CGFloat const cellSwipeDelay                           = 0.5f;
+static CGFloat const cellSwipeDelay                           = 0.5;
 
 
 

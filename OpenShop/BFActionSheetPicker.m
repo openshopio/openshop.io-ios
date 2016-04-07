@@ -16,19 +16,19 @@
 /**
  * Default action sheet picker height.
  */
-static CGFloat const actionSheetPickerHeight      = 216.0f;
+static CGFloat const actionSheetPickerHeight      = 216.0;
 /**
  * Default action sheet picker origin.
  */
-static CGFloat const actionSheetPickerOriginY     = 40.0f;
+static CGFloat const actionSheetPickerOriginY     = 40.0;
 /**
  * Default action sheet picker label width.
  */
-static CGFloat const actionSheetPickerLabelWidth  = 120.0f;
+static CGFloat const actionSheetPickerLabelWidth  = 120.0;
 /**
  * Default action sheet picker label height.
  */
-static CGFloat const actionSheetPickerLabelHeight = 60.0f;
+static CGFloat const actionSheetPickerLabelHeight = 60.0;
 
 
 

@@ -25,7 +25,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb226667166080</string>
+				<string>fb1686631971595434</string>
 			</array>
 		</dict>
 	</array>
@@ -44,7 +44,7 @@
 		</array>
 	</dict>
 	<key>FacebookAppID</key>
-	<string>226667166080</string>
+	<string>1686631971595434</string>
 	<key>FacebookDisplayName</key>
 	<string>OpenShop</string>
 	<key>LSApplicationQueriesSchemes</key>

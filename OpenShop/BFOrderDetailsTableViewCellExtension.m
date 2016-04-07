@@ -29,15 +29,15 @@ static NSString *const orderDetailsHeaderViewNibName         = @"BFTableViewGrou
 /**
  * Order details header view height.
  */
-static CGFloat const orderDetailsHeaderViewHeight            = 50.0f;
+static CGFloat const orderDetailsHeaderViewHeight            = 50.0;
 /**
  * Order details empty footer view height.
  */
-static CGFloat const orderDetailsEmptyFooterViewHeight       = 10.0f;
+static CGFloat const orderDetailsEmptyFooterViewHeight       = 10.0;
 /**
  * Order detail item table view cell height.
  */
-static CGFloat const orderDetailItemHeight                   = 60.0f;
+static CGFloat const orderDetailItemHeight                   = 60.0;
 
 /**
  * Order details item types.

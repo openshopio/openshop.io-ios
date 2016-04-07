@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 4.3">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 4.3">
     <entity name="Banner" representedClassName="BFBanner" syncable="YES">
         <attribute name="bannerID" attributeType="Integer 32" defaultValueString="0" syncable="YES">
             <userInfo>
@@ -481,7 +481,7 @@
                 <entry key="MMRecordAttributeAlternateNameKey" value="remote_id"/>
             </userInfo>
         </attribute>
-        <relationship name="productVariants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProductVariant" inverseName="product" inverseEntity="ProductVariant" syncable="YES">
+        <relationship name="productVariants" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ProductVariant" inverseName="product" inverseEntity="ProductVariant" syncable="YES">
             <userInfo>
                 <entry key="MMRecordAttributeAlternateNameKey" value="variants"/>
             </userInfo>
@@ -692,15 +692,15 @@
         <element name="Order" positionX="-191" positionY="369" width="128" height="195"/>
         <element name="OrderItem" positionX="-27" positionY="369" width="128" height="135"/>
         <element name="OrderShipping" positionX="295" positionY="351" width="128" height="180"/>
-        <element name="Product" positionX="-612" positionY="-270" width="128" height="300"/>
+        <element name="Product" positionX="-612" positionY="-270" width="128" height="30"/>
         <element name="ProductVariant" positionX="-9" positionY="81" width="128" height="345"/>
         <element name="ProductVariantColor" positionX="304" positionY="-108" width="128" height="120"/>
         <element name="ProductVariantSize" positionX="297" positionY="54" width="128" height="90"/>
         <element name="Region" positionX="-666" positionY="-126" width="128" height="75"/>
         <element name="SearchQuery" positionX="-657" positionY="-117" width="128" height="105"/>
+        <element name="SearchSuggestion" positionX="-657" positionY="-117" width="128" height="75"/>
         <element name="Shop" positionX="-864" positionY="-90" width="128" height="180"/>
         <element name="Translation" positionX="-666" positionY="-126" width="128" height="90"/>
         <element name="WishlistItem" positionX="-657" positionY="321" width="128" height="75"/>
-        <element name="SearchSuggestion" positionX="-657" positionY="-117" width="128" height="75"/>
     </elements>
 </model>

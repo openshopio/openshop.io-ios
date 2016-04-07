@@ -49,39 +49,39 @@ static NSString *const productDetailButtonRightAlignedCellReuseIdentifier = @"BF
 /**
  * Product detail action button table view cell reuse identifier.
  */
-static CGFloat const productDetailButtonEmptyHeaderFooterViewHeight       = 2.0f;
+static CGFloat const productDetailButtonEmptyHeaderFooterViewHeight       = 2.0;
 /**
  * Product detail action button table view cell height.
  */
-static CGFloat const productDetailButtonCellHeight                        = 60.0f;
+static CGFloat const productDetailButtonCellHeight                        = 60.0;
 /**
  * Success overlay informing when product was added to cart dismiss delay.
  */
-static CGFloat const productAddedToCartSuccessDismissDelay                = 1.0f;
+static CGFloat const productAddedToCartSuccessDismissDelay                = 1.0;
 /**
  * Failure overlay informing when product was not added to cart dismiss delay.
  */
-static CGFloat const productAddedToCartFailureDismissDelay                = 2.0f;
+static CGFloat const productAddedToCartFailureDismissDelay                = 2.0;
 /**
  * Product checkout tooltip scroll animation duration.
  */
-static CGFloat const productCheckoutTooltipAnimationDuration              = 0.3f;
+static CGFloat const productCheckoutTooltipAnimationDuration              = 0.3;
 /**
  * Product checkout tooltip scroll bottom margin.
  */
-static CGFloat const productCheckoutTooltipScrollBottomMargin             = 100.0f;
+static CGFloat const productCheckoutTooltipScrollBottomMargin             = 100.0;
 /**
  * After user login delay to display overlay informing when product is being added to cart.
  */
-static CGFloat const productAddToCartAfterLoginDelay                      = 1.0f;
+static CGFloat const productAddToCartAfterLoginDelay                      = 1.0;
 /**
  * Product detail action button item popover bottom margin.
  */
-static CGFloat const activityItemProviderPopoverSourceRectBottom          = 10.0f;
+static CGFloat const activityItemProviderPopoverSourceRectBottom          = 10.0;
 /**
  * Product detail action button border width.
  */
-static CGFloat const buttonBorderWidth                                    = 1.0f;
+static CGFloat const buttonBorderWidth                                    = 1.0;
 
 
 
@@ -97,6 +97,7 @@ static CGFloat const buttonBorderWidth                                    = 1.0f
 
 @implementation BFProductDetailButtonsTableViewCellExtension
 
+@dynamic tableViewController;
 
 #pragma mark - Initialization
 
@@ -185,6 +186,8 @@ static CGFloat const buttonBorderWidth                                    = 1.0f
                 button.layer.borderColor = [UIColor lightGrayColor].CGColor;
             }
             else {
+                [button setTitleColor:[UIColor blackColor]  forState:UIControlStateNormal];
+                button.enabled = YES;
                 button.layer.borderColor = [UIColor blackColor].CGColor;
             }
         }
@@ -213,6 +216,7 @@ static CGFloat const buttonBorderWidth                                    = 1.0f
             buttonTitle = [BFLocalizedString(kTranslationAddToCart, @"Add to the cart") uppercaseString];
             image = [UIImage imageNamed:@"TabBarCartUnselected"];
             button.backgroundColor = [UIColor BFN_pinkColor];
+            button.accessibilityLabel = @"ADDTOCART";
         }
         
         [button setTitle:buttonTitle forState:UIControlStateNormal];
@@ -242,6 +246,11 @@ static CGFloat const buttonBorderWidth                                    = 1.0f
         if(selectedValue && [selectedValue isKindOfClass:[BFProductVariantColor class]]) {
             weakSelf.selectedProductColor = (BFProductVariantColor *)selectedValue;
             [weakSender setTitle:weakSelf.selectedProductColor.name forState:UIControlStateNormal];
+            
+            // table view controller interaction
+            if ([self.tableViewController respondsToSelector:@selector(selectedProductVariantColor:)]) {
+                [self.tableViewController selectedProductVariantColor:selectedValue];
+            }
         }
     };
     
@@ -291,7 +300,7 @@ static CGFloat const buttonBorderWidth                                    = 1.0f
     
     // verify product variant existence
     if(!productVariant) {
-        BFError *customError = [BFError errorWithCode:BFErrorCodeWishlistNoProduct];
+        BFError *customError = [BFError errorWithCode:BFErrorCodeCartNoProduct];
         [customError showAlertFromSender:self.tableViewController];
     }
     else {

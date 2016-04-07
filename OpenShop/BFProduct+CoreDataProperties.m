@@ -2,12 +2,12 @@
 //  BFProduct+CoreDataProperties.m
 //  OpenShop
 //
-//  Created by Jirka Apps
-//  Copyright (c) 2015 Business Factory. All rights reserved.
+//  Created by Petr Škorňok on 03.04.16.
+//  Copyright © 2016 Business-Factory. All rights reserved.
 //
-
-#import "BFProduct+CoreDataProperties.h"
-
+//  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
+//  to delete and recreate this implementation file for your updated model.
+//
 
 #import "BFProduct+CoreDataProperties.h"
 

@@ -177,6 +177,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSArray *)findProductVariantColorsForProducts:(NSArray *)products withSizes:(nullable NSArray *)sizes;
 /**
+ * Retrieves product variant colors from specified product variants and their sizes.
+ *
+ * @param productVariants The array of product variants.
+ * @param sizes The products variants sizes.
+ * @return The resulting array of product variant colors data models.
+ */
+- (NSArray *)findProductVariantColorsForProductVariants:(NSArray *)productVariants withSizes:(nullable NSArray *)sizes;
+/**
  * Retrieves product variant sizes for specified products and their variants colors.
  *
  * @param products The array of products.
@@ -184,6 +192,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @return The resulting array of product variant sizes data models.
  */
 - (NSArray *)findProductVariantSizesForProducts:(NSArray *)products withColors:(nullable NSArray *)colors;
+/**
+ * Retrieves product variant sizes from specified product variants and their colors.
+ *
+ * @param productVariants The array of product variants.
+ * @param colors The products variants colors.
+ * @return The resulting array of product variant sizes data models.
+ */
+- (NSArray *)findProductVariantSizesForProductVariants:(NSArray *)productVariants withColors:(nullable NSArray *)colors;
 /**
  * Retrieves product variant of specified product with specified color and size.
  *

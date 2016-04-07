@@ -31,34 +31,37 @@ class OpenShopUITests: XCTestCase {
         let existsPredicate = NSPredicate(format: "exists == 1")
         
         // Initial start with country screen
-        let countryButton = app.buttons["Country"]
         sleep(1)
-        if (countryButton.exists) {
-            countryButton.tap()
-            app.toolbars.buttons["Done"].tap()
-            app.buttons["CONTINUE"].tap()
-        }
+//        let continueButton = app.buttons["CONTINUE"]
+//        if (XCUIApplication().buttons["CONTINUE"].exists) {
+            XCUIApplication().buttons["CONTINUE"].tap()
+//        }
 
         // Email/FB login screen
-        let emailButton = app.buttons["EMAIL"]
         sleep(1)
-        if (emailButton.exists) {
+//        let emailButton = app.buttons["EMAIL"]
+        
+//        XCUIApplication().buttons["EMAIL"].tap()
+        
+        if (XCUIApplication().buttons["EMAIL"].exists) {
             snapshot("Login")
-            
-            emailButton.tap()
+        
+            XCUIApplication().buttons["EMAIL"].tap()
             let eMailTextField = app.textFields["E-mail"]
             eMailTextField.tap()
             eMailTextField.typeText(loginEmail)
             let passwordSecureTextField = app.secureTextFields["Password"]
             passwordSecureTextField.tap()
             passwordSecureTextField.typeText(loginPassword)
-            app.buttons["P\u{0158}IHL\u{00c1}SIT SE"].tap()
+            app.buttons["LOGIN"].tap()
         }
         
         // Banners screen
         let firstBanner = app.tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
         expectationForPredicate(existsPredicate, evaluatedWithObject: firstBanner, handler: nil)
         waitForExpectationsWithTimeout(10, handler: nil)
+        // dismiss APNS alert
+        firstBanner.forceTapElement()
         snapshot("Banners")
         firstBanner.tap()
 
@@ -70,7 +73,7 @@ class OpenShopUITests: XCTestCase {
         firstProduct.tap()
         
         // Add product to the cart
-        let addToCartButton = app.tables.buttons["P\u{0158}IDAT DO KO\u{0160}\u{00cd}KU"]
+        let addToCartButton = app.tables.buttons["ADDTOCART"]
         expectationForPredicate(existsPredicate, evaluatedWithObject: addToCartButton, handler: nil)
         waitForExpectationsWithTimeout(10, handler: nil)
         snapshot("Product Detail")
@@ -82,10 +85,10 @@ class OpenShopUITests: XCTestCase {
         let cartTabBarHittable = NSPredicate(format: "hittable == 1")
         expectationForPredicate(cartTabBarHittable, evaluatedWithObject: cartTabBar, handler: nil)
         waitForExpectationsWithTimeout(10, handler: nil)
-        cartTabBar.tap()
-        cartTabBar.tap()
+        cartTabBar.forceTapElement()
+        cartTabBar.forceTapElement()
         
-        sleep(10)
+        sleep(5)
         snapshot("Cart")
     }
 }

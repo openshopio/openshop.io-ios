@@ -303,45 +303,21 @@ static CGFloat const defaultItemHeight         = 280.0;
 }
 
 - (UICollectionViewLayoutAttributes*)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
-    UICollectionViewLayoutAttributes *attributes = [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
-
-    // inserted section
-    if ([self.insertedSections containsObject:@(itemIndexPath.section)]) {
-        attributes = [[self.currentCellAttributes objectForKey:itemIndexPath] copy];
-        /*
-         * Initial attributes customization.
-         */
-    }
-    // reloaded section
-    else if ([self.reloadedSections containsObject:@(itemIndexPath.section)]) {
-        attributes = [[self.currentCellAttributes objectForKey:itemIndexPath] copy];
-        /*
-         * Initial attributes customization.
-         */
-    }
-
-    return attributes;
+    UICollectionViewLayoutAttributes *attr = [self layoutAttributesForItemAtIndexPath:itemIndexPath];
+    
+    attr.transform3D = CATransform3DMakeScale(0.5, 0.5, 0.5);
+    attr.alpha = 0;
+    
+    return attr;
 }
 
 - (UICollectionViewLayoutAttributes*)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
-    UICollectionViewLayoutAttributes *attributes = [super finalLayoutAttributesForDisappearingItemAtIndexPath:itemIndexPath];
+    UICollectionViewLayoutAttributes *attr = [self layoutAttributesForItemAtIndexPath:itemIndexPath];
     
-    // removed section
-    if ([self.removedSections containsObject:@(itemIndexPath.section)]) {
-        attributes = [[self.cachedCellAttributes objectForKey:itemIndexPath] copy];
-        /*
-         * Final attributes customization.
-         */
-    }
-    // reloaded section
-    else if ([self.reloadedSections containsObject:@(itemIndexPath.section)]) {
-        attributes = [[self.cachedCellAttributes objectForKey:itemIndexPath] copy];
-        /*
-         * Final attributes customization.
-         */
-    }
-
-    return attributes;
+    attr.transform3D = CATransform3DMakeScale(0.5, 0.5, 0.5);
+    attr.alpha = 0;
+    
+    return attr;
 }
 
 - (UICollectionViewLayoutAttributes*)initialLayoutAttributesForAppearingSupplementaryElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)elementIndexPath {

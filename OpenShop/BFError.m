@@ -263,6 +263,10 @@
             return BFLocalizedString(kTranslationDataFetchingErrorReason, @"There was an error while fetching the data. Please try again later.");
         case BFErrorCodeWishlistNoProduct:
             return BFLocalizedString(kTranslationWishlistNoProductErrorReason, @"Product cannot be added or removed from wishlist. Please try again later.");
+        case BFErrorCodeNoProductVariant:
+            return BFLocalizedString(kTranslationNoProductVariantErrorReason, @"Product variant not found. Please try again later.");
+        case BFErrorCodeCartNoProduct:
+            return BFLocalizedString(kTranslationCartNoProductError, @"Product cannot be added or removed from cart. Please try again later.");
         default:
             break;
     }

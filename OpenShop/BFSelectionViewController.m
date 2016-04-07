@@ -167,7 +167,7 @@ static NSInteger const minRowsToDisplaySectionIndexes      = 8;
         [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSFontAttributeName: [UIFont BFN_robotoRegularWithSize:13]}];
         [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:@{ NSFontAttributeName : [UIFont BFN_robotoMediumWithSize:14],NSForegroundColorAttributeName : [UIColor BFN_pinkColor]} forState:UIControlStateNormal];
         [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitle:BFLocalizedString(kTranslationCancel, @"Cancel")];
-        [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitlePositionAdjustment:UIOffsetMake(0, 2.0f) forBarMetrics:UIBarMetricsDefault];
+        [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitlePositionAdjustment:UIOffsetMake(0, 2.0) forBarMetrics:UIBarMetricsDefault];
     }
     return _searchBar;
 }
@@ -183,7 +183,7 @@ static NSInteger const minRowsToDisplaySectionIndexes      = 8;
     self.tableView.sectionIndexMinimumDisplayRowCount = minRowsToDisplaySectionIndexes;
     self.tableView.sectionFooterHeight = 0;
     self.tableView.sectionHeaderHeight = 0;
-    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableView.bounds.size.width, CGFLOAT_MIN)];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, CGFLOAT_MIN)];
     
     // title view
     self.navigationItem.title = [_navigationTitle uppercaseString];
@@ -196,7 +196,7 @@ static NSInteger const minRowsToDisplaySectionIndexes      = 8;
         self.tableView.tableHeaderView = self.searchBar;
     }
     else {
-        self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableView.bounds.size.width, CGFLOAT_MIN)];
+        self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, CGFLOAT_MIN)];
     }
     // clear all navigation bar button setup
     _clearButton = [[UIBarButtonItem alloc] initWithTitle:BFLocalizedString(kTranslationClearSelection, @"Clear selection") style:UIBarButtonItemStylePlain target:self action:@selector(clearSelection)];

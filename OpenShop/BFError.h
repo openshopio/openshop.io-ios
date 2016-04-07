@@ -27,7 +27,9 @@ typedef NS_ENUM(NSInteger, BFErrorCode) {
     BFErrorCodeIncompleteInput,
     BFErrorCodeInvalidInputEmail,
     BFErrorCodeNoData,
-    BFErrorCodeWishlistNoProduct
+    BFErrorCodeWishlistNoProduct,
+    BFErrorCodeNoProductVariant,
+    BFErrorCodeCartNoProduct
 };
 
 /**

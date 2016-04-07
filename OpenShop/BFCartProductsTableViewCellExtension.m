@@ -199,7 +199,7 @@ static CGFloat const cellSwipeDelay                                = 1.0f;
             }
             else {
                 BFProduct *product = [records firstObject];
-                NSArray<BFProductVariant *> *productVariants = [product.productVariants allObjects];
+                NSArray<BFProductVariant *> *productVariants = [product.productVariants array];
                 [strongSelf.tableViewController performSegueWithViewController:[BFEditCartProductViewController class] params:@{ segueParameterCartProduct: strongCartProduct,
                                                                                                                                  segueParameterProductVariants: productVariants}];
             }

@@ -12,11 +12,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * Protocol which informs about product variant selection.
+ */
+@protocol BFProductVariantSelectionDelegate <NSObject>
+
+@optional
+/**
+ * Informs about product variant color selection.
+ * @param productVariantColor product variant color which was selected.
+ */
+- (void)selectedProductVariantColor:(BFProductVariantColor *)productVariantColor;
+
+@end
 
 /**
  * `BFProductDetailViewController` displays the product information details.
  */
-@interface BFProductDetailViewController : BFTableViewController <BFCustomAppearance, BFProductDetailHeaderViewDelegate>
+@interface BFProductDetailViewController : BFTableViewController <BFCustomAppearance, BFProductDetailHeaderViewDelegate, BFProductVariantSelectionDelegate>
 
 /**
  * The product data model.

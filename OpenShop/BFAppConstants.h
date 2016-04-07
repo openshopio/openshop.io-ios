@@ -323,6 +323,8 @@ extern NSString *const kTranslationShareFacebook;
 extern NSString *const kTranslationShareTwitter;
 extern NSString *const kTranslationProperties;
 extern NSString *const kTranslationOrderItemsList;
+extern NSString *const kTranslationCartNoProductError;
+extern NSString *const kTranslationNoProductVariantErrorReason;
 
 /*
  * Orders.

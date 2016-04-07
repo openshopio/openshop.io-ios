@@ -213,8 +213,16 @@
     if(sizes) {
         predicate = [NSPredicate predicateWithFormat:@"SUBQUERY(productVariants, $item, $item.size IN %@ AND $item.product IN %@).@count > 0", sizes, products];
     }
+    return [BFProductVariantColor findAllSortedBy:@"name" ascending:YES withPredicate:predicate inContext:[self privateQueueContext]];;
+}
 
-    return [BFProductVariantColor findAllWithPredicate:predicate inContext:[self privateQueueContext]];
+- (NSArray *)findProductVariantColorsForProductVariants:(NSArray *)productVariants withSizes:(NSArray *)sizes {
+    NSArray *filteredProductVariants = productVariants;
+    if(sizes) {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.size IN %@", sizes];
+        filteredProductVariants = [productVariants filteredArrayUsingPredicate:predicate];
+    }
+    return [filteredProductVariants valueForKeyPath:@"@distinctUnionOfObjects.color"];
 }
 
 - (NSArray *)findProductVariantSizesForProducts:(NSArray *)products withColors:(NSArray *)colors {
@@ -223,6 +231,15 @@
         predicate = [NSPredicate predicateWithFormat:@"SUBQUERY(productVariants, $item, $item.color IN %@ AND $item.product IN %@).@count > 0", colors, products];
     }
     return [BFProductVariantSize findAllWithPredicate:predicate inContext:[self privateQueueContext]];
+}
+
+- (NSArray *)findProductVariantSizesForProductVariants:(NSArray *)productVariants withColors:(NSArray *)colors {
+    NSArray *filteredProductVariants = productVariants;
+    if(colors) {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.color IN %@", colors];
+        filteredProductVariants = [productVariants filteredArrayUsingPredicate:predicate];
+    }
+    return [filteredProductVariants valueForKey:@"size"];
 }
 
 - (BFProductVariant *)findProductVariantForProduct:(BFProduct *)product withColor:(BFProductVariantColor *)color size:(BFProductVariantSize *)size {

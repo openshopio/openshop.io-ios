@@ -101,7 +101,7 @@ static CGFloat const toastNotificationImageSize               = 14.0;
     
     // iOS 8 background fix
     [self.tableView setBackgroundColor:[UIColor whiteColor]];
-    
+
     // setup product info
     [self setupProductInfo];
     
@@ -210,9 +210,13 @@ static CGFloat const toastNotificationImageSize               = 14.0;
         // colors and sizes
         self.productColors = [[StorageManager defaultManager]findProductVariantColorsForProducts:@[self.product] withSizes:nil];
         self.selectedProductColor = self.productColors.count ? [self.productColors firstObject] : nil;
-        self.productSizes = [[StorageManager defaultManager]findProductVariantSizesForProducts:@[self.product] withColors:self.selectedProductColor ? @[self.selectedProductColor] : nil];
-        self.selectedProductSize = self.productSizes.count ? [self.productSizes firstObject] : nil;
+        [self updateProductVariantSizes];
     }
+}
+
+- (void)updateProductVariantSizes {
+    self.productSizes = [[StorageManager defaultManager] findProductVariantSizesForProductVariants:[self.product.productVariants array] withColors:self.selectedProductColor ? @[self.selectedProductColor] : nil];
+    self.selectedProductSize = self.productSizes.count ? [self.productSizes firstObject] : nil;
 }
 
 - (void)updateTitleView {
@@ -366,6 +370,14 @@ static CGFloat const toastNotificationImageSize               = 14.0;
     }];
 }
 
+#pragma mark - BFProductVariantSelectionDelegate
+
+- (void)selectedProductVariantColor:(BFProductVariantColor *)productVariantColor {
+    self.selectedProductColor = productVariantColor;
+    [self updateProductVariantSizes];
+    [self updateExtensions:true animated:false];
+    [self updateHeaderView:true animated:false];
+}
 
 #pragma mark - DZNEmptyDataSetSource Customization
 
