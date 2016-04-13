@@ -105,6 +105,7 @@ NSString *const kTranslationWoman                          = @"150";
 NSString *const kTranslationRegistrationError              = @"151";
 NSString *const kTranslationRegistrationErrorCredentials   = @"152";
 NSString *const kTranslationRegistering                    = @"153";
+NSString *const kTranslationLoggingIn                      = @"68";
 
 /**
  * Push notification permissions.
@@ -116,17 +117,17 @@ NSString *const kTranslationNoThanks                       = @"";
 /**
  * Products categories.
  */
-NSString *const kTranslationMen                            = @"154";
-NSString *const kTranslationWomen                          = @"155";
-NSString *const kTranslationDesign                         = @"156";
-NSString *const kTranslationCatalogue                      = @"157";
+NSString *const kTranslationMen                            = @"";
+NSString *const kTranslationWomen                          = @"";
 NSString *const kTranslationPopular                        = @"";
-NSString *const kTranslationSale                           = @"159";
+NSString *const kTranslationSale                           = @"";
 
 /**
  * Products offers.
  */
-NSString *const kTranslationJustArrived                    = @"160";
+NSString *const kTranslationJustArrived                    = @"";
+NSString *const kTranslationNoOffersHeadline               = @"112";
+NSString *const kTranslationNoCategoriesHeadline           = @"113";
 
 /**
  * APNS.
@@ -137,11 +138,11 @@ NSString *const kTranslationBrowseHere                     = @"98";
 /**
  * Shopping cart.
  */
-NSString *const kTranslationShoppingCart                   = @"161";
+NSString *const kTranslationCart                           = @"13";
+NSString *const kTranslationShoppingCart                   = @"";
 NSString *const kTranslationContinue                       = @"";
 NSString *const kTranslationEmptyCartHeadline              = @"115";
 NSString *const kTranslationEmptyCartSubheadline           = @"";
-NSString *const kTranslationProductsInCart                 = @"24";
 NSString *const kTranslationDiscounts                      = @"105";
 NSString *const kTranslationProducts                       = @"";
 NSString *const kTranslationPieces                         = @"";
@@ -149,7 +150,7 @@ NSString *const kTranslationApplyingDiscountCode           = @"";
 NSString *const kTranslationApplyDiscountCode              = @"";
 NSString *const kTranslationEnterDiscountCode              = @"";
 NSString *const kTranslationDiscountCode                   = @"";
-NSString *const kTranslationProceedToShipping              = @"";
+NSString *const kTranslationConfirm                        = @"106";
 
 /**
  * Edit product in shopping cart
@@ -157,6 +158,9 @@ NSString *const kTranslationProceedToShipping              = @"";
 NSString *const kTranslationEditProduct                    = @"";
 NSString *const kTranslationQuantity                       = @"";
 NSString *const kTranslationChooseQuantity                 = @"";
+NSString *const kTranslationColorAndSize                   = @"4";
+NSString *const kTranslationEdit                           = @"20";
+NSString *const kTranslationDelete                         = @"21";
 
 /**
  * Order form
@@ -183,6 +187,11 @@ NSString *const kTranslationPleaseFillInPayment            = @"";
 NSString *const kTranslationVatIncluded                    = @"";
 NSString *const kTranslationByOrderingYouAgreeWithOur      = @"";
 NSString *const kTranslationTermsAndConditions             = @"";
+NSString *const kTranslationOrder                          = @"22";
+NSString *const kTranslationPleaseFillInAllFields          = @"72";
+NSString *const kTranslationSendingOrder                   = @"78";
+NSString *const kTranslationOrderCommand                   = @"94";
+NSString *const kTranslationOrderSent                      = @"95";
 
 /**
  * Shipping, Payment
@@ -196,7 +205,6 @@ NSString *const kTranslationPaymentMethod                  = @"";
  * Order Summary
  */
 NSString *const kTranslationSummary                        = @"";
-NSString *const kTranslationYourOrder                      = @"";
 NSString *const kTranslationYourOrderHasBeenSent           = @"";
 NSString *const kTranslationWaitForSMS                     = @"";
 NSString *const kTranslationTotal                          = @"25";
@@ -207,66 +215,73 @@ NSString *const kTranslationDismiss                        = @"";
 /**
  * Products searching.
  */
-NSString *const kTranslationWhoSeeksFinds                  = @"162";
-NSString *const kTranslationLastSearchedQueries            = @"163";
-NSString *const kTranslationMostSearchedQueries            = @"164";
-NSString *const kTranslationNoSearchQueries                = @"165";
+NSString *const kTranslationWhoSeeksFinds                  = @"";
+NSString *const kTranslationLastSearchedQueries            = @"";
+NSString *const kTranslationMostSearchedQueries            = @"";
+NSString *const kTranslationNoSearchQueries                = @"";
 NSString *const kTranslationSearchSuggestions              = @"";
 NSString *const kTranslationCategory                       = @"";
+NSString *const kTranslationCancel                         = @"62";
+NSString *const kTranslationSearch                         = @"76";
 
 /**
  * More section.
  */
-NSString *const kTranslationOpenShop                       = @"166";
-NSString *const kTranslationMyWishlist                     = @"167";
-NSString *const kTranslationBranches                       = @"168";
-NSString *const kTranslationCountryAndCurrency             = @"169";
-NSString *const kTranslationUserProfile                    = @"170";
-NSString *const kTranslationClose                          = @"171";
+NSString *const kTranslationOpenShop                       = @"";
+NSString *const kTranslationMyWishlist                     = @"";
+NSString *const kTranslationBranches                       = @"";
+NSString *const kTranslationCountryAndCurrency             = @"";
+NSString *const kTranslationUserProfile                    = @"";
+NSString *const kTranslationClose                          = @"";
+NSString *const kTranslationChangingShop                   = @"64";
 
 /*
  * Orders history
  */
-NSString *const kTranslationNoOrders                       = @"172";
-NSString *const kTranslationGoShopping                     = @"173";
+NSString *const kTranslationNoOrders                       = @"";
+NSString *const kTranslationGoShopping                     = @"";
+NSString *const kTranslationOrderDetail                    = @"27";
 
 /*
  * Branches
  */
-NSString *const kTranslationNavigateToBranch               = @"174";
+NSString *const kTranslationNavigateToBranch               = @"";
 
 /**
  * Settings.
  */
-NSString *const kTranslationNoSettings                     = @"175";
-NSString *const kTranslationGoBack                         = @"176";
-NSString *const kTranslationCountry                        = @"177";
+NSString *const kTranslationNoSettings                     = @"";
+NSString *const kTranslationGoBack                         = @"";
+NSString *const kTranslationCountry                        = @"";
+NSString *const kTranslationLogout                         = @"19";
+NSString *const kTranslationLoading                        = @"35";
 
 /**
  * User details.
  */
-NSString *const kTranslationUserDetailsName                = @"178";
-NSString *const kTranslationUserDetailsEmail               = @"179";
-NSString *const kTranslationUserDetailsPhone               = @"180";
-NSString *const kTranslationUserDetailsStreet              = @"181";
-NSString *const kTranslationUserDetailsHouseNumber         = @"182";
-NSString *const kTranslationUserDetailsCity                = @"183";
-NSString *const kTranslationUserDetailsZip                 = @"184";
-NSString *const kTranslationUserDetailsOldPassword         = @"185";
-NSString *const kTranslationUserDetailsNewPassword         = @"186";
-NSString *const kTranslationUserDetailsConfirmPassword     = @"187";
-NSString *const kTranslationUserDetailsPasswordChange      = @"188";
-NSString *const kTranslationUserDetailsConfirm             = @"189";
-NSString *const kTranslationChangePassword                 = @"190";
-NSString *const kTranslationPasswordsMatch                 = @"191";
+NSString *const kTranslationMyAccount                      = @"15";
+NSString *const kTranslationUserDetailsName                = @"";
+NSString *const kTranslationUserDetailsEmail               = @"";
+NSString *const kTranslationUserDetailsPhone               = @"";
+NSString *const kTranslationUserDetailsStreet              = @"";
+NSString *const kTranslationUserDetailsHouseNumber         = @"";
+NSString *const kTranslationUserDetailsCity                = @"";
+NSString *const kTranslationUserDetailsZip                 = @"";
+NSString *const kTranslationUserDetailsOldPassword         = @"";
+NSString *const kTranslationUserDetailsNewPassword         = @"";
+NSString *const kTranslationUserDetailsConfirmPassword     = @"";
+NSString *const kTranslationUserDetailsPasswordChange      = @"";
+NSString *const kTranslationUserDetailsConfirm             = @"";
+NSString *const kTranslationChangePassword                 = @"";
+NSString *const kTranslationPasswordsMatch                 = @"";
 
 /**
  * Empty data set.
  */
-NSString *const kTranslationNoItems                        = @"192";
-NSString *const kTranslationPressForUpdate                 = @"193";
-NSString *const kTranslationGoToCategories                 = @"194";
-NSString *const kTranslationNoProducts                     = @"195";
+NSString *const kTranslationNoItems                        = @"";
+NSString *const kTranslationPressForUpdate                 = @"";
+NSString *const kTranslationGoToCategories                 = @"";
+NSString *const kTranslationNoProducts                     = @"";
 
 /**
  * Products filter
@@ -275,153 +290,71 @@ NSString *const kTranslationSortByPopularity               = @"6";
 NSString *const kTranslationNewestFirst                    = @"7";
 NSString *const kTranslationPricestFirst                   = @"8";
 NSString *const kTranslationCheapestFirst                  = @"9";
+NSString *const kTranslationAll                            = @"0";
+NSString *const kTranslationFilter                         = @"65";
+NSString *const kTranslationClearSelection                 = @"117";
+NSString *const kTranslationFilterSize                     = @"118";
+NSString *const kTranslationFilterColor                    = @"119";
+NSString *const kTranslationFilterBrand                    = @"120";
+NSString *const kTranslationFilterNoFilters                = @"123";
+NSString *const kTranslationFilterUpdateFilter             = @"124";
+NSString *const kTranslationPrice                          = @"73";
+NSString *const kTranslationSort                           = @"80";
+NSString *const kTranslationSortBy                         = @"81";
 
 /**
  * General info.
  */
-NSString *const kTranslationDataFetchingError              = @"175";
-NSString *const kTranslationDataFetchingErrorReason        = @"176";
+NSString *const kTranslationDataFetchingError              = @"";
+NSString *const kTranslationDataFetchingErrorReason        = @"";
+NSString *const kTranslationError                          = @"87";
+NSString *const kTranslationErrorDefaultButtonTitle        = @"125";
 
 /**
  * Wishlist.
  */
-NSString *const kTranslationWishlistNoProductError         = @"177";
-NSString *const kTranslationWishlistNoProductErrorReason   = @"178";
-NSString *const kTranslationAddedToWishlist                = @"179";
-NSString *const kTranslationWishlist                       = @"180";
-NSString *const kTranslationNoWishlistItems                = @"181";
-NSString *const kTranslationLoginToRemoveFromWishlist      = @"182";
+NSString *const kTranslationWishlistNoProductError         = @"";
+NSString *const kTranslationWishlistNoProductErrorReason   = @"";
+NSString *const kTranslationAddedToWishlist                = @"";
+NSString *const kTranslationWishlist                       = @"";
+NSString *const kTranslationNoWishlistItems                = @"";
+NSString *const kTranslationLoginToRemoveFromWishlist      = @"";
 
 /*
  * Product details.
  */
-NSString *const kTranslationShareWithFriends               = @"183";
-NSString *const kTranslationChooseSize                     = @"184";
-NSString *const kTranslationChooseColor                    = @"185";
-NSString *const kTranslationLoginToAddToWishlist           = @"186";
-NSString *const kTranslationLoginToAddToCart               = @"187";
-NSString *const kTranslationGoToCart                       = @"188";
-NSString *const kTranslationSharePlaceholder               = @"189";
-NSString *const kTranslationShareFacebook                  = @"190";
-NSString *const kTranslationShareTwitter                   = @"191";
-NSString *const kTranslationProperties                     = @"192";
+NSString *const kTranslationShareWithFriends               = @"";
+NSString *const kTranslationChooseSize                     = @"";
+NSString *const kTranslationChooseColor                    = @"";
+NSString *const kTranslationLoginToAddToWishlist           = @"";
+NSString *const kTranslationLoginToAddToCart               = @"";
+NSString *const kTranslationGoToCart                       = @"";
+NSString *const kTranslationSharePlaceholder               = @"";
+NSString *const kTranslationShareFacebook                  = @"";
+NSString *const kTranslationShareTwitter                   = @"";
+NSString *const kTranslationProperties                     = @"";
 NSString *const kTranslationCartNoProductError             = @"";
 NSString *const kTranslationNoProductVariantErrorReason    = @"";    
+NSString *const kTranslationRecommending                   = @"2";
+NSString *const kTranslationAddToCart                      = @"36";
+NSString *const kTranslationAddingToCart                   = @"37";
+NSString *const kTranslationAddedToCart                    = @"39";
+NSString *const kTranslationColor                          = @"40";
+NSString *const kTranslationSize                           = @"41";
+NSString *const kTranslationProductIsUnavailable           = @"74";
+NSString *const kTranslationProductDetail                  = @"99";
 
 /*
  * Orders.
  */
 NSString *const kTranslationOrderID                        = @"83";
-NSString *const kTranslationOrderClientName                = @"193";
-NSString *const kTranslationOrderDateCreated               = @"194";
-NSString *const kTranslationOrderTotalPrice                = @"195";
-NSString *const kTranslationOrderShippingName              = @"196";
-NSString *const kTranslationOrderTransportPrice            = @"197";
-NSString *const kTranslationOrderProductsList              = @"198";
-NSString *const kTranslationOrderItemsList                 = @"199";
-NSString *const kTranslationOrderElement                   = @"200";
+NSString *const kTranslationOrderClientName                = @"";
+NSString *const kTranslationOrderDateCreated               = @"";
+NSString *const kTranslationOrderTotalPrice                = @"";
+NSString *const kTranslationOrderShippingName              = @"";
+NSString *const kTranslationOrderTransportPrice            = @"";
+NSString *const kTranslationOrderItemsList                 = @"";
+NSString *const kTranslationOrderElement                   = @"";
+NSString *const kTranslationMyOrders                       = @"17";
 
-
-
-NSString *const kTranslationAll = @"0";
-NSString *const kTranslationRecommending = @"2";
-NSString *const kTranslationAboutProduct = @"3";
-NSString *const kTranslationColorAndSize = @"4";
-NSString *const kTranslationSendToAFriend = @"5";
-NSString *const kTranslationFilteringOff = @"10";
-NSString *const kTranslationOffers = @"11";
-NSString *const kTranslationShop = @"12";
-NSString *const kTranslationCart = @"13";
-NSString *const kTranslationSettings = @"14";
-NSString *const kTranslationMyAccount = @"15";
-NSString *const kTranslationLoggedOut = @"16";
-NSString *const kTranslationMyOrders = @"17";
-NSString *const kTranslationEditAccount = @"18";
-NSString *const kTranslationLogout = @"19";
-NSString *const kTranslationEdit = @"20";
-NSString *const kTranslationDelete = @"21";
-NSString *const kTranslationOrder = @"22";
-NSString *const kTranslationProductInCart = @"23";
-NSString *const kTranslationAboutUs = @"26";
-NSString *const kTranslationOrderDetail = @"27";
-NSString *const kTranslationOrder2 = @"28";
-NSString *const kTranslationDateCreated = @"30";
-NSString *const kTranslationTotalFormatted = @"31";
-NSString *const kTranslationShippingPrice = @"33";
-NSString *const kTranslationLoading = @"35";
-NSString *const kTranslationAddToCart = @"36";
-NSString *const kTranslationAddingToCart = @"37";
-NSString *const kTranslationAddingToCartFailed = @"38";
-NSString *const kTranslationAddedToCart = @"39";
-NSString *const kTranslationColor = @"40";
-NSString *const kTranslationSize = @"41";
-NSString *const kTranslationAmount = @"42";
-NSString *const kTranslationAny = @"43";
-NSString *const kTranslationBrand = @"44";
-NSString *const kTranslationSendOrder = @"45";
-NSString *const kTranslationOrderDetail2 = @"46";
-NSString *const kTranslationShippingInformation = @"47";
-NSString *const kTranslationShipping2  = @"49";
-NSString *const kTranslationName2 = @"51";
-NSString *const kTranslationReallyOrder = @"59";
-NSString *const kTranslationByOrderingYouAgreeWithOurTermsAndConditions = @"60";
-NSString *const kTranslationCancel = @"62";
-NSString *const kTranslationEditingCart = @"63";
-NSString *const kTranslationChangingShop = @"64";
-NSString *const kTranslationFilter = @"65";
-NSString *const kTranslationFilterOff = @"66";
-NSString *const kTranslationFilterOn = @"67";
-NSString *const kTranslationLoggingIn = @"68";
-NSString *const kTranslationMakeSureYourInternetConnectionIsAvailableTheServerMayAlsoBeOffline = @"69";
-NSString *const kTranslationMore = @"70";
-NSString *const kTranslationCashOnDelivery = @"71";
-NSString *const kTranslationPleaseFillInAllFields = @"72";
-NSString *const kTranslationPrice = @"73";
-NSString *const kTranslationProductIsUnavailable = @"74";
-NSString *const kTranslationResetFilter = @"75";
-NSString *const kTranslationSearch = @"76";
-NSString *const kTranslationSearchIn = @"77";
-NSString *const kTranslationSendingOrder = @"78";
-NSString *const kTranslationSomeFieldsAreNotFilled = @"79";
-NSString *const kTranslationSort = @"80";
-NSString *const kTranslationSortBy = @"81";
-NSString *const kTranslationYourCartIsEmpty = @"82";
-NSString *const kTranslationInformation = @"84";
-NSString *const kTranslationNotLoggedIn = @"85";
-NSString *const kTranslationOrders = @"86";
-NSString *const kTranslationError = @"87";
-NSString *const kTranslationUserDetails = @"88";
-NSString *const kTranslationThereWasAnErrorWhileProcessingYourRequest = @"89";
-NSString *const kTranslationSortByNewest = @"90";
-NSString *const kTranslationSortByHighestPrice = @"91";
-NSString *const kTranslationSortByLowestPrice = @"92";
-NSString *const kTranslationOrderNumber = @"93";
-NSString *const kTranslationOrderCommand = @"94";
-NSString *const kTranslationOrderSent = @"95";
-NSString *const kTranslationPopularity = @"96";
-NSString *const kTranslationProductDetail = @"99";
-NSString *const kTranslationLogInWithFacebook = @"100";
-NSString *const kTranslationLogInLater = @"101";
-NSString *const kTranslationPleaseFillInEmail = @"102";
-NSString *const kTranslationConfirmEmail = @"103";
-NSString *const kTranslationConfirmEmailAndEmailFieldsMustMatch = @"104";
-NSString *const kTranslationConfirm = @"106";
-NSString *const kTranslationLanguage = @"107";
-NSString *const kTranslationPleaseSelectYourLanguage = @"108";
-NSString *const kTranslationSelectAShop = @"109";
-NSString *const kTranslationLoginWithFacebookAndGainAccess = @"110";
-NSString *const kTranslationDone = @"111";
-NSString *const kTranslationNoOffersHeadline = @"112";
-NSString *const kTranslationNoCategoriesHeadline = @"113";
-NSString *const kTranslationTapToRefresh = @"114";
-NSString *const kTranslationEmptyProductsHeadline = @"116";
-NSString *const kTranslationClearSelection = @"117";
-NSString *const kTranslationFilterSize = @"118";
-NSString *const kTranslationFilterColor = @"119";
-NSString *const kTranslationFilterBrand = @"120";
-NSString *const kTranslationFilterSearch = @"121";
-NSString *const kTranslationFilterCancelSearch = @"122";
-NSString *const kTranslationFilterNoFilters = @"123";
-NSString *const kTranslationFilterUpdateFilter = @"124";
-NSString *const kTranslationErrorDefaultButtonTitle = @"125";
 

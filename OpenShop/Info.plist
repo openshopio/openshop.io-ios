@@ -14,8 +14,6 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>CFBundleVersion</key>
-	<string>25</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
@@ -29,6 +27,8 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>30</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
