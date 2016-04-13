@@ -59,7 +59,7 @@
 + (void)customizeGlobalAppearance {
     // app window appearance
     [[UIWindow appearance]setTintColor:[UIColor BFN_pinkColor]];
-    [[UIWindow appearance]setBackgroundColor:[UIColor whiteColor]];
+//    [[UIWindow appearance]setBackgroundColor:[UIColor whiteColor]];
     // overlay view appearance
     [[MRProgressOverlayView appearance] setTintColor:[UIColor BFN_pinkColor]];
     // tab bar appearance

@@ -99,10 +99,12 @@ static NSString *const segueParameterProduct                     = @"product";
     BFViewType viewType = (BFViewType)[[[BFAppPreferences sharedPreferences]preferredViewType]integerValue];
     
     NSURL *productImage;
-    if(viewType == BFViewTypeSingleItem && product.imageURLHighRes) {
+    // Ipad
+    UIUserInterfaceIdiom device = [[UIDevice currentDevice] userInterfaceIdiom];
+    if(product.imageURLHighRes && (device == UIUserInterfaceIdiomPad || viewType == BFViewTypeSingleItem)) {
         productImage = [NSURL URLWithString:(NSString *)product.imageURLHighRes];
     }
-    else if(viewType == BFViewTypeCollection && product.imageURL) {
+    else if(product.imageURL) {
         productImage = [NSURL URLWithString:(NSString *)product.imageURL];
     }
     
