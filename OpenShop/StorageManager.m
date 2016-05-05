@@ -552,18 +552,18 @@
 #pragma mark - Translations
 
 - (BFTranslation *)findTranslationWithKey:(NSString *)key {
-    return [self findTranslationWithLanguage:(BFLanguage)[[[BFAppPreferences sharedPreferences]selectedLanguage]integerValue] key:key];
+    return [self findTranslationWithLanguage:[[BFAppPreferences sharedPreferences]selectedLanguage] key:key];
 }
 
-- (BFTranslation *)findTranslationWithLanguage:(BFLanguage)language key:(NSString *)key {
-    return [BFTranslation findFirstWithPredicate:[NSPredicate predicateWithFormat:@"language = %@ AND stringID = %@", [BFAppStructure languageCode:language], key] inContext:[self privateQueueContext]];
+- (BFTranslation *)findTranslationWithLanguage:(NSString *)language key:(NSString *)key {
+    return [BFTranslation findFirstWithPredicate:[NSPredicate predicateWithFormat:@"language = %@ AND stringID = %@", language, key] inContext:[self privateQueueContext]];
 }
 
 - (NSString *)findTranslationStringWithKey:(NSString *)key defaultValue:(NSString *)defaultValue {
-    return [self findTranslationStringWithLanguage:(BFLanguage)[[[BFAppPreferences sharedPreferences]selectedLanguage]integerValue] key:key defaultValue:defaultValue];
+    return [self findTranslationStringWithLanguage:[[BFAppPreferences sharedPreferences]selectedLanguage] key:key defaultValue:defaultValue];
 }
 
-- (NSString *)findTranslationStringWithLanguage:(BFLanguage)language key:(NSString *)key defaultValue:(NSString *)defaultValue {
+- (NSString *)findTranslationStringWithLanguage:(NSString *)language key:(NSString *)key defaultValue:(NSString *)defaultValue {
     if(key) {
         BFTranslation *translation = [self findTranslationWithLanguage:language key:key];
         if (translation) {

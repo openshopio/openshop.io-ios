@@ -65,7 +65,7 @@ static NSString *const segueParameterProductInfo         = @"productInfo";
     [self reloadDataFromNetwork];
 
     // language changed notification observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChangedAction) name:BFLanguageDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -105,8 +105,12 @@ static NSString *const segueParameterProductInfo         = @"productInfo";
         [self removeAllExtensions];
     }
     // scroll to top to display empty data set correctly
-    [self.tableView setContentOffset:CGPointZero];
-    [self.tableView reloadData];
+    NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    if ([self isIndexPathPresentInTableView:topIndexPath]) {
+        [self.tableView scrollToRowAtIndexPath:topIndexPath atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    }
+//    [self.tableView setContentOffset:CGPointZero];
+//    [self.tableView reloadData];
 }
 
 
@@ -237,7 +241,8 @@ static NSString *const segueParameterProductInfo         = @"productInfo";
 
 #pragma mark - Language changed notification
 
-- (void)languageChangedAction {
+- (void)shopChangedAction {
+    [self.navigationController popToRootViewControllerAnimated:NO];
     // fetch data
     [self reloadDataFromNetwork];
 }

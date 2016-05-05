@@ -31,10 +31,10 @@
     // app appearance
     [BFAppAppearance customizeAppearance:false];
     
-    // app translations
-    [[BFAPIManager sharedManager]findTranslationWithLanguageCode:[[BFAppPreferences sharedPreferences] selectedLanguageCode] completionBlock:nil];
+    
+    [[BFAPIManager sharedManager]findTranslationsCompletionBlock:nil];
     [[NSNotificationCenter defaultCenter]addObserverForName:BFLanguageDidChangeNotification object:nil queue:[NSOperationQueue currentQueue] usingBlock:^(NSNotification *note) {
-        [[BFAPIManager sharedManager]findTranslationWithLanguageCode:[[BFAppPreferences sharedPreferences] selectedLanguageCode] completionBlock:nil];
+        [[BFAPIManager sharedManager]findTranslationsCompletionBlock:nil];
     }];
         
     // app logging

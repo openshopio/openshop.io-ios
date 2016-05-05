@@ -485,7 +485,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param key The translation string key.
  * @return The translation data model.
  */
-- (nullable BFTranslation *)findTranslationWithLanguage:(BFLanguage)language key:(NSString *)key;
+- (nullable BFTranslation *)findTranslationWithLanguage:(NSString *)language key:(NSString *)key;
 /**
  * Retrieves translation string with specified translation string key in the currently selected language. If none translation
  * is found it attempts to find static local translation with optional default value.
@@ -504,7 +504,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param defaultValue The default value.
  * @return The translation string.
  */
-- (NSString *)findTranslationStringWithLanguage:(BFLanguage)language key:(NSString *)key defaultValue:(NSString *)defaultValue;
+- (NSString *)findTranslationStringWithLanguage:(NSString *)language key:(NSString *)key defaultValue:(NSString *)defaultValue;
 
 
 NS_ASSUME_NONNULL_END

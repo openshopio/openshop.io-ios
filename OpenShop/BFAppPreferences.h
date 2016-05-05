@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Selected language identification.
  */
-@property (nonatomic, strong, nullable) NSNumber *selectedLanguage;
+@property (nonatomic, strong, nullable) NSString *selectedLanguage;
 /**
  * Selected organization identification.
  */
@@ -43,10 +43,6 @@ NS_ASSUME_NONNULL_BEGIN
  * Preferred products menu category (men, women).
  */
 @property (nonatomic, strong, nullable) NSNumber *preferredMenuCategory;
-/**
- * Selected language code (ISO 639-1).
- */
-@property (nonatomic, copy) NSString *selectedLanguageCode;
 
 /**
  * Class method to access the static preferences instance.

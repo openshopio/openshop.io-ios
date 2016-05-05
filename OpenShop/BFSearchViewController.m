@@ -12,6 +12,8 @@
 #import "BFSearchQueriesTableViewCellExtension.h"
 #import "BFSearchSuggestionsTableViewCellExtension.h"
 #import "MGSwipeTableCell+BFNSwipeGestureTutorial.h"
+#import "NSNotificationCenter+BFAsyncNotifications.h"
+#import "NSNotificationCenter+BFManagedNotificationObserver.h"
 #import "BFProductsViewController.h"
 
 /**
@@ -83,6 +85,9 @@ static NSUInteger const minOccurencesOfMostSearchedQueries = 3;
     
     // empty data set customization
     [self customizeEmptyDataSet];
+    
+    // language changed notification observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -164,6 +169,12 @@ static NSUInteger const minOccurencesOfMostSearchedQueries = 3;
             [self removeExtension:_searchSuggestionsExtension];
         }
     }
+}
+
+#pragma mark - Language changed notification
+
+- (void)shopChangedAction {
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 #pragma mark - UISearchBarDelegate

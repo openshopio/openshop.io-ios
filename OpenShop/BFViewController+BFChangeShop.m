@@ -14,7 +14,7 @@
 /**
  * Shop selection overlay dismiss delay.
  */
-static CGFloat const selectionOverlayDelay             = 1.0f;
+static CGFloat const selectionOverlayDelay             = 1.0;
 
 @implementation BFViewController (BFChangeShop)
 

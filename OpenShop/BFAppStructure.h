@@ -10,14 +10,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * Shop languages.
- */
-typedef NS_ENUM(NSInteger, BFLanguage) {
-    BFLanguageCzech,
-    BFLanguageSlovak,
-};
-
-/**
  * Shops identification.
  */
 typedef NS_ENUM(NSInteger, BFShopIdentification) {
@@ -218,20 +210,6 @@ typedef NS_ENUM(NSInteger, BFRegistrationItem) {
  */
 + (nullable NSString *)sortTypeDisplayName:(BFSortType)sortType;
 /**
- * Translates the language to its display name.
- *
- * @param language The language.
- * @return The language display name.
- */
-+ (nullable NSString *)languageDisplayName:(BFLanguage)language;
-/**
- * Translates the language to its country display name.
- *
- * @param language The language.
- * @return The language country display name.
- */
-+ (nullable NSString *)languageCountryDisplayName:(BFLanguage)language;
-/**
  * Translates user profile item to its display name.
  *
  * @param userProfileItem The user profile item.
@@ -295,20 +273,6 @@ typedef NS_ENUM(NSInteger, BFRegistrationItem) {
 
 #pragma mark - Translations
 
-/**
- * Translates the language to its language code (ISO 639-1).
- *
- * @param language The language.
- * @return The language code.
- */
-+ (nullable NSString *)languageCode:(BFLanguage)language;
-/**
- * Translates the language code (ISO 639-1) to its corresponding `BFLanguage` enum type.
- *
- * @param languageCode The language code.
- * @return The language enum type wrapped in `NSNumber` instance.
- */
-+ (nullable NSNumber *)languageWithCode:(NSString *)languageCode;
 /**
  * Translates the shop identification to its universal analytics (UA) code.
  *

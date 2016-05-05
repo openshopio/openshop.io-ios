@@ -890,8 +890,8 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
 
 #pragma mark - Translations
 
-- (void)findTranslationWithLanguageCode:(NSString *)languageCode completionBlock:(nullable BFAPIDataLoadingCompletionBlock) block {
-    NSString *requestURL = [BFAPIPath APIBaseURLWithPath:BFAPIRequestPathTranslations params:@[languageCode] relative:true];
+- (void)findTranslationsCompletionBlock:(nullable BFAPIDataLoadingCompletionBlock) block {
+    NSString *requestURL = [BFAPIPath APIRequestShopURLWithPath:BFAPIRequestPathTranslations];
     
     // conditionally disable authorization
     [self disableAuthorizationForSingleRequest];

@@ -9,7 +9,6 @@
 @import UIKit;
 
 #import "BFOnboardingContentViewController.h"
-#import "BFOnboardingLanguageView.h"
 
 @class BFShop, BFAlignedImageButton;
 

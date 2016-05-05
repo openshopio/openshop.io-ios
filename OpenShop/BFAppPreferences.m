@@ -24,7 +24,6 @@ static NSString *const UserDefaultsAppPreferencesPreferredViewType      = @"Pref
 static NSString *const UserDefaultsAppPreferencesPreferredSortType      = @"PreferredSortType";
 static NSString *const UserDefaultsAppPreferencesPreferredMenuCategory  = @"PreferredMenuCategory";
 
-
 /**
  * Default organization identification.
  */
@@ -33,10 +32,6 @@ static NSInteger const BFAppPreferencesDefaultOrganization        = 4;
  * Default shop identification.
  */
 static BFShopIdentification const BFAppPreferencesDefaultShop     = BFShopIdentificationOpenShop;
-/**
- * Default language.
- */
-static BFLanguage const BFAppPreferencesDefaultLanguage           = BFLanguageCzech;
 /**
  * Default products view type.
  */
@@ -133,7 +128,7 @@ static BFMenuCategory const BFAppPreferencesDefaultMenuCategory   = BFMenuCatego
 
 - (void)resetPreferences {
     self.selectedShop = @(BFAppPreferencesDefaultShop);
-    self.selectedLanguage = @(BFAppPreferencesDefaultLanguage);
+    self.selectedLanguage = nil;
     self.selectedOrganization = @(BFAppPreferencesDefaultOrganization);
     self.APNIdentification = nil;
     self.preferredViewType = @(BFAppPreferencesDefaultViewType);
@@ -151,14 +146,6 @@ static BFMenuCategory const BFAppPreferencesDefaultMenuCategory   = BFMenuCatego
         _selectedShop = @(BFAppPreferencesDefaultShop);
     }
     return _selectedShop;
-}
-
-- (NSNumber *)selectedLanguage {
-    // if none selected return default
-    if (!_selectedLanguage) {
-        _selectedLanguage = @(BFAppPreferencesDefaultLanguage);
-    }
-    return _selectedLanguage;
 }
 
 - (NSNumber *)selectedOrganization {
@@ -193,11 +180,6 @@ static BFMenuCategory const BFAppPreferencesDefaultMenuCategory   = BFMenuCatego
     return _preferredMenuCategory;
 }
 
-- (NSString *)selectedLanguageCode {
-    _selectedLanguageCode = (NSString *)[BFAppStructure languageCode:(BFLanguage)[self.selectedLanguage integerValue]];
-    return _selectedLanguageCode;
-}
-
 
 #pragma mark - Preferences Modification
 
@@ -215,7 +197,7 @@ static BFMenuCategory const BFAppPreferencesDefaultMenuCategory   = BFMenuCatego
     [self save];
 }
 
-- (void)setSelectedLanguage:(NSNumber *)selectedLanguage {
+- (void)setSelectedLanguage:(NSString *)selectedLanguage {
     _selectedLanguage = selectedLanguage;
     [self save];
 }

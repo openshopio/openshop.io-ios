@@ -73,18 +73,18 @@ NSString *const BFWishlistDidChangeNotification                   = @"BFWishlist
 /**
  * User's onboarding process.
  */
-NSString *const kTranslationChooseCountry                  = @"126";
-NSString *const kTranslationWhereYouWantToShop             = @"127";
-NSString *const kTranslationCzechRepublic                  = @"128";
-NSString *const kTranslationSlovakRepublic                 = @"129";
-NSString *const kTranslationCzechLanguage                  = @"130";
-NSString *const kTranslationSlovakLanguage                 = @"131";
+NSString *const kTranslationChooseCountry                  = @"105";
+NSString *const kTranslationWhereYouWantToShop             = @"106";
+NSString *const kTranslationCzechRepublic                  = @"107";
+NSString *const kTranslationSlovakRepublic                 = @"108";
+NSString *const kTranslationCzechLanguage                  = @"109";
+NSString *const kTranslationSlovakLanguage                 = @"110";
 
 /**
  * User's onboarding - login.
  */
-NSString *const kTranslationEnterEmailAndPassword          = @"132";
-NSString *const kTranslationDidYouForgetPassword           = @"133";
+NSString *const kTranslationEnterEmailAndPassword          = @"111";
+NSString *const kTranslationDidYouForgetPassword           = @"112";
 NSString *const kTranslationLogin                          = @"134";
 NSString *const kTranslationPasswordRetrieval              = @"135";
 NSString *const kTranslationLoginWithEmail                 = @"136";

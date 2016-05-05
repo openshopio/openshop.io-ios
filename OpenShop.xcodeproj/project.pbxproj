@@ -27,7 +27,6 @@
 		5B61B9771C23621E00C79735 /* BFOnboardingContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B61B9751C23621E00C79735 /* BFOnboardingContentViewController.m */; };
 		5B7154271BE955B6002F187B /* PersistentStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7154261BE955B6002F187B /* PersistentStorage.m */; };
 		5B71542A1BE96ADC002F187B /* BFRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7154281BE96ADC002F187B /* BFRecord.m */; };
-		5B8273E91C2D48E4006FF075 /* BFOnboardingLanguageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8273E81C2D48E4006FF075 /* BFOnboardingLanguageView.m */; };
 		5B9266F21BE7F727005597A8 /* UIAlertView+BFError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9266F01BE7F727005597A8 /* UIAlertView+BFError.m */; };
 		5B9266F61BE7F90B005597A8 /* BFError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9266F41BE7F90B005597A8 /* BFError.m */; };
 		5B9266F91BE809AF005597A8 /* UIAlertController+BFError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9266F71BE809AF005597A8 /* UIAlertController+BFError.m */; };
@@ -353,8 +352,6 @@
 		5B7154261BE955B6002F187B /* PersistentStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PersistentStorage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5B7154281BE96ADC002F187B /* BFRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFRecord.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5B7154291BE96ADC002F187B /* BFRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFRecord.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		5B8273E71C2D48E4006FF075 /* BFOnboardingLanguageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFOnboardingLanguageView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		5B8273E81C2D48E4006FF075 /* BFOnboardingLanguageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFOnboardingLanguageView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5B9266F01BE7F727005597A8 /* UIAlertView+BFError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIAlertView+BFError.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5B9266F11BE7F727005597A8 /* UIAlertView+BFError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIAlertView+BFError.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		5B9266F41BE7F90B005597A8 /* BFError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFError.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -954,15 +951,6 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5B8273E61C2D47D1006FF075 /* NibViews */ = {
-			isa = PBXGroup;
-			children = (
-				5B8273E71C2D48E4006FF075 /* BFOnboardingLanguageView.h */,
-				5B8273E81C2D48E4006FF075 /* BFOnboardingLanguageView.m */,
-			);
-			name = NibViews;
-			sourceTree = "<group>";
-		};
 		5B9266F31BE7F8F5005597A8 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -1288,7 +1276,6 @@
 				BB6633F11C308E90003F3B85 /* BFOnboardingLoginEmailViewController.m */,
 				BB6AC1181C31A07C0016863F /* BFOnboardingRegistrationViewController.h */,
 				BB6AC1191C31A07D0016863F /* BFOnboardingRegistrationViewController.m */,
-				5B8273E61C2D47D1006FF075 /* NibViews */,
 			);
 			name = Onboarding;
 			sourceTree = "<group>";
@@ -2233,7 +2220,6 @@
 				BB7C0F721C443CB000AC0919 /* BFSortViewController.m in Sources */,
 				5BD993D91BE7D95C00AE12C0 /* BFJSONResponseSerializer.m in Sources */,
 				5BD993ED1BE7E27D00AE12C0 /* BFAPIRequestUserInfo.m in Sources */,
-				5B8273E91C2D48E4006FF075 /* BFOnboardingLanguageView.m in Sources */,
 				BBA165DB1C4CE6E500CC50D4 /* BFProductsTableViewCell.m in Sources */,
 				5B3812061C0FB2790080B106 /* BFDataRequestCartDiscountInfo.m in Sources */,
 				5BC0821C1BF26C62003EB0F1 /* NSObject+BFRuntimeAdditions.m in Sources */,

@@ -55,7 +55,7 @@ static NSString *const ordersSegueIdentifier      = @"ordersSegue";
 /**
  * The data source refreshing delay. Used to finish the view controller transition before the data refresh.
  */
-static CGFloat const dataSourceRefreshDelay       = 0.5f;
+static CGFloat const dataSourceRefreshDelay       = 0.5;
 
 
 
@@ -92,6 +92,8 @@ static CGFloat const dataSourceRefreshDelay       = 0.5f;
     
     // user state change listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userStateChanged) name:BFUserDidChangeNotification object:nil];
+    // language changed notification observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
 }
 
 
@@ -110,6 +112,11 @@ static CGFloat const dataSourceRefreshDelay       = 0.5f;
     [self addExtension:_infoSettingsItemsExtension];
 }
 
+#pragma mark - Language changed notification
+
+- (void)shopChangedAction {
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
 
 #pragma mark - Data Fetching
 

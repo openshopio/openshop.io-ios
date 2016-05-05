@@ -203,8 +203,7 @@ static CGFloat const contentHeight = 200.0;
         // set first launch flag
         [[BFAppSessionInfo sharedInfo]setFirstLaunch:false];
         // selected language
-        BFLanguage language = (BFLanguage)[[BFAppStructure languageWithCode:self.selectedShop.language]integerValue];
-        [[BFAppPreferences sharedPreferences]setSelectedLanguage:@(language)];
+        [[BFAppPreferences sharedPreferences]setSelectedLanguage:self.selectedShop.language];
         // selected shop
         [[BFAppPreferences sharedPreferences]setSelectedShop:self.selectedShop.shopID];
         // move to next page

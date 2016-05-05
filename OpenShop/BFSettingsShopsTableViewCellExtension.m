@@ -34,15 +34,15 @@ static NSString *const shopsHeaderViewNibName          = @"BFTableViewGroupedHea
 /**
  * Shop table view cell height.
  */
-static CGFloat const shopCellHeight                    = 42.0f;
+static CGFloat const shopCellHeight                    = 42.0;
 /**
  * Shops header view height.
  */
-static CGFloat const shopsHeaderViewHeight             = 50.0f;
+static CGFloat const shopsHeaderViewHeight             = 50.0;
 /**
  * Shops empty footer view height.
  */
-static CGFloat const shopsEmptyFooterViewHeight        = 15.0f;
+static CGFloat const shopsEmptyFooterViewHeight        = 15.0;
 
 
 

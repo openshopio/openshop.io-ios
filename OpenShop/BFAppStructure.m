@@ -34,18 +34,6 @@
              };
 }
 
-+ (NSDictionary *)languageDisplayNames {
-    return @{@(BFLanguageCzech)  : BFLocalizedString(kTranslationCzechLanguage, @"Čeština"),
-             @(BFLanguageSlovak) : BFLocalizedString(kTranslationSlovakLanguage, @"Slovenština")
-             };
-}
-
-+ (NSDictionary *)languageCountryDisplayNames {
-    return @{@(BFLanguageCzech)  : BFLocalizedString(kTranslationCzechRepublic, @"Česká republika"),
-             @(BFLanguageSlovak) : BFLocalizedString(kTranslationSlovakRepublic, @"Slovenská republika")
-             };
-}
-
 + (NSDictionary *)userProfileItemDisplayNames {
     return @{@(BFUserProfileItemOrders)     : BFLocalizedString(kTranslationMyOrders, @"My orders"),
              @(BFUserProfileItemMyProfile)  : BFLocalizedString(kTranslationMyAccount, @"My account"),
@@ -103,12 +91,6 @@
 
 #pragma mark - Other Enum Mapping
 
-+ (NSDictionary *)languageCodes {
-    return @{@(BFLanguageCzech)  : @"cs",
-             @(BFLanguageSlovak) : @"sk"
-             };
-}
-
 + (NSDictionary *)shopUACodes {
     return @{
              @(BFShopIdentificationOpenShop)  : @"UA-70002133-2"
@@ -156,16 +138,6 @@
 + (NSString *)sortTypeDisplayName:(BFSortType)sortType {
     NSDictionary *displayNames = [self sortTypeDisplayNames];
     return sortType < displayNames.count ? displayNames[@(sortType)] : nil;
-}
-
-+ (NSString *)languageDisplayName:(BFLanguage)language {
-    NSDictionary *languages = [self languageDisplayNames];
-    return languages[@(language)];
-}
-
-+ (NSString *)languageCountryDisplayName:(BFLanguage)language {
-    NSDictionary *languageCountries = [self languageCountryDisplayNames];
-    return languageCountries[@(language)];
 }
 
 + (NSString *)userProfileItemDisplayName:(BFUserProfileItem)userProfileItem {
@@ -216,17 +188,6 @@
 
 
 #pragma mark - Translations
-
-+ (NSString *)languageCode:(BFLanguage)language {
-    NSDictionary *languageCodes = [self languageCodes];
-    return languageCodes[@(language)];
-}
-
-+ (NSNumber *)languageWithCode:(NSString *)languageCode {
-    NSDictionary *languageCodes = [self languageCodes];
-    NSArray *languages = [languageCodes allKeysForObject:languageCode];
-    return [languages firstObject];
-}
 
 + (NSString *)shopUACode:(BFShopIdentification)shopIdentification {
     NSDictionary *shopUACodes = [self shopUACodes];

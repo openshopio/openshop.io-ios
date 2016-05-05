@@ -405,12 +405,11 @@ typedef void (^BFAPIDataLoadingCompletionBlock)(NSArray *_Nullable records, id _
 #pragma mark - Translations
 
 /**
- * Retrieves translation strings for specified language code.
+ * Retrieves translation strings for current shop.
  *
- * @param languageCode The translation language code.
  * @param block The block to call when the request completes.
  */
-- (void)findTranslationWithLanguageCode:(NSString *)languageCode completionBlock:(nullable BFAPIDataLoadingCompletionBlock) block;
+- (void)findTranslationsCompletionBlock:(nullable BFAPIDataLoadingCompletionBlock) block;
 
 
 

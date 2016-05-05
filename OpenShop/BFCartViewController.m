@@ -24,25 +24,26 @@
 #import "MGSwipeTableCell+BFNSwipeGestureTutorial.h"
 #import "UIColor+BFColor.h"
 #import "NSNotificationCenter+BFAsyncNotifications.h"
+#import "NSNotificationCenter+BFManagedNotificationObserver.h"
 #import "ShoppingCart.h"
 #import <Masonry.h>
 
 /**
  * Delay in seconds for presenting success overlay.
  */
-static CGFloat const orderSucessDismissDelay = 1.4f;
+static CGFloat const orderSucessDismissDelay = 1.4;
 /**
  * Delay in seconds for presenting failure overlay.
  */
-static CGFloat const orderFailureDismissDelay = 2.0f;
+static CGFloat const orderFailureDismissDelay = 2.0;
 /**
  * Top navigation height.
  */
-static CGFloat const topNavigationHeight = 20.0f;
+static CGFloat const topNavigationHeight = 20.0;
 /**
  * Bottom navigation height.
  */
-static CGFloat const bottomNavigationHeight = 60.0f;
+static CGFloat const bottomNavigationHeight = 60.0;
 /**
  * Storyboard embed footer button segue identifier.
  */
@@ -135,6 +136,9 @@ static NSInteger const confirmButtonIndex = 1;
     
     // table view cell swipe tutorial
     self.swipeTutorialEnabled = YES;
+    
+    // language changed notification observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -211,6 +215,12 @@ static NSInteger const confirmButtonIndex = 1;
     // scroll to top to display empty data set correctly
     [self.tableView setContentOffset:CGPointZero];
     [self.tableView reloadData];
+}
+
+#pragma mark - Language changed notification
+
+- (void)shopChangedAction {
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 #pragma mark - Data Fetching

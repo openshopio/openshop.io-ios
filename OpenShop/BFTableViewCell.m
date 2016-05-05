@@ -11,7 +11,7 @@
 /**
  * Selection layer fade out animation duration.
  */
-static CGFloat const selectionLayerFadeOutDuration = 0.3f;
+static CGFloat const selectionLayerFadeOutDuration = 0.3;
 
 
 @interface BFTableViewCell ()
@@ -33,7 +33,7 @@ static CGFloat const selectionLayerFadeOutDuration = 0.3f;
     if (self) {
         self.managesSelection = false;
         // selection layer default color
-        self.selectionColor = [UIColor colorWithWhite:0.0f alpha:0.3f];
+        self.selectionColor = [UIColor colorWithWhite:0.0 alpha:0.3];
     }
     return self;
 }
@@ -42,6 +42,11 @@ static CGFloat const selectionLayerFadeOutDuration = 0.3f;
     [super awakeFromNib];
 }
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    self.imageContentView.image = nil;
+}
 
 #pragma mark - Action Button Events
 

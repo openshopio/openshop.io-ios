@@ -11,8 +11,10 @@
 #import "BFBannerTableViewCellExtension.h"
 #import "BFTabBarController.h"
 #import "NSObject+BFStoryboardInitialization.h"
-#import "UIFont+BFFont.h"
+#import "NSNotificationCenter+BFAsyncNotifications.h"
+#import "NSNotificationCenter+BFManagedNotificationObserver.h"
 #import "UINavigationController+BFCustomTitleView.h"
+#import "UIFont+BFFont.h"
 #import "BFProductsViewController.h"
 #import "BFProductsViewController.h"
 #import "BFProductDetailViewController.h"
@@ -63,8 +65,10 @@ static NSString *const productsSegueIdentifier      = @"productsSegue";
     
     // fetch data
     [self reloadDataFromNetwork];
+    
+    // reload banners if the shop changes
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
 }
-
 
 #pragma mark - Table View Cell Extensions
 
@@ -88,10 +92,11 @@ static NSString *const productsSegueIdentifier      = @"productsSegue";
 #pragma mark - Data Fetching
 
 - (void)reloadDataFromNetwork {
-    // data fetching flag
-    self.loadingData = true;
     // empty data source
     [self cleanDataSource];
+
+    // data fetching flag
+    self.loadingData = true;
     
     // fetch banners
     __weak __typeof__(self) weakSelf = self;
@@ -119,6 +124,13 @@ static NSString *const productsSegueIdentifier      = @"productsSegue";
     }
 }
 
+#pragma mark - Language changed notification
+
+- (void)shopChangedAction {
+    [self.navigationController popToRootViewControllerAnimated:NO];
+    // fetch data
+    [self reloadDataFromNetwork];
+}
 
 #pragma mark - DZNEmptyDataSetSource Customization
 

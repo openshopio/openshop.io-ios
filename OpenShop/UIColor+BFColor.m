@@ -14,23 +14,23 @@
 #pragma mark - Color Definitions
 
 + (UIColor *)BFN_pinkColor {
-    return [self BFN_pinkColorWithAlpha:1.0f];
+    return [self BFN_pinkColorWithAlpha:1.0];
 }
 
 + (UIColor *)BFN_orangeColor {
-    return [self BFN_orangeColorWithAlpha:1.0f];
+    return [self BFN_orangeColorWithAlpha:1.0];
 }
 
 + (UIColor *)BFN_darkerDimColor {
-    return [self BFN_blackColorWithAlpha:0.7f];
+    return [self BFN_blackColorWithAlpha:0.7];
 }
 
 + (UIColor *)BFN_dimColor {
-    return [self BFN_blackColorWithAlpha:0.5f];
+    return [self BFN_blackColorWithAlpha:0.5];
 }
 
 + (UIColor *)BFN_lighterDimColor {
-    return [self BFN_blackColorWithAlpha:0.3f];
+    return [self BFN_blackColorWithAlpha:0.3];
 }
 
 + (UIColor *)BFN_blackColorWithAlpha:(CGFloat)alpha {
@@ -54,7 +54,7 @@
 }
 
 + (UIColor *)BFN_greyColor {
-    return [self BFN_greyColorWithAlpha:1.0f];
+    return [self BFN_greyColorWithAlpha:1.0];
 }
 
 + (UIColor *)BFN_greyColorWithAlpha:(CGFloat)alpha {
