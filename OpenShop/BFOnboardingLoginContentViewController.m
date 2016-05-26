@@ -53,6 +53,14 @@ static CGFloat const contentViewFadeInDuration = 0.5;
     self.contentHeight = contentHeight;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.subheaderLabel.text = BFLocalizedString(kTranslationLoginToOpenShop, @"Login to OpenShop.io");
+    [self.registerButton setTitle:BFLocalizedString(kTranslationDontHaveAnAccount, @"Don't have an account?") forState:UIControlStateNormal];
+    [self.skipButton setTitle:BFLocalizedString(kTranslationSkip, @"Skip") forState:UIControlStateNormal];
+
+}
+
 
 #pragma mark - BFOnboardingContentViewState Protocol
 

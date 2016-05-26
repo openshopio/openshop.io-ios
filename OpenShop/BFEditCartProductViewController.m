@@ -56,11 +56,14 @@ static NSString *const paymentSegueIdentifier = @"paymentSegue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationEditProduct, @"Edit product") uppercaseString];
-    
     // setup table view cell extensions
     [self setupExtensions];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationEditProduct, @"Edit product") uppercaseString];
 }
 
 #pragma mark - Custom getters & setters

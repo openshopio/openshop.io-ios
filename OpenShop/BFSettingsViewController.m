@@ -30,9 +30,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationOpenShop, @"OpenShop") uppercaseString];
-    
     // empty data set customization
     [self customizeEmptyDataSet];
     
@@ -40,6 +37,11 @@
     [self reloadDataFromNetwork];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationOpenShop, @"OpenShop") uppercaseString];
+}
 
 #pragma mark - Table View Cell Extensions
 

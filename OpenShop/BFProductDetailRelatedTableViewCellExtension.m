@@ -73,7 +73,7 @@ static NSString *const segueParameterProduct                                 = @
     }
 
     [cell setData:self.relatedProducts];
-    cell.headerlabel.text = [BFLocalizedString(kTranslationRecommending, @"Recommending") uppercaseString];
+    cell.headerlabel.text = [BFLocalizedString(kTranslationRecommended, @"Recommended") uppercaseString];
     
     __weak __typeof__(self) weakSelf = self;
     cell.productSelectionBlock = ^(BFProduct *product) {

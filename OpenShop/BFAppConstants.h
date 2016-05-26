@@ -123,7 +123,8 @@ extern NSString *const kTranslationWoman;
 extern NSString *const kTranslationRegistrationError;
 extern NSString *const kTranslationRegistrationErrorCredentials;
 extern NSString *const kTranslationRegistering;
-
+extern NSString *const kTranslationLoginToOpenShop;
+extern NSString *const kTranslationSkip;
 /**
  * Push notification permissions.
  */
@@ -292,6 +293,8 @@ extern NSString *const kTranslationSortByPopularity;
 extern NSString *const kTranslationNewestFirst;
 extern NSString *const kTranslationPricestFirst;
 extern NSString *const kTranslationCheapestFirst;
+extern NSString *const kTranslationCancelFilter;
+extern NSString *const kTranslationApplyFilter;
 
 /**
  * General info.
@@ -340,7 +343,7 @@ extern NSString *const kTranslationOrderElement;
 
 
 extern NSString *const kTranslationAll;
-extern NSString *const kTranslationRecommending;
+extern NSString *const kTranslationRecommended;
 extern NSString *const kTranslationAboutProduct;
 extern NSString *const kTranslationColorAndSize;
 extern NSString *const kTranslationSendToAFriend;

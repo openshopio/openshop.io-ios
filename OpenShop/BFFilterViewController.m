@@ -66,14 +66,19 @@ static NSString *const segueParameterFilterType    = @"filterType";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationFilter, @"Filter") uppercaseString];
-    
     // extensions setup
     [self setupExtensions];
     
     // setup footer view
     [self setupFooter];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationFilter, @"Filter") uppercaseString];
+    [self.cancelButton setTitle:[BFLocalizedString(kTranslationCancelFilter, @"Cancel") uppercaseString] forState:UIControlStateNormal];
+    [self.doneButton setTitle:[BFLocalizedString(kTranslationApplyFilter, @"Apply") uppercaseString] forState:UIControlStateNormal];
 }
 
 

@@ -33,6 +33,10 @@ static NSInteger const BFAppPreferencesDefaultOrganization        = 4;
  */
 static BFShopIdentification const BFAppPreferencesDefaultShop     = BFShopIdentificationOpenShop;
 /**
+ * Default shop language.
+ */
+static NSString *const BFAppPreferencesDefaultLanguage = @"en";
+/**
  * Default products view type.
  */
 static BFViewType const BFAppPreferencesDefaultViewType           = BFViewTypeCollection;
@@ -128,7 +132,7 @@ static BFMenuCategory const BFAppPreferencesDefaultMenuCategory   = BFMenuCatego
 
 - (void)resetPreferences {
     self.selectedShop = @(BFAppPreferencesDefaultShop);
-    self.selectedLanguage = nil;
+    self.selectedLanguage = BFAppPreferencesDefaultLanguage;
     self.selectedOrganization = @(BFAppPreferencesDefaultOrganization);
     self.APNIdentification = nil;
     self.preferredViewType = @(BFAppPreferencesDefaultViewType);

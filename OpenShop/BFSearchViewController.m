@@ -76,10 +76,6 @@ static NSUInteger const minOccurencesOfMostSearchedQueries = 3;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationSearch, @"Search") uppercaseString];
-    // search bar
-    self.searchBar.placeholder = BFLocalizedString(kTranslationWhoSeeksFinds, @"Who seeks finds");
     // table view cell swipe tutorial
     self.swipeTutorialEnabled = true;
     
@@ -95,6 +91,10 @@ static NSUInteger const minOccurencesOfMostSearchedQueries = 3;
     // clear search bar
     self.searchBar.text = nil;
     self.searchText = nil;
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationSearch, @"Search") uppercaseString];
+    // search bar
+    self.searchBar.placeholder = BFLocalizedString(kTranslationWhoSeeksFinds, @"Who seeks find");
     // setup table view cell extensions
     [self setupExtensions];
 }
@@ -215,7 +215,7 @@ static NSUInteger const minOccurencesOfMostSearchedQueries = 3;
 - (void)customizeEmptyDataSet {
     self.emptyDataImage = nil;
     self.emptyDataTitle = BFLocalizedString(kTranslationNoSearchQueries, @"No previous search queries");
-    self.emptyDataSubtitle = BFLocalizedString(kTranslationWhoSeeksFinds, @"Who seeks finds");
+    self.emptyDataSubtitle = BFLocalizedString(kTranslationWhoSeeksFinds, @"Who seeks find");
 }
 
 

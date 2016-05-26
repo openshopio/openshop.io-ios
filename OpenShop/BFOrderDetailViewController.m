@@ -46,9 +46,6 @@ static NSString *const productDetailSegueIdentifier = @"productDetailSegue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationOrderDetail, @"Order detail") uppercaseString];
-    
     // setup table view cell extension
     [self setupExtensions];
     
@@ -56,6 +53,11 @@ static NSString *const productDetailSegueIdentifier = @"productDetailSegue";
     [self reloadDataFromNetwork];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationOrderDetail, @"Order detail") uppercaseString];
+}
 
 #pragma mark - Table View Cell Extensions
 

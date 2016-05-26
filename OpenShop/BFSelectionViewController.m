@@ -159,7 +159,7 @@ static NSInteger const minRowsToDisplaySectionIndexes      = 8;
         _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.navigationController.navigationBar.frame.size.height)];
         // style
         _searchBar.searchBarStyle = UISearchBarStyleDefault;
-        _searchBar.placeholder = BFLocalizedString(kTranslationWhoSeeksFinds, @"Who seeks finds");
+        _searchBar.placeholder = BFLocalizedString(kTranslationWhoSeeksFinds, @"Who seeks find");
         _searchBar.delegate = self;
         _searchBar.returnKeyType = UIReturnKeyDone;
         // appearance

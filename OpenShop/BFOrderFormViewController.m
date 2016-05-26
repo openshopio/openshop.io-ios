@@ -103,9 +103,6 @@ static NSString *const segueParameterInfoPage             = @"infoPage";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationShippingAndPayment, @"Shipping and payment") uppercaseString];
-
     // don't scroll to the bottom on the first appearance
     self.scrollToBottomOnAppear = NO;
     
@@ -120,6 +117,12 @@ static NSString *const segueParameterInfoPage             = @"infoPage";
     
     // cart change listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cartDidChange) name:BFCartDidChangeNotification object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationShippingAndPayment, @"Shipping and payment") uppercaseString];
 }
 
 - (void) viewDidAppear:(BOOL)animated

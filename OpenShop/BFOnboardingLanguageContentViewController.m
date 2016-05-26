@@ -65,8 +65,6 @@ static CGFloat const contentHeight = 200.0;
 }
 
 - (void)setDefaults {
-    [self.selectLanguageButton setTitle:BFLocalizedString(kTranslationCountry, @"Country") forState:UIControlStateNormal];
-    [self.continueButton setTitle:[BFLocalizedString(kTranslationContinue, @"Continue") uppercaseString] forState:UIControlStateNormal];
     if ([[BFAppSessionInfo sharedInfo]firstLaunch]) {
         self.contentHeight = contentHeightFirstLaunch;
     }
@@ -80,9 +78,15 @@ static CGFloat const contentHeight = 200.0;
     
     // initial load of languages
     [self loadLanguagesFromNetwork];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     // subheader
     [self.subheaderLabel setAttributedText:[self subheaderText]];
+    [self.selectLanguageButton setTitle:BFLocalizedString(kTranslationCountry, @"Country") forState:UIControlStateNormal];
+    [self.continueButton setTitle:[BFLocalizedString(kTranslationContinue, @"Continue") uppercaseString] forState:UIControlStateNormal];
+    
 }
 
 #pragma mark - Custom getters & setters

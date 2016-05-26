@@ -29,13 +29,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationSort, @"Sort") uppercaseString];
-    
     // extensions setup
     [self setupExtensions];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationSort, @"Sort") uppercaseString];
+}
 
 #pragma mark - Table View Cell Extensions
 

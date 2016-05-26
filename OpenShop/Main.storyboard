@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vZ9-CD-CPE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vZ9-CD-CPE">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -29,8 +29,6 @@
             <string>Roboto-Light</string>
         </mutableArray>
         <mutableArray key="Roboto-Medium.ttf">
-            <string>Roboto-Medium</string>
-            <string>Roboto-Medium</string>
             <string>Roboto-Medium</string>
             <string>Roboto-Medium</string>
             <string>Roboto-Medium</string>
@@ -591,7 +589,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-3j-XaB" customClass="BFAlignedImageButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJi-3j-XaB" customClass="BFAlignedImageButton">
                                 <rect key="frame" x="30" y="350" width="540" height="40"/>
                                 <accessibility key="accessibilityConfiguration" label="Country"/>
                                 <constraints>
@@ -613,7 +611,7 @@
                                     <action selector="languageButtonAction:" destination="Hu8-dS-o14" eventType="touchUpInside" id="9RI-YC-sE3"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-Tm-mb7" userLabel="Top Spacing">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-Tm-mb7" userLabel="Top Spacing">
                                 <rect key="frame" x="295" y="0.0" width="10" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -628,7 +626,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVm-3n-dEe" userLabel="Top Middle Spacing">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVm-3n-dEe" userLabel="Top Middle Spacing">
                                 <rect key="frame" x="295" y="340" width="10" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -642,7 +640,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRi-W4-M3m" userLabel="Bottom Middle Spacing">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRi-W4-M3m" userLabel="Bottom Middle Spacing">
                                 <rect key="frame" x="290" y="390" width="20" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -657,7 +655,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2i-1X-JZ9" userLabel="Bottom Spacing">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2i-1X-JZ9" userLabel="Bottom Spacing">
                                 <rect key="frame" x="290" y="450" width="20" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -672,7 +670,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="540" translatesAutoresizingMaskIntoConstraints="NO" id="4RT-4C-7Lq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="540" translatesAutoresizingMaskIntoConstraints="NO" id="4RT-4C-7Lq">
                                 <rect key="frame" x="30" y="300" width="540" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1y3-Av-A4T"/>
@@ -690,7 +688,7 @@ kde chcete nakupovat</string>
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-0d-x2e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-0d-x2e">
                                 <rect key="frame" x="30" y="400" width="540" height="50"/>
                                 <color key="backgroundColor" red="0.93929904699325562" green="0.058065511286258698" blue="0.38389852643013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -767,7 +765,7 @@ kde chcete nakupovat</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-MT-e9P" userLabel="Ještě nemáte účet?" customClass="BFAlignedImageButton">
-                                <rect key="frame" x="40" y="412" width="275" height="40"/>
+                                <rect key="frame" x="40" y="412" width="338" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MTI-fu-8Nt"/>
@@ -804,48 +802,6 @@ kde chcete nakupovat</string>
                                 </variation>
                                 <connections>
                                     <action selector="registerClicked:" destination="bot-Xh-qi6" eventType="touchUpInside" id="Pf0-sw-q6f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="syL-jh-Eyz" userLabel="Přeskočit" customClass="BFAlignedImageButton">
-                                <rect key="frame" x="315" y="412" width="235" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="EYB-Yh-mZ5"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="IIS-XM-9ix"/>
-                                    <constraint firstAttribute="height" constant="100" id="Nei-TS-k0a"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                <state key="normal" title="Přeskočit" image="ChevronIconPink">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSpacing">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetTop">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetBottom">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetLeft">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetRight">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="IIS-XM-9ix"/>
-                                        <exclude reference="Nei-TS-k0a"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="skipOnboarding:" destination="bot-Xh-qi6" eventType="touchUpInside" id="gwG-fn-adU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IzK-g5-Bf1" userLabel="přes FACEBOOK" customClass="BFButton">
@@ -997,16 +953,60 @@ kde chcete nakupovat</string>
                                     </mask>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="syL-jh-Eyz" userLabel="Přeskočit" customClass="BFAlignedImageButton">
+                                <rect key="frame" x="383" y="412" width="167" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EYB-Yh-mZ5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="IIS-XM-9ix"/>
+                                    <constraint firstAttribute="height" constant="100" id="Nei-TS-k0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="Přeskočit" image="ChevronIconPink">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSpacing">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetTop">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetBottom">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetLeft">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="hitTestInsetRight">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IIS-XM-9ix"/>
+                                        <exclude reference="Nei-TS-k0a"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="skipOnboarding:" destination="bot-Xh-qi6" eventType="touchUpInside" id="gwG-fn-adU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="syL-jh-Eyz" firstAttribute="leading" secondItem="MVj-oS-XD6" secondAttribute="trailing" constant="10" id="2WM-Nk-c2k"/>
+                            <constraint firstItem="syL-jh-Eyz" firstAttribute="leading" secondItem="MVj-oS-XD6" secondAttribute="trailing" constant="40" id="2WM-Nk-c2k"/>
                             <constraint firstItem="x6x-4J-qy8" firstAttribute="leading" secondItem="5T6-Nd-snC" secondAttribute="leading" constant="30" id="3Wp-Lq-aG0"/>
+                            <constraint firstItem="bYU-MT-e9P" firstAttribute="width" secondItem="IzK-g5-Bf1" secondAttribute="width" multiplier="0.65" id="4eV-vo-nei"/>
                             <constraint firstItem="ONQ-dg-eu2" firstAttribute="top" secondItem="JBs-BY-gRf" secondAttribute="bottom" id="5gp-ks-ehb"/>
                             <constraint firstItem="JBs-BY-gRf" firstAttribute="top" secondItem="x6x-4J-qy8" secondAttribute="bottom" id="85y-NM-rfe"/>
                             <constraint firstItem="JBs-BY-gRf" firstAttribute="centerX" secondItem="5T6-Nd-snC" secondAttribute="centerX" id="9ge-OL-Cu2"/>
                             <constraint firstItem="bYU-MT-e9P" firstAttribute="top" secondItem="IzK-g5-Bf1" secondAttribute="bottom" constant="30" id="ADE-Kr-ucT"/>
                             <constraint firstItem="syL-jh-Eyz" firstAttribute="leading" secondItem="bYU-MT-e9P" secondAttribute="trailing" id="CEh-C9-4VL"/>
                             <constraint firstItem="gdv-cj-R51" firstAttribute="top" secondItem="syL-jh-Eyz" secondAttribute="bottom" constant="5" id="EZr-9k-z4U"/>
+                            <constraint firstItem="syL-jh-Eyz" firstAttribute="leading" secondItem="bYU-MT-e9P" secondAttribute="trailing" constant="5" id="J0M-Ws-vYW"/>
                             <constraint firstItem="bYU-MT-e9P" firstAttribute="leading" secondItem="5T6-Nd-snC" secondAttribute="leading" constant="40" id="JAl-f8-BYn"/>
                             <constraint firstItem="5uj-r4-3Sd" firstAttribute="top" secondItem="IzK-g5-Bf1" secondAttribute="bottom" id="JxY-CU-yN6"/>
                             <constraint firstItem="29u-K7-pRc" firstAttribute="top" secondItem="yEz-HT-WYQ" secondAttribute="bottom" id="Kq8-3X-xGA"/>
@@ -1041,6 +1041,8 @@ kde chcete nakupovat</string>
                                 <exclude reference="Q7b-dc-l4x"/>
                                 <exclude reference="ADE-Kr-ucT"/>
                                 <exclude reference="vew-mq-66s"/>
+                                <exclude reference="2WM-Nk-c2k"/>
+                                <exclude reference="CEh-C9-4VL"/>
                                 <exclude reference="EZr-9k-z4U"/>
                                 <exclude reference="sk6-zp-KmF"/>
                             </mask>
@@ -1067,11 +1069,11 @@ kde chcete nakupovat</string>
                         <viewControllerLayoutGuide type="bottom" id="E7Q-8V-qMn"/>
                     </layoutGuides>
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="o2o-OM-onA">
-                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="240"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nejste ještě OpenShoperem?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-oN-8vj">
-                                <rect key="frame" x="25" y="20" width="210" height="21"/>
+                                <rect key="frame" x="25" y="19" width="210" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EKx-VS-Np2"/>
                                     <constraint firstAttribute="width" constant="230" id="PsK-NJ-1bf"/>
@@ -1086,7 +1088,7 @@ kde chcete nakupovat</string>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-Ed-Wsg" customClass="BFTextField">
-                                <rect key="frame" x="25" y="61" width="230" height="37"/>
+                                <rect key="frame" x="25" y="60" width="230" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="fGt-Gh-76U"/>
@@ -1103,7 +1105,7 @@ kde chcete nakupovat</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Heslo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AAL-Wv-TgK" customClass="BFTextField">
-                                <rect key="frame" x="25" y="113" width="230" height="37"/>
+                                <rect key="frame" x="25" y="112" width="230" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
@@ -1117,7 +1119,7 @@ kde chcete nakupovat</string>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-pa-pVw" customClass="BFButton">
-                                <rect key="frame" x="25" y="210" width="230" height="48"/>
+                                <rect key="frame" x="25" y="169" width="230" height="48"/>
                                 <color key="backgroundColor" red="0.93929904699325562" green="0.058065511286258698" blue="0.38389852643013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="FfB-s7-qsl"/>
@@ -1138,7 +1140,7 @@ kde chcete nakupovat</string>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-to-WiW" userLabel="Bottom spacing">
-                                <rect key="frame" x="130" y="258" width="20" height="19"/>
+                                <rect key="frame" x="130" y="217" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="cFc-ct-8Oq"/>
@@ -1147,82 +1149,6 @@ kde chcete nakupovat</string>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="cFc-ct-8Oq"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnF-o8-6eO" userLabel="Checkmark Center">
-                                <rect key="frame" x="130" y="170" width="20" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="WXc-CR-xFR"/>
-                                    <constraint firstAttribute="height" constant="20" id="b2n-dF-PTb"/>
-                                    <constraint firstAttribute="height" constant="20" id="zPb-18-SPJ"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="zPb-18-SPJ"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MW-8n-ac0" userLabel="Checkmark Woman Spacer">
-                                <rect key="frame" x="150" y="170" width="105" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="KDA-8M-03H"/>
-                                    <constraint firstAttribute="width" constant="20" id="U5o-wX-9v1"/>
-                                    <constraint firstAttribute="height" constant="20" id="xvY-dr-EMp"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="U5o-wX-9v1"/>
-                                        <exclude reference="xvY-dr-EMp"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-kF-xSr" userLabel="Checkmark Man Spacer">
-                                <rect key="frame" x="25" y="170" width="105" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="gaq-Bd-ojC"/>
-                                    <constraint firstAttribute="height" constant="20" id="paE-cP-ABg"/>
-                                    <constraint firstAttribute="height" constant="20" id="y1F-zh-iZN"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gaq-Bd-ojC"/>
-                                        <exclude reference="paE-cP-ABg"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEb-Bi-v9U" userLabel="Checkmark Man Center">
-                                <rect key="frame" x="73" y="170" width="10" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="10" id="5By-QS-oEE"/>
-                                    <constraint firstAttribute="width" constant="20" id="Nzq-5m-j92"/>
-                                    <constraint firstAttribute="height" constant="20" id="f5a-XR-z6k"/>
-                                    <constraint firstAttribute="height" constant="20" id="rvi-Dv-cqE"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Nzq-5m-j92"/>
-                                        <exclude reference="rvi-Dv-cqE"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGh-QZ-So4" userLabel="Checkmark Woman Center">
-                                <rect key="frame" x="198" y="170" width="10" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="jv8-Fj-Hht"/>
-                                    <constraint firstAttribute="height" constant="20" id="ksw-i2-DX1"/>
-                                    <constraint firstAttribute="width" constant="10" id="q1R-m2-rnT"/>
-                                    <constraint firstAttribute="width" constant="20" id="reL-YV-u2Q"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ksw-i2-DX1"/>
-                                        <exclude reference="reL-YV-u2Q"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1239,106 +1165,8 @@ kde chcete nakupovat</string>
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-Ib-QPj" userLabel="Man Checkmark" customClass="BFNCheckmarkView">
-                                <rect key="frame" x="45" y="166" width="28" height="28"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="28" id="ZcB-9i-bvw"/>
-                                    <constraint firstAttribute="height" constant="28" id="u1y-e9-iVY"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="circleLineWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.75113146551724141" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="circleLineColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsCircle" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateSelection" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="checkmarkManSelected:" destination="5tF-2H-ell" eventType="touchUpInside" id="AfD-V4-Cjt"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irD-hb-E4c" userLabel="Woman Checkmark" customClass="BFNCheckmarkView">
-                                <rect key="frame" x="165" y="166" width="28" height="28"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="3SD-XM-sdf"/>
-                                    <constraint firstAttribute="width" constant="28" id="UhU-gk-f8N"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.75113146549999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="circleLineColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="circleLineWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsCircle" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateSelection" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="checkmarkWomanSelected:" destination="5tF-2H-ell" eventType="touchUpInside" id="Uh5-ud-Yph"/>
-                                </connections>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RS-p8-be6" userLabel="Man Checkmark Overlay">
-                                <rect key="frame" x="25" y="165" width="105" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="I04-42-lkk"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="checkmarkManSelected:" destination="5tF-2H-ell" eventType="touchUpInside" id="oPv-Q1-AlF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYA-ZP-KKq" userLabel="Woman Checkmark Overlay">
-                                <rect key="frame" x="150" y="165" width="105" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="sLE-ct-boB"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="checkmarkWomanSelected:" destination="5tF-2H-ell" eventType="touchUpInside" id="PVJ-KE-Xct"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muž" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="Mzx-IP-jVc">
-                                <rect key="frame" x="83" y="170" width="42" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="fwP-Ge-5WO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.5" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Žena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-vi-8mk">
-                                <rect key="frame" x="203" y="169" width="52" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="JTb-9r-6mV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.5" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdY-T8-Hie" customClass="BFButton">
-                                <rect key="frame" x="237" y="20" width="18" height="22"/>
+                                <rect key="frame" x="237" y="19" width="18" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="J6m-I7-6xF"/>
                                     <constraint firstAttribute="height" constant="22" id="Qu3-ML-8WE"/>
@@ -1351,62 +1179,30 @@ kde chcete nakupovat</string>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="centerX" secondItem="o2o-OM-onA" secondAttribute="centerX" id="09w-QV-WEH"/>
                             <constraint firstItem="mjg-to-WiW" firstAttribute="centerX" secondItem="o2o-OM-onA" secondAttribute="centerX" id="1Xj-Q6-kz5"/>
-                            <constraint firstItem="pGh-QZ-So4" firstAttribute="leading" secondItem="irD-hb-E4c" secondAttribute="trailing" constant="5" id="2b2-ej-75O"/>
-                            <constraint firstItem="8kp-kF-xSr" firstAttribute="leading" secondItem="Klg-Ib-QPj" secondAttribute="trailing" constant="5" id="2i2-aJ-sem"/>
-                            <constraint firstItem="Mzx-IP-jVc" firstAttribute="top" secondItem="AAL-Wv-TgK" secondAttribute="bottom" constant="20" id="3Xs-SZ-d5B"/>
-                            <constraint firstItem="DEb-Bi-v9U" firstAttribute="leading" secondItem="Klg-Ib-QPj" secondAttribute="trailing" id="3pi-EV-SNd"/>
                             <constraint firstItem="yc5-oN-8vj" firstAttribute="top" secondItem="o2o-OM-onA" secondAttribute="top" constant="29" id="47m-sa-aIU"/>
-                            <constraint firstItem="6MW-8n-ac0" firstAttribute="trailing" secondItem="z6j-pa-pVw" secondAttribute="trailing" id="4ai-Yq-8oq"/>
+                            <constraint firstItem="z6j-pa-pVw" firstAttribute="top" secondItem="AAL-Wv-TgK" secondAttribute="bottom" constant="20" id="4u9-Wi-j1C"/>
                             <constraint firstAttribute="centerX" secondItem="z6j-pa-pVw" secondAttribute="centerX" id="7CZ-qR-Z6O"/>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="centerY" secondItem="8kp-kF-xSr" secondAttribute="centerY" id="9XI-Qm-GFy"/>
                             <constraint firstItem="cAH-yW-XrW" firstAttribute="top" secondItem="W2H-5g-NUe" secondAttribute="bottom" id="E4Y-FF-bgS"/>
                             <constraint firstItem="mjg-to-WiW" firstAttribute="top" secondItem="z6j-pa-pVw" secondAttribute="bottom" id="FDG-3j-9BL"/>
-                            <constraint firstItem="z6j-pa-pVw" firstAttribute="leading" secondItem="8kp-kF-xSr" secondAttribute="leading" id="Faj-Xv-JNt"/>
                             <constraint firstItem="AAL-Wv-TgK" firstAttribute="centerX" secondItem="Hgf-Ed-Wsg" secondAttribute="centerX" constant="4.5" id="GMg-kE-ejb"/>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="centerY" secondItem="Klg-Ib-QPj" secondAttribute="centerY" id="Geo-hK-DN5"/>
-                            <constraint firstItem="z6j-pa-pVw" firstAttribute="leading" secondItem="2RS-p8-be6" secondAttribute="leading" id="HUG-6k-1A5"/>
                             <constraint firstItem="cAH-yW-XrW" firstAttribute="centerX" secondItem="o2o-OM-onA" secondAttribute="centerX" id="JvE-g7-gAI"/>
-                            <constraint firstItem="DS1-vi-8mk" firstAttribute="leading" secondItem="irD-hb-E4c" secondAttribute="trailing" constant="10" id="Kjj-X7-X4J"/>
                             <constraint firstItem="AAL-Wv-TgK" firstAttribute="top" secondItem="Hgf-Ed-Wsg" secondAttribute="bottom" constant="15" id="MLw-BI-rKl"/>
-                            <constraint firstItem="Klg-Ib-QPj" firstAttribute="top" secondItem="AAL-Wv-TgK" secondAttribute="bottom" constant="16" id="Ma3-bQ-dgR"/>
                             <constraint firstItem="E7Q-8V-qMn" firstAttribute="top" secondItem="mjg-to-WiW" secondAttribute="bottom" constant="3" id="Mzr-kH-miu"/>
-                            <constraint firstItem="z6j-pa-pVw" firstAttribute="leading" secondItem="8kp-kF-xSr" secondAttribute="leading" id="PWV-Cw-jTd"/>
-                            <constraint firstItem="z6j-pa-pVw" firstAttribute="leading" secondItem="Klg-Ib-QPj" secondAttribute="leading" id="RNQ-kx-6sD"/>
-                            <constraint firstItem="6MW-8n-ac0" firstAttribute="centerY" secondItem="WnF-o8-6eO" secondAttribute="centerY" id="Rck-ju-qXH"/>
-                            <constraint firstItem="8kp-kF-xSr" firstAttribute="centerX" secondItem="DEb-Bi-v9U" secondAttribute="centerX" id="SPG-Ee-A8k"/>
-                            <constraint firstItem="z6j-pa-pVw" firstAttribute="top" secondItem="Mzx-IP-jVc" secondAttribute="bottom" constant="20" id="SzO-2H-Z0H"/>
-                            <constraint firstItem="DS1-vi-8mk" firstAttribute="trailing" secondItem="z6j-pa-pVw" secondAttribute="trailing" id="TCW-3j-wzy"/>
                             <constraint firstItem="WdY-T8-Hie" firstAttribute="trailing" secondItem="Hgf-Ed-Wsg" secondAttribute="trailing" id="TIy-4W-k5Q"/>
                             <constraint firstItem="AAL-Wv-TgK" firstAttribute="leading" secondItem="Hgf-Ed-Wsg" secondAttribute="leading" id="U3E-AT-UyG"/>
                             <constraint firstAttribute="trailing" secondItem="z6j-pa-pVw" secondAttribute="trailing" constant="25" id="UH5-2C-M3i"/>
                             <constraint firstItem="yc5-oN-8vj" firstAttribute="top" secondItem="cAH-yW-XrW" secondAttribute="bottom" id="WNT-5K-fUK"/>
-                            <constraint firstItem="irD-hb-E4c" firstAttribute="centerY" secondItem="WnF-o8-6eO" secondAttribute="centerY" id="WWI-m3-tG2"/>
                             <constraint firstItem="z6j-pa-pVw" firstAttribute="leading" secondItem="o2o-OM-onA" secondAttribute="leading" constant="25" id="YGl-OE-kXa"/>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="centerY" secondItem="2RS-p8-be6" secondAttribute="centerY" id="cLc-c5-uXC"/>
                             <constraint firstItem="WdY-T8-Hie" firstAttribute="leading" secondItem="yc5-oN-8vj" secondAttribute="trailing" constant="2" id="cLn-10-uJs"/>
                             <constraint firstAttribute="centerX" secondItem="Hgf-Ed-Wsg" secondAttribute="centerX" id="eIK-5N-yHc"/>
                             <constraint firstItem="AAL-Wv-TgK" firstAttribute="height" secondItem="Hgf-Ed-Wsg" secondAttribute="height" id="eu4-q9-Z8T"/>
-                            <constraint firstItem="TYA-ZP-KKq" firstAttribute="leading" secondItem="WnF-o8-6eO" secondAttribute="trailing" id="f7w-zK-nNp"/>
                             <constraint firstAttribute="centerX" secondItem="yc5-oN-8vj" secondAttribute="centerX" id="hSX-Ti-ekb"/>
-                            <constraint firstItem="6MW-8n-ac0" firstAttribute="leading" secondItem="WnF-o8-6eO" secondAttribute="trailing" id="hjx-Qa-Clh"/>
-                            <constraint firstItem="TYA-ZP-KKq" firstAttribute="centerY" secondItem="WnF-o8-6eO" secondAttribute="centerY" id="hoz-AK-iEM"/>
                             <constraint firstItem="Hgf-Ed-Wsg" firstAttribute="leading" secondItem="o2o-OM-onA" secondAttribute="leading" constant="25" id="hye-Jo-F0f"/>
                             <constraint firstAttribute="trailing" secondItem="Hgf-Ed-Wsg" secondAttribute="trailing" constant="25" id="iqC-UZ-MW1"/>
-                            <constraint firstItem="pGh-QZ-So4" firstAttribute="centerX" secondItem="6MW-8n-ac0" secondAttribute="centerX" id="jjf-ai-7AC"/>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="leading" secondItem="2RS-p8-be6" secondAttribute="trailing" id="kW3-dx-v8X"/>
                             <constraint firstItem="mjg-to-WiW" firstAttribute="height" secondItem="cAH-yW-XrW" secondAttribute="height" id="lra-jA-o94"/>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="leading" secondItem="8kp-kF-xSr" secondAttribute="trailing" id="ltL-7g-b9n"/>
-                            <constraint firstItem="TYA-ZP-KKq" firstAttribute="trailing" secondItem="z6j-pa-pVw" secondAttribute="trailing" id="nP0-HH-fij"/>
-                            <constraint firstItem="WnF-o8-6eO" firstAttribute="leading" secondItem="Mzx-IP-jVc" secondAttribute="trailing" constant="5" id="pNM-db-99U"/>
-                            <constraint firstItem="pGh-QZ-So4" firstAttribute="centerY" secondItem="6MW-8n-ac0" secondAttribute="centerY" id="qjH-qi-aRP"/>
                             <constraint firstItem="yc5-oN-8vj" firstAttribute="leading" secondItem="Hgf-Ed-Wsg" secondAttribute="leading" id="rx4-nD-7sR"/>
                             <constraint firstItem="WdY-T8-Hie" firstAttribute="centerY" secondItem="yc5-oN-8vj" secondAttribute="centerY" id="t4N-HY-or4"/>
-                            <constraint firstItem="DS1-vi-8mk" firstAttribute="centerY" secondItem="WnF-o8-6eO" secondAttribute="centerY" id="toR-1g-fYD"/>
-                            <constraint firstItem="8kp-kF-xSr" firstAttribute="centerY" secondItem="DEb-Bi-v9U" secondAttribute="centerY" id="vma-yY-59f"/>
-                            <constraint firstItem="z6j-pa-pVw" firstAttribute="top" secondItem="Klg-Ib-QPj" secondAttribute="bottom" constant="16" id="xPC-Gy-LSs"/>
-                            <constraint firstItem="Mzx-IP-jVc" firstAttribute="leading" secondItem="Klg-Ib-QPj" secondAttribute="trailing" constant="10" id="yaJ-8E-shy"/>
                             <constraint firstItem="AAL-Wv-TgK" firstAttribute="width" secondItem="Hgf-Ed-Wsg" secondAttribute="width" id="ycR-LE-bQ7"/>
                             <constraint firstItem="Hgf-Ed-Wsg" firstAttribute="top" secondItem="yc5-oN-8vj" secondAttribute="bottom" constant="20" id="z2J-a0-sbk"/>
                         </constraints>
@@ -1415,22 +1211,14 @@ kde chcete nakupovat</string>
                                 <exclude reference="47m-sa-aIU"/>
                                 <exclude reference="hSX-Ti-ekb"/>
                                 <exclude reference="GMg-kE-ejb"/>
-                                <exclude reference="2i2-aJ-sem"/>
-                                <exclude reference="Faj-Xv-JNt"/>
-                                <exclude reference="RNQ-kx-6sD"/>
-                                <exclude reference="SzO-2H-Z0H"/>
                             </mask>
                         </variation>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="280" height="260"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="280" height="280"/>
+                    <size key="freeformSize" width="280" height="240"/>
                     <connections>
-                        <outlet property="checkmarkMan" destination="Klg-Ib-QPj" id="Js9-fo-1hp"/>
-                        <outlet property="checkmarkManLabel" destination="Mzx-IP-jVc" id="E41-0g-5cn"/>
-                        <outlet property="checkmarkWoman" destination="irD-hb-E4c" id="XGO-qD-WLV"/>
-                        <outlet property="checkmarkWomanLabel" destination="DS1-vi-8mk" id="Vh3-AT-HFf"/>
                         <outlet property="emailTextField" destination="Hgf-Ed-Wsg" id="Pt1-ai-ORz"/>
                         <outlet property="passwordTextField" destination="AAL-Wv-TgK" id="qYh-Jm-pfs"/>
                         <outlet property="registerButton" destination="z6j-pa-pVw" id="TXM-hL-uBW"/>
@@ -2103,19 +1891,19 @@ kde chcete nakupovat</string>
                                     <rect key="frame" x="0.0" y="241.5" width="600" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3 pcs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zg3-rg-aWG">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 pcs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zg3-rg-aWG">
                                             <rect key="frame" x="15" y="0.0" width="37" height="20"/>
                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="150 EUR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSB-OO-mKf">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 EUR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSB-OO-mKf">
                                             <rect key="frame" x="165" y="0.0" width="420" height="20"/>
                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsd-Ya-rte">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsd-Ya-rte">
                                             <rect key="frame" x="15" y="23" width="420" height="32"/>
                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                             <state key="normal" title="Do you have a discount code?">
@@ -2199,13 +1987,13 @@ kde chcete nakupovat</string>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Boty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-5L-d6Q">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-5L-d6Q">
                                                     <rect key="frame" x="100" y="13" width="409" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="modré / XXL / " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-og-1qK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="modré / XXL / " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-og-1qK">
                                                     <rect key="frame" x="100" y="64" width="409" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2220,7 +2008,7 @@ kde chcete nakupovat</string>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qi-Jh-Ksl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qi-Jh-Ksl">
                                                     <rect key="frame" x="100" y="39" width="409" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2259,13 +2047,13 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sleva na všechno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oI-5Z-EzL">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleva na všechno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oI-5Z-EzL">
                                                     <rect key="frame" x="23" y="17" width="110" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-uQ-RJg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-uQ-RJg">
                                                     <rect key="frame" x="23" y="37" width="44" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.93929904699325562" green="0.058065511286258698" blue="0.38389852643013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2561,19 +2349,19 @@ kde chcete nakupovat</string>
                                     <rect key="frame" x="0.0" y="329.5" width="600" height="139"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1259 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKH-Na-F3R">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1259 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKH-Na-F3R">
                                             <rect key="frame" x="360" y="3" width="230" height="22"/>
                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="cena s DPH" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUH-9A-80R">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cena s DPH" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUH-9A-80R">
                                             <rect key="frame" x="360" y="30" width="230" height="17"/>
                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-yE-T9I" customClass="BFAlignedImageButton">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-yE-T9I" customClass="BFAlignedImageButton">
                                             <rect key="frame" x="8" y="62" width="584" height="44"/>
                                             <color key="backgroundColor" red="0.93929904699325562" green="0.058065511286258698" blue="0.38389852643013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -2590,7 +2378,7 @@ kde chcete nakupovat</string>
                                                 <action selector="showSummaryViewController:" destination="wrj-yH-KOh" eventType="touchUpInside" id="WAf-0D-ejx"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kliknutím na &quot;Objednat&quot; souhlasíte s obchodními podmínkami." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbR-xA-qUn">
+                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kliknutím na &quot;Objednat&quot; souhlasíte s obchodními podmínkami." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbR-xA-qUn">
                                             <rect key="frame" x="8" y="3" width="350" height="16"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
@@ -2630,7 +2418,7 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="41.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Způsob převzetí" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54p-ZL-LSb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Způsob převzetí" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54p-ZL-LSb">
                                                     <rect key="frame" x="16" y="12" width="170" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2709,13 +2497,13 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-Df-NCT" customClass="BFLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-Df-NCT" customClass="BFLabel">
                                                     <rect key="frame" x="23" y="10" width="332" height="19"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-VO-JFD" customClass="BFLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-VO-JFD" customClass="BFLabel">
                                                     <rect key="frame" x="376" y="10" width="201" height="19"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2922,13 +2710,13 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celkem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-TI-I49">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Celkem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-TI-I49">
                                                     <rect key="frame" x="23" y="14" width="240" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12269 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-l2-sau">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12269 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-l2-sau">
                                                     <rect key="frame" x="268" y="14" width="309" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
@@ -2955,13 +2743,13 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Božena Tresková" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmZ-wk-QPD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Božena Tresková" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmZ-wk-QPD">
                                                     <rect key="frame" x="23" y="14" width="290" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U Lososa 5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da1-MN-sNU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="U Lososa 5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da1-MN-sNU">
                                                     <rect key="frame" x="318" y="14" width="259" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
@@ -2988,13 +2776,13 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snehoruzove boty do roboty na podpatku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-gH-F4Y">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Snehoruzove boty do roboty na podpatku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-gH-F4Y">
                                                     <rect key="frame" x="23" y="14" width="360" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12269 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC4-TA-70K">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12269 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC4-TA-70K">
                                                     <rect key="frame" x="388" y="14" width="189" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -3030,13 +2818,13 @@ kde chcete nakupovat</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doprava" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-8t-Kbr">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doprava" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-8t-Kbr">
                                                     <rect key="frame" x="23" y="14" width="180" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PPL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXa-Kx-Tii">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PPL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXa-Kx-Tii">
                                                     <rect key="frame" x="208" y="14" width="369" height="17"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -3769,19 +3557,19 @@ kde chcete nakupovat</string>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwE-B3-DZY" userLabel="InfoView">
                                 <rect key="frame" x="0.0" y="151" width="300" height="199"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Praha – Výdejna radosti Dejvická" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84I-GY-bbu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Praha – Výdejna radosti Dejvická" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84I-GY-bbu">
                                         <rect key="frame" x="10" y="10" width="280" height="23"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chrudimská 2364/4, 130 00 Praha 3 Vinohrady" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxJ-er-PRv">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chrudimská 2364/4, 130 00 Praha 3 Vinohrady" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxJ-er-PRv">
                                         <rect key="frame" x="10" y="38" width="280" height="37"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                         <color key="textColor" red="0.43510138990000002" green="0.4390381277" blue="0.4514439106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Note" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="L81-0G-Vpa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="L81-0G-Vpa">
                                         <rect key="frame" x="20" y="165" width="260" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="SPB-aa-Qrc"/>
@@ -3790,7 +3578,7 @@ kde chcete nakupovat</string>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-c5-OI1" customClass="BFBranchTransportView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-c5-OI1" customClass="BFBranchTransportView">
                                         <rect key="frame" x="10" y="85" width="280" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="129" translatesAutoresizingMaskIntoConstraints="NO" id="jn5-zs-6vg">
@@ -4190,10 +3978,10 @@ kde chcete nakupovat</string>
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXE-ad-xbx">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXE-ad-xbx">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                                             <subviews>
-                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WWS-86-Qce">
+                                                <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WWS-86-Qce">
                                                     <rect key="frame" x="280" y="92" width="39" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="6p6-fm-WiV"/>
@@ -4204,7 +3992,7 @@ kde chcete nakupovat</string>
                                                         <action selector="pageControlClicked:" destination="0tO-2S-iaK" eventType="valueChanged" id="RbZ-uH-5ac"/>
                                                     </connections>
                                                 </pageControl>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRW-gz-sbP" customClass="SwipeView">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRW-gz-sbP" customClass="SwipeView">
                                                     <rect key="frame" x="0.0" y="10" width="600" height="77"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
@@ -4219,7 +4007,7 @@ kde chcete nakupovat</string>
                                                 <constraint firstItem="SRW-gz-sbP" firstAttribute="leading" secondItem="WXE-ad-xbx" secondAttribute="leading" id="rSc-zI-L5j"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ls3-Xe-fRf" customClass="BFWishlistButtonView">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ls3-Xe-fRf" customClass="BFWishlistButtonView">
                                             <rect key="frame" x="540" y="62" width="50" height="50"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vT-mt-l0H" customClass="BFButton">
@@ -4270,7 +4058,7 @@ kde chcete nakupovat</string>
                                                 <outlet property="wishlistButton" destination="2vT-mt-l0H" id="4bf-NT-AS0"/>
                                             </connections>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Very long product name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-AQ-8Mr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="Very long product name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-AQ-8Mr">
                                             <rect key="frame" x="10" y="122" width="580" height="18"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -4286,7 +4074,7 @@ kde chcete nakupovat</string>
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="1599 CZK 99 CZK (-48%)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122" translatesAutoresizingMaskIntoConstraints="NO" id="Crj-Uh-rhB">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" misplaced="YES" text="1599 CZK 99 CZK (-48%)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122" translatesAutoresizingMaskIntoConstraints="NO" id="Crj-Uh-rhB">
                                             <rect key="frame" x="10" y="145" width="580" height="30"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -4896,7 +4684,7 @@ kde chcete nakupovat</string>
                                             <constraint firstAttribute="width" constant="26" id="qYy-s9-UFw"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jdi do košíku" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-D9-tt2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jdi do košíku" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMI-D9-tt2">
                                         <rect key="frame" x="56" y="19" width="464" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="jmC-cD-cRY"/>
@@ -4957,6 +4745,9 @@ kde chcete nakupovat</string>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="dBe-ss-eM0"/>
+                    <connections>
+                        <outlet property="tooltip" destination="Pqt-av-woh" id="OnF-6Y-cJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuO-uI-4w1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="iym-KG-LUt">
@@ -5422,7 +5213,7 @@ kde chcete nakupovat</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-jG-stf">
                                                     <rect key="frame" x="0.0" y="229" width="181" height="73"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" misplaced="YES" text="Very long product name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dy-bE-GxF">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Very long product name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dy-bE-GxF">
                                                             <rect key="frame" x="3" y="3" width="175" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="guW-8o-Wef"/>
@@ -5431,7 +5222,7 @@ kde chcete nakupovat</string>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" misplaced="YES" text="1599 CZK 99 CZK (-48%)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvj-Ic-Ef2">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="1599 CZK 99 CZK (-48%)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvj-Ic-Ef2">
                                                             <rect key="frame" x="3" y="24" width="142" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="luT-of-j8R"/>

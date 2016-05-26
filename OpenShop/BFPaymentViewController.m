@@ -45,15 +45,15 @@ static NSString *const unwindToOrderFormSegueIdentifier = @"unwindToOrderFormSeg
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationPayment, @"Payment") uppercaseString];
-    
     // setup table view cell extensions
     [self setupExtensions];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationPayment, @"Payment") uppercaseString];
+    
     [self refreshFooterButton];
 }
 

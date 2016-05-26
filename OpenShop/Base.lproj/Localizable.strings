@@ -9,8 +9,8 @@
 /* %@ products */
 "1" = "%@ products";
 
-/* Recommending */
-"2" = "Recommending";
+/* Recommended */
+"2" = "Recommended";
 
 /* About product */
 "3" = "About product";

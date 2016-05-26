@@ -52,11 +52,14 @@
     
     // setup keyboard toolbar and textfields
     [self setupTextFields];
-    // default texts
-    [self updateTexts];
     // gender
     self.gender = UserGenderFemale;
     [self.checkmarkWoman setSelected:true withAnimation:false];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self updateTexts];
 }
 
 #pragma mark - Input fields setup

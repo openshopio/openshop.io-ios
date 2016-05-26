@@ -129,8 +129,6 @@ static NSInteger const confirmButtonIndex = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationShoppingCart, @"Shopping cart") uppercaseString];
     // empty data set customization
     [self customizeEmptyDataSet];
     
@@ -143,6 +141,8 @@ static NSInteger const confirmButtonIndex = 1;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationShoppingCart, @"Shopping cart") uppercaseString];
     // fetch data
     [self reloadDataFromNetwork];
 }

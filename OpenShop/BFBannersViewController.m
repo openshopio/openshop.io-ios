@@ -54,9 +54,6 @@ static NSString *const productsSegueIdentifier      = @"productsSegue";
     // register for remote notifications if not in the testing environment
     [BFPushNotificationHandler tryToRegisterForRemoteNotifications];
 
-    // title view
-    [self.navigationController setCustomTitleViewText:[BFLocalizedString(kTranslationJustArrived, @"Just arrived") uppercaseString]];
-
     // empty data set customization
     [self customizeEmptyDataSet];
     
@@ -68,6 +65,13 @@ static NSString *const productsSegueIdentifier      = @"productsSegue";
     
     // reload banners if the shop changes
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // title view
+    [self.navigationController setCustomTitleViewText:[BFLocalizedString(kTranslationJustArrived, @"Just arrived") uppercaseString]];
 }
 
 #pragma mark - Table View Cell Extensions

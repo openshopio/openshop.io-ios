@@ -63,9 +63,6 @@ static NSString *const orderDetailSegueIdentifier = @"orderDetailSegue";
     // setup orders info
     [self setupOrdersInfo];
     
-    // title view
-    [self.navigationController setCustomTitleViewText:[BFLocalizedString(kTranslationMyOrders, @"My orders") uppercaseString]];
-    
     // empty data set customization
     [self customizeEmptyDataSet];
     
@@ -76,9 +73,10 @@ static NSString *const orderDetailSegueIdentifier = @"orderDetailSegue";
     [self reloadDataFromNetwork];
 }
 
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    // title view
+    [self.navigationController setCustomTitleViewText:[BFLocalizedString(kTranslationMyOrders, @"My orders") uppercaseString]];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

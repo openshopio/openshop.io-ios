@@ -66,13 +66,15 @@ static CGFloat const horizontalCellContentMargin = 15.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    [self.navigationController setCustomTitleViewText:[BFLocalizedString(kTranslationMyAccount, @"My account") uppercaseString]];
-    
     // table view cell extensions
     [self setupTableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    [self.navigationController setCustomTitleViewText:[BFLocalizedString(kTranslationMyAccount, @"My account") uppercaseString]];
+}
 
 #pragma mark - User Details
 

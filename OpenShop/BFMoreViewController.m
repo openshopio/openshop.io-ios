@@ -81,9 +81,6 @@ static CGFloat const dataSourceRefreshDelay       = 0.5;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationOpenShop, @"OpenShop") uppercaseString];
-    
     // setup table view cell extensiosn
     [self setupExtensions];
     
@@ -96,6 +93,11 @@ static CGFloat const dataSourceRefreshDelay       = 0.5;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shopChangedAction) name:BFLanguageDidChangeNotification object:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationOpenShop, @"OpenShop") uppercaseString];
+}
 
 #pragma mark - Table View Cell Extensions
 

@@ -81,6 +81,10 @@ static CGFloat const layoutChangeAnimationDuration = 0.4;
     [self setupConstraints];
     // default texts
     self.isDisplayingPasswordReset = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self updateTexts];
 }
 

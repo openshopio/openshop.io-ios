@@ -33,10 +33,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // tooltip content
-    self.tooltip.titleLabel.text = BFLocalizedString(kTranslationGoToCart, @"Go to the cart");
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // tooltip content
+    self.tooltip.titleLabel.text = BFLocalizedString(kTranslationGoToCart, @"Go to cart");
+}
 
 #pragma mark - Touch Actions
 

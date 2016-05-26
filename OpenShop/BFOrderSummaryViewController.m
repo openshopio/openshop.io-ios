@@ -63,14 +63,17 @@ static NSString *const embedFooterButtonSegueIdentifier            = @"embedFoot
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // title view
-    self.navigationItem.title = [BFLocalizedString(kTranslationSummary, @"Summary") uppercaseString];
-
     // setup table view cell extensions
     [self setupExtensions];
     
     // cart change listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cartDidChange) name:BFCartDidChangeNotification object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // title view
+    self.navigationItem.title = [BFLocalizedString(kTranslationSummary, @"Summary") uppercaseString];
 }
 
 #pragma mark - Table View Cell Extensions
