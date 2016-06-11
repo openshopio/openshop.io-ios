@@ -106,13 +106,10 @@ static NSString *const segueParameterNavigationTitle                 = @"navigat
     // build filter items
     NSMutableArray *filterItems = [NSMutableArray new];
     if([self.productVariantSizes count]) {
-        [filterItems addObject:@(BFNProductFilterTypeSize)];
+        [filterItems addObject:@(BFNProductFilterTypeSelect)];
     }
     if([self.productVariantColors count]) {
         [filterItems addObject:@(BFNProductFilterTypeColor)];
-    }
-    if([self.productBrands count]) {
-        [filterItems addObject:@(BFNProductFilterTypeBrand)];
     }
     self.filterSelectionItems = filterItems;
 }
@@ -154,13 +151,9 @@ static NSString *const segueParameterNavigationTitle                 = @"navigat
             [cell.headerlabel setText:BFLocalizedString(kTranslationFilterColor, @"Color")];
             [cell.subheaderLabel setText:[self formatSelectionText:(NSArray *)self.selectedProductVariantColors]];
             break;
-        case BFNProductFilterTypeSize:
+        case BFNProductFilterTypeSelect:
             [cell.headerlabel setText:BFLocalizedString(kTranslationFilterSize, @"Size")];
             [cell.subheaderLabel setText:[self formatSelectionText:(NSArray *)self.selectedProductVariantSizes]];
-            break;
-        case BFNProductFilterTypeBrand:
-            [cell.headerlabel setText:BFLocalizedString(kTranslationFilterBrand, @"Brand")];
-            [cell.subheaderLabel setText:[self formatSelectionText:(NSArray *)self.selectedProductBrands]];
             break;
         default:
             break;
@@ -211,18 +204,11 @@ static NSString *const segueParameterNavigationTitle                 = @"navigat
                             segueParameterSelectedItems : self.selectedProductVariantColors ?: @[],
                             };
             break;
-        case BFNProductFilterTypeSize:
+        case BFNProductFilterTypeSelect:
             segueParams = @{segueParameterNavigationTitle : BFLocalizedString(kTranslationFilterSize, @"Size"),
                             segueParameterFilterType : @(filterType),
                             segueParameterItems : self.productVariantSizes,
                             segueParameterSelectedItems : self.selectedProductVariantSizes ?: @[],
-                            };
-            break;
-        case BFNProductFilterTypeBrand:
-            segueParams = @{segueParameterNavigationTitle : BFLocalizedString(kTranslationFilterBrand, @"Brand"),
-                            segueParameterFilterType : @(filterType),
-                            segueParameterItems : self.productBrands,
-                            segueParameterSelectedItems : self.selectedProductBrands ?: @[],
                             };
             break;
         default:

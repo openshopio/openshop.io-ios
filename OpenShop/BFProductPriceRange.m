@@ -17,7 +17,7 @@
 #pragma mark - BFNFiltering Protocol
 
 - (BFNFilterType)filterType {
-    return BFNProductFilterTypePriceRange;
+    return BFNProductFilterTypeRange;
 }
 
 - (id)filterValue {

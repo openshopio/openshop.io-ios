@@ -48,9 +48,8 @@ typedef NS_ENUM(NSInteger, BFSortType) {
  */
 typedef NS_ENUM(NSInteger, BFNFilterType) {
     BFNProductFilterTypeColor = 0,
-    BFNProductFilterTypeSize,
-    BFNProductFilterTypeBrand,
-    BFNProductFilterTypePriceRange
+    BFNProductFilterTypeSelect,
+    BFNProductFilterTypeRange
 };
 
 /**

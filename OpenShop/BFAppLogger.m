@@ -8,7 +8,8 @@
 
 #import "BFAppLogger.h"
 
-#import <ATNetworkActivityLoggerLumberJack/ATNetworkActivityLoggerLumberJack.h>
+#import <AFNetworkActivityLogger.h>
+#import <AFNetworkActivityConsoleLogger.h>
 
 DDLogLevel ddLogLevel;
 
@@ -34,7 +35,9 @@ DDLogLevel ddLogLevel;
     [BFAppLogger setLogLevel:logLevel];
 
     // AFNetworking logger
-    [[ATNetworkActivityLoggerLumberJack sharedLogger] startLogging];
+    AFNetworkActivityConsoleLogger *logger = [AFNetworkActivityLogger sharedLogger].loggers.anyObject;
+    logger.level = AFLoggerLevelDebug;
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
     
     // CocoaLumberjack
     [DDLog addLogger:[DDASLLogger sharedInstance]];
@@ -46,7 +49,24 @@ DDLogLevel ddLogLevel;
 
 + (void)setLogLevel:(DDLogLevel)logLevel {
     ddLogLevel = logLevel;
-    [[ATNetworkActivityLoggerLumberJack sharedLogger] setDdLogLevel:logLevel];
+    AFNetworkActivityConsoleLogger *logger = [AFNetworkActivityLogger sharedLogger].loggers.anyObject;
+    switch (logLevel) {
+        case DDLogLevelOff:
+            logger.level = AFLoggerLevelOff;
+            break;
+        case DDLogLevelError:
+            logger.level = AFLoggerLevelError;
+            break;
+        case DDLogLevelInfo:
+            logger.level = AFLoggerLevelInfo;
+            break;
+        case DDLogLevelDebug:
+        case DDLogLevelWarning:
+        case DDLogLevelVerbose:
+        case DDLogLevelAll:
+            logger.level = AFLoggerLevelDebug;
+            break;
+    }
 }
 
 + (void)setColorsEnabled:(BOOL)colorsEnabled {

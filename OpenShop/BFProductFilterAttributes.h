@@ -55,6 +55,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) BFProductPriceRange *productPriceRange;
 
 /**
+ * Updates filter items in the datasource.
+ *
+ * @param items The filter items.
+ */
+- (void)updateFilterItems:(NSArray *)items;
+/**
  * Adds filter items to the datasource.
  *
  * @param items The filter items.

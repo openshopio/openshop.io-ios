@@ -41,12 +41,18 @@
 
 #pragma mark - Filter Items Modification
 
+- (void)updateFilterItems:(NSArray *)items {
+    // update each filter type with corresponding items
+    [self.productVariantColors removeAllObjects];
+    [self.productVariantSizes removeAllObjects];
+    [self addFilterItems:items];
+}
+
 - (void)addFilterItems:(NSArray *)items {
     // update each filter type with corresponding items
     [self.productVariantColors addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeColor]];
-    [self.productVariantSizes addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeSize]];
-    [self.productBrands addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeBrand]];
-    NSArray *priceRanges = [self filterArray:items usingFilterType:BFNProductFilterTypePriceRange];
+    [self.productVariantSizes addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeSelect]];
+    NSArray *priceRanges = [self filterArray:items usingFilterType:BFNProductFilterTypeRange];
     if([priceRanges count]) {
         self.productPriceRange = (BFProductPriceRange *)[priceRanges firstObject];
     }
@@ -55,9 +61,8 @@
 - (void)addSelectedFilterItems:(NSArray *)items {
     // add selected items of filter type
     [self.selectedProductVariantColors addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeColor]];
-    [self.selectedProductVariantSizes addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeSize]];
-    [self.selectedProductBrands addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeBrand]];
-    NSArray *priceRanges = [self filterArray:items usingFilterType:BFNProductFilterTypePriceRange];
+    [self.selectedProductVariantSizes addObjectsFromArray:[self filterArray:items usingFilterType:BFNProductFilterTypeSelect]];
+    NSArray *priceRanges = [self filterArray:items usingFilterType:BFNProductFilterTypeRange];
     if([priceRanges count]) {
         self.productPriceRange = (BFProductPriceRange *)[priceRanges firstObject];
     }
@@ -78,11 +83,8 @@
         case BFNProductFilterTypeColor:
             [self.selectedProductVariantColors removeAllObjects];
             break;
-        case BFNProductFilterTypeSize:
+        case BFNProductFilterTypeSelect:
             [self.selectedProductVariantSizes removeAllObjects];
-            break;
-        case BFNProductFilterTypeBrand:
-            [self.selectedProductBrands removeAllObjects];
             break;
         default:
             break;

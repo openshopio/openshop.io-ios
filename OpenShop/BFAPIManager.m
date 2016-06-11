@@ -11,6 +11,8 @@
 #import "BFKeyStore.h"
 #import "BFAppSessionInfo.h"
 #import "BFAppPreferences.h"
+#import "BFJSONRequestSerializer.h"
+#import "BFXMLRequestSerializer.h"
 #import "BFPushNotificationHandler.h"
 #import "BFJSONResponseSerializer.h"
 #import "NSNotificationCenter+BFAsyncNotifications.h"
@@ -42,15 +44,8 @@
 #import "BFTranslationsParsingOperation.h"
 #import "BFOrderDetailsParsingOperation.h"
 #import "BFOrderItem.h"
+#import <XMLDictionary.h>
 
-/**
- * API service request header key to identify client.
- */
-static NSString *const APIRequestHeaderClientVersion    = @"Client-Version";
-/**
- * API service request header key to identify device.
- */
-static NSString *const APIRequestHeaderDeviceToken      = @"Device-Token";
 /**
  * API service response header key to identify caching.
  */
@@ -84,6 +79,18 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
  * User authorization header is conditionally disabled if set.
  */
 @property (nonatomic, assign) BOOL authCondDisabled;
+/**
+ * Switch to different parser (e.g. XML) and disable JSON for a single request.
+ */
+@property (nonatomic, assign) BOOL jsonCondDisabled;
+/**
+ * JSON request serializer.
+ */
+@property (nonatomic, strong) BFJSONRequestSerializer *JSONRequestSerializer;
+/**
+ * XML request serializer.
+ */
+@property (nonatomic, strong) BFXMLRequestSerializer *XMLRequestSerializer;
 
 @end
 
@@ -110,19 +117,15 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
     self = [super initWithBaseURL:url];
     if (self) {
         // JSON request serializer params
-        AFJSONRequestSerializer* requestSerializer = [[AFJSONRequestSerializer alloc] init];
-        requestSerializer.writingOptions = NSJSONWritingPrettyPrinted;
-        [requestSerializer setValue:[BFAppSessionInfo versionBuild] forHTTPHeaderField:APIRequestHeaderClientVersion];
-        [requestSerializer setValue:[BFAppSessionInfo deviceToken] forHTTPHeaderField:APIRequestHeaderDeviceToken];
+        self.requestSerializer = [self JSONRequestSerializer];
         
-        self.requestSerializer = requestSerializer;
         // access token
         if ([BFKeystore isLoggedIn]) {
             [self setAccessToken];
         }
         
         // compound response serializer of custom JSON response serializer and default HTTP response serializer
-        self.responseSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[BFJSONResponseSerializer serializer], [AFHTTPResponseSerializer serializer]]];
+        self.responseSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[BFJSONResponseSerializer serializer], [AFHTTPResponseSerializer serializer], [AFXMLParserResponseSerializer serializer]]];
         // register for access token changes
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(accessTokenChanged:)
@@ -164,14 +167,40 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
 #pragma mark - Data Task
 
 - (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request
-                            completionHandler:(void (^)(NSURLResponse *, id, NSError *))originalCompletionHandler {
+                               uploadProgress:(nullable void (^)(NSProgress *uploadProgress)) uploadProgressBlock
+                             downloadProgress:(nullable void (^)(NSProgress *downloadProgress)) downloadProgressBlock
+                            completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler {
     // enable authorization if its conditionally disabled
     if(self.authCondDisabled) {
         [self enableAuthorization];
     }
-    return [super dataTaskWithRequest:request completionHandler:originalCompletionHandler];
+    if(self.jsonCondDisabled) {
+        self.requestSerializer = [self JSONRequestSerializer];
+    }
+    return [super dataTaskWithRequest:request uploadProgress:uploadProgressBlock downloadProgress:downloadProgressBlock completionHandler:completionHandler];
 }
 
+
+#pragma mark - Request Serializer
+
+- (BFJSONRequestSerializer *)JSONRequestSerializer {
+    if (!_JSONRequestSerializer) {
+        _JSONRequestSerializer = [[BFJSONRequestSerializer alloc] init];
+    }
+    return _JSONRequestSerializer;
+}
+
+- (BFXMLRequestSerializer *)XMLRequestSerializer {
+    if (!_XMLRequestSerializer) {
+        _XMLRequestSerializer = [[BFXMLRequestSerializer alloc] init];
+    }
+    return _XMLRequestSerializer;
+}
+
+- (void)XMLRequestSerializerForSingleRequest {
+    self.requestSerializer = [self XMLRequestSerializer];
+    self.jsonCondDisabled = true;
+}
 
 #pragma mark - Authorization
 
@@ -216,18 +245,18 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
 - (void)POSTInfoRequestWithURLString:(NSString *)URLString parameters:(BFJSONSerializableObject *)parameters completionBlock:(BFAPIInfoCompletionBlock) block {
     NSError *error;
     NSDictionary *dictParameters = [parameters JSONDictionaryWithError:&error];
-
+    
     if(error) {
         if(block) {
             block(nil, error);
         }
     }
     else {
-        [self POST:URLString parameters:dictParameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self POST:URLString parameters:dictParameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if (block) {
                 block(responseObject, nil);
             }
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             if (block) {
                 block(nil, error);
             }
@@ -245,13 +274,13 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
         }
     }
     else {
-        [self GET:URLString parameters:dictParameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self GET:URLString parameters:dictParameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if ([responseObject isKindOfClass:[NSDictionary class]]) {
                 if (block) {
                     block(responseObject, nil);
                 }
             }
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             if (block) {
                 block(nil, error);
             }
@@ -615,7 +644,7 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
 
 #pragma mark - Products & Variants
 
-- (void)findProductsWithInfo:(BFDataRequestProductInfo *)productInfo completionBlock:(BFAPIDataLoadingCompletionBlock) block {
+- (void)findProductsWithInfo:(BFDataRequestProductInfo *)productInfo completionBlock:(BFAPIDataLoadingCompletionBlock)block {
     [self dataLoadingRequestWithParameters:productInfo completionBlock:block executionBlock:^(NSDictionary *parameters) {
         NSString *requestURL;
         if (productInfo.menuCategory && productInfo.staticMenuCategory) {
@@ -906,6 +935,11 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
             block(nil, nil, error);
         }
     }];
+}
+
+#pragma mark - Credit Card Payments
+
+- (void)createTransactionToken:(nullable BFAPIDataLoadingCompletionBlock) block {
 }
 
 

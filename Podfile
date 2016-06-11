@@ -5,7 +5,7 @@ platform :ios, '8.0'
 
 xcodeproj 'OpenShop'
 
-pod 'AFNetworking', '~> 2.6.1'
+pod 'AFNetworking', '~> 3.0'
 pod 'SSKeychain', '~> 1.2.3'
 # custom MMRecord repo fixes check for NULL before setting a primary key value for a child entity
 pod 'MMRecord', :git => 'https://github.com/Skornos/MMRecord.git'
@@ -32,6 +32,7 @@ pod 'SwipeView', '~> 1.3.2'
 pod 'NMRangeSlider', :git => 'https://github.com/muZZkat/NMRangeSlider.git'
 pod 'ActionSheetPicker-3.0', '~> 2.0.4'
 pod 'DTCoreText', '~> 1.6.17'
+pod 'XMLDictionary', '~> 1.4'
 
 # clean status bar fro screenshots on simulator
 pod 'SimulatorStatusMagic', :configurations => ['Debug']
@@ -41,5 +42,5 @@ pod 'Onboard', :git => 'https://github.com/Skornos/Onboard.git'
 pod 'Fabric'
 pod 'Crashlytics'
 pod 'CrashlyticsLumberjack', '~> 2.0.0'
-pod 'ATNetworkActivityLoggerLumberJack', :git => 'https://github.com/adriantofan/ATNetworkActivityLoggerLumberJack'
+pod 'AFNetworkActivityLogger', :git => 'https://github.com/AFNetworking/AFNetworkActivityLogger.git', :branch => '3_0_0'
 pod 'CocoaLumberjack'

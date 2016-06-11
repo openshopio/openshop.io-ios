@@ -16,11 +16,11 @@
 /**
  * Buttons footer view height.
  */
-static CGFloat const filterButtonsFooterViewHeight = 90.0f;
+static CGFloat const filterButtonsFooterViewHeight = 90.0;
 /**
  * Filter cancel button border width.
  */
-static CGFloat const buttonBorderWidth             = 0.0f;
+static CGFloat const buttonBorderWidth             = 0.0;
 /**
  * Storyboard products segue identifier.
  */
@@ -152,7 +152,7 @@ static NSString *const segueParameterFilterType    = @"filterType";
             
             // selection options
             __weak __typeof__(self) weakSelf = self;
-            if(filterType && (BFNFilterType)[filterType integerValue] == BFNProductFilterTypeSize) {
+            if(filterType && (BFNFilterType)[filterType integerValue] == BFNProductFilterTypeSelect) {
                 selectionController.sortAlphabetically = false;
                 selectionController.fastNavigation = false;
             }

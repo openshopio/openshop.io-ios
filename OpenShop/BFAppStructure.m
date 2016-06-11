@@ -81,10 +81,9 @@
 
 + (NSDictionary *)filterTypeAPINames {
     return @{
-             @(BFNProductFilterTypeColor)      : @"Color",
-             @(BFNProductFilterTypeSize)       : @"Size",
-             @(BFNProductFilterTypePriceRange) : @"Price",
-             @(BFNProductFilterTypeBrand)      : @"Brand"
+             @(BFNProductFilterTypeColor)      : @"color",
+             @(BFNProductFilterTypeSelect)     : @"select",
+             @(BFNProductFilterTypeRange)      : @"range"
              };
 }
 

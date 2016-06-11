@@ -456,16 +456,13 @@ static CGFloat const buttonBorderWidth                                    = 1.0;
         if(self.product.imageURL) {
             [self.tableViewController.view.window showIndeterminateSmallProgressOverlayWithTitle:nil animated:YES];
             
-            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:(NSURL *)[NSURL URLWithString:(NSString *)self.product.imageURL]];
-            [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
-
             __weak __typeof__(self) weakSelf = self;
             __weak __typeof__(self.tableViewController) weakController = self.tableViewController;
-            AFHTTPRequestOperation *imageRequestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-            imageRequestOperation.responseSerializer = [AFImageResponseSerializer serializer];
 
-            // download product image
-            [imageRequestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSURL *URL = [NSURL URLWithString:(NSString *)self.product.imageURL];
+            AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+            manager.responseSerializer = [AFImageResponseSerializer serializer];
+            [manager GET:URL.absoluteString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
                 __typeof__(weakSelf) strongSelf = weakSelf;
                 [weakController.view.window dismissAllOverlaysWithCompletion:^{
                     BFShareImageProvider *imageProvider = [[BFShareImageProvider alloc] initWithImage:responseObject];
@@ -473,14 +470,13 @@ static CGFloat const buttonBorderWidth                                    = 1.0;
                     // present activity view controller
                     [strongSelf presentActivityViewControllerWithItems:itemsToShare fromSender:sender];
                 } animated:YES];
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            } failure:^(NSURLSessionTask *operation, NSError *error) {
                 [weakController.view.window dismissAllOverlaysWithCompletion:^{
                     __typeof__(weakSelf) strongSelf = weakSelf;
                     // present activity view controller
                     [strongSelf presentActivityViewControllerWithItems:itemsToShare fromSender:sender];
                 } animated:YES];
             }];
-            [imageRequestOperation start];
         }
         else {
             // present activity view controller

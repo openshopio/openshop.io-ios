@@ -44,22 +44,6 @@ typedef void (^BFAPIDataLoadingCompletionBlock)(NSArray *_Nullable records, id _
 + (instancetype)sharedManager;
 
 
-#pragma mark - Authorization
-
-/**
- * Disables the user authorization header for future API requests.
- */
-- (void)disableAuthorization;
-/**
- * Conditionally disables the user authorization header for a single API request.
- */
-- (void)disableAuthorizationForSingleRequest;
-/**
- * Enables the user authorization header for future API requests.
- */
-- (void)enableAuthorization;
-
-
 #pragma mark - User Login & Registration
 
 /**
@@ -411,6 +395,14 @@ typedef void (^BFAPIDataLoadingCompletionBlock)(NSArray *_Nullable records, id _
  */
 - (void)findTranslationsCompletionBlock:(nullable BFAPIDataLoadingCompletionBlock) block;
 
+#pragma mark - Credit Card Payments
+
+/**
+ * Creates transaction token for the payment.
+ *
+ * @param block The block to call when the request completes.
+ */
+- (void)createTransactionToken:(nullable BFAPIDataLoadingCompletionBlock) block;
 
 
 @end

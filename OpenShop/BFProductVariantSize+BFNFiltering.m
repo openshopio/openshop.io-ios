@@ -29,7 +29,7 @@ static NSString *const BFProductVariantSizeValuePropertyJSONMapping  = @"value";
 #pragma mark - BFNFiltering Protocol
 
 - (BFNFilterType)filterType {
-    return BFNProductFilterTypeSize;
+    return BFNProductFilterTypeSelect;
 }
 
 - (id)filterValue {

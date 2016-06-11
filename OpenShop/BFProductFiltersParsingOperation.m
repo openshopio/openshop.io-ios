@@ -51,7 +51,7 @@ static NSString *const BFFiltersParsingRootElementKey = @"metadata.filters";
         
         // return results with respect to the existing records
         if(self.completion) {
-            self.completion(self.records ? self.records : filters, self.records ? filters : nil, nil);
+            self.completion(self.records ?: filters, self.records ? filters : nil, nil);
         }
     }
     else {

@@ -23,6 +23,10 @@
  */
 static NSString *const BFProductFilterTypeParsingNameElementKey = @"name";
 /**
+ * The product filter type element key path in a raw JSON data.
+ */
+static NSString *const BFProductFilterTypeParsingTypeElementKey = @"type";
+/**
  * The product filter type values element key path in a raw JSON data.
  */
 static NSString *const BFProductFilterTypeParsingValuesElementKey = @"values";
@@ -47,7 +51,7 @@ static NSString *const BFProductFilterTypeParsingValuesElementKey = @"values";
         [self.managedObjectContext performBlockAndWait:^{
             NSMutableArray *filters = [[NSMutableArray alloc]init];
             // filter type name
-            NSString *filterTypeName = [filterType objectForKey:BFProductFilterTypeParsingNameElementKey];
+            NSString *filterTypeName = [filterType objectForKey:BFProductFilterTypeParsingTypeElementKey];
             if(filterTypeName && [BFAppStructure filterTypeFromAPIName:filterTypeName]) {
                 NSArray *filterTypeValues = [filterType objectForKey:BFProductFilterTypeParsingValuesElementKey];
                 // filter type values
@@ -96,15 +100,10 @@ static NSString *const BFProductFilterTypeParsingValuesElementKey = @"values";
                     filterItemID = filterItem ? [(BFProductVariantColor *)filterItem colorID] : nil;
                     break;
                 // size filter item
-                case BFNProductFilterTypeSize:
-                    filterItem = [BFProductVariantSizeParsedResult dataModelFromDictionary:(NSDictionary *)filterTypeValue];
-                    filterItemID = filterItem ? [(BFProductVariantSize *)filterItem sizeID] : nil;
-                    break;
-                // brand filter item
-                case BFNProductFilterTypeBrand:
-                    filterItem = [BFProductBrandParsedResult dataModelFromDictionary:(NSDictionary *)filterTypeValue];
-                    filterItemID = filterItem ? [(BFProductBrand *)filterItem brandID] : nil;
-                    break;
+//                case BFNProductFilterTypeSelect:
+//                    filterItem = [BFProductVariantSizeParsedResult dataModelFromDictionary:(NSDictionary *)filterTypeValue];
+//                    filterItemID = filterItem ? [(BFProductVariantSize *)filterItem sizeID] : nil;
+//                    break;
                 default:
                     break;
             }
@@ -117,7 +116,7 @@ static NSString *const BFProductFilterTypeParsingValuesElementKey = @"values";
     }
     
     // parse product price range filter item
-    if (filterType == BFNProductFilterTypePriceRange) {
+    if (filterType == BFNProductFilterTypeRange) {
         if([(NSArray *)filterTypeValues count] >= 2) {
             BFProductPriceRange *priceRange = [[BFProductPriceRange alloc]init];
             if([[filterTypeValues objectAtIndex:0]isKindOfClass:[NSNumber class]]) {

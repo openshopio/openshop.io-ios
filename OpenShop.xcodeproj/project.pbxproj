@@ -129,6 +129,8 @@
 		AD02B1281C5F585300303FF9 /* BFEditCartProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02B1271C5F585300303FF9 /* BFEditCartProductViewController.m */; };
 		AD0A813D1C635B6500348FAE /* MGSwipeTableCell+BFNSwipeGestureTutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0A813C1C635B6500348FAE /* MGSwipeTableCell+BFNSwipeGestureTutorial.m */; };
 		AD0BDEAE1C58B439001E6B9D /* BFButtonFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0BDEAD1C58B439001E6B9D /* BFButtonFooterView.m */; };
+		AD21964B1D0BF686005EED05 /* BFJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD21964A1D0BF686005EED05 /* BFJSONRequestSerializer.m */; };
+		AD21964E1D0C6BC6005EED05 /* BFXMLRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD21964D1D0C6BC6005EED05 /* BFXMLRequestSerializer.m */; };
 		AD27FD621C59195100B348FA /* BFDeliveryInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AD27FD5F1C59195100B348FA /* BFDeliveryInfo+CoreDataProperties.m */; };
 		AD27FD631C59195100B348FA /* BFDeliveryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD27FD611C59195100B348FA /* BFDeliveryInfo.m */; };
 		AD27FD661C5A609800B348FA /* BFCartProductsTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD27FD651C5A609800B348FA /* BFCartProductsTableViewCellExtension.m */; };
@@ -544,6 +546,10 @@
 		AD0A813C1C635B6500348FAE /* MGSwipeTableCell+BFNSwipeGestureTutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MGSwipeTableCell+BFNSwipeGestureTutorial.m"; sourceTree = "<group>"; };
 		AD0BDEAC1C58B439001E6B9D /* BFButtonFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFButtonFooterView.h; sourceTree = "<group>"; };
 		AD0BDEAD1C58B439001E6B9D /* BFButtonFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFButtonFooterView.m; sourceTree = "<group>"; };
+		AD2196491D0BF686005EED05 /* BFJSONRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFJSONRequestSerializer.h; sourceTree = "<group>"; };
+		AD21964A1D0BF686005EED05 /* BFJSONRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFJSONRequestSerializer.m; sourceTree = "<group>"; };
+		AD21964C1D0C6BC6005EED05 /* BFXMLRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFXMLRequestSerializer.h; sourceTree = "<group>"; };
+		AD21964D1D0C6BC6005EED05 /* BFXMLRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFXMLRequestSerializer.m; sourceTree = "<group>"; };
 		AD27FD5E1C59195100B348FA /* BFDeliveryInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "BFDeliveryInfo+CoreDataProperties.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AD27FD5F1C59195100B348FA /* BFDeliveryInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "BFDeliveryInfo+CoreDataProperties.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AD27FD601C59195100B348FA /* BFDeliveryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFDeliveryInfo.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1128,6 +1134,10 @@
 				5BD993D61BE7D95C00AE12C0 /* BFJSONSerializing.h */,
 				5BD993D71BE7D95C00AE12C0 /* BFKeystore.h */,
 				5BD993D81BE7D95C00AE12C0 /* BFKeystore.m */,
+				AD2196491D0BF686005EED05 /* BFJSONRequestSerializer.h */,
+				AD21964A1D0BF686005EED05 /* BFJSONRequestSerializer.m */,
+				AD21964C1D0C6BC6005EED05 /* BFXMLRequestSerializer.h */,
+				AD21964D1D0C6BC6005EED05 /* BFXMLRequestSerializer.m */,
 			);
 			name = Communication;
 			sourceTree = "<group>";
@@ -2149,6 +2159,7 @@
 				BBBE676E1C3F1833008B8ACE /* BFBranchViewController.m in Sources */,
 				AD0254371C4FE28F00FACB2B /* BFTextViewTableViewCell.m in Sources */,
 				5B60AEBC1C2DE2400018322B /* BFTranslation+CoreDataProperties.m in Sources */,
+				AD21964E1D0C6BC6005EED05 /* BFXMLRequestSerializer.m in Sources */,
 				5BEC729A1BF3FB4900239943 /* BFProductVariant.m in Sources */,
 				5BEDF9A51BEA17FB003CB9AC /* BFAppStructure.m in Sources */,
 				5B179B861BF491F300FC8CF9 /* BFOrderShipping+CoreDataProperties.m in Sources */,
@@ -2248,6 +2259,7 @@
 				ADF26D871C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m in Sources */,
 				BB99C44E1C45BACC0002A929 /* BFDataResponseWishlistInfo.m in Sources */,
 				5BF2B5001C12452300558B1D /* BFSearchQuery.m in Sources */,
+				AD21964B1D0BF686005EED05 /* BFJSONRequestSerializer.m in Sources */,
 				5B179B891BF4975700FC8CF9 /* BFDataRequestWishlistInfo.m in Sources */,
 				BBF8C0001C31369600A52084 /* BFTextField.m in Sources */,
 				AD0254401C50F7DA00FACB2B /* BFInputTableViewCellExtension.m in Sources */,

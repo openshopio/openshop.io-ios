@@ -31,7 +31,7 @@ static NSString *const BFProductBrandBrandNamePropertyJSONMapping = @"name";
 #pragma mark - BFNFiltering Protocol
 
 - (BFNFilterType)filterType {
-    return BFNProductFilterTypeBrand;
+    return BFNProductFilterTypeSelect;
 }
 
 - (id)filterValue {

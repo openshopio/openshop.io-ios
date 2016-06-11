@@ -31,7 +31,6 @@
     // app appearance
     [BFAppAppearance customizeAppearance:false];
     
-    
     [[BFAPIManager sharedManager]findTranslationsCompletionBlock:nil];
     [[NSNotificationCenter defaultCenter]addObserverForName:BFLanguageDidChangeNotification object:nil queue:[NSOperationQueue currentQueue] usingBlock:^(NSNotification *note) {
         [[BFAPIManager sharedManager]findTranslationsCompletionBlock:nil];
