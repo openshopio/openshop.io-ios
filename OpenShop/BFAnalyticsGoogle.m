@@ -8,18 +8,18 @@
 
 #import "BFAnalyticsGoogle.h"
 #import "BFProduct.h"
-#import <GAI.h>
-#import <GAIDictionaryBuilder.h>
-#import <GAIFields.h>
+#import <Google/Analytics.h>
 
 static NSString * const trackerName = @"foo";
-static NSString * const trackerUA   = @"UA-73690730";
+static NSString * const trackerUA   = @"UA-73690730-2";
 
 @implementation BFAnalyticsGoogle
 
 + (void)logPurchasedProduct:(BFProduct *)product amount:(NSNumber *)amount quantity:(NSNumber *)quantity category:(NSString *)category sku:(NSString *)sku transactionId:(NSString *)transactionId
 {
     id tracker = [[GAI sharedInstance] trackerWithName:trackerName trackingId:trackerUA];
+    // Enable IDFA collection.
+    [tracker setAllowIDFACollection:YES];
     [tracker send:[[GAIDictionaryBuilder createItemWithTransactionId:transactionId                             // (NSString) Transaction ID
                                                                 name:product.name                              // (NSString) Product Name
                                                                  sku:sku                                       // (NSString) Product SKU

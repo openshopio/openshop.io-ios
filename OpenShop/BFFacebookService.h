@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * `BFFacebookService` handles Facebook setup.
+ * `BFFacebookService` handles Facebook SDK setup.
  */
 @interface BFFacebookService : NSObject <UIApplicationDelegate>
 

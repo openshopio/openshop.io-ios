@@ -940,6 +940,50 @@ static NSString *const APIResponseDefaultCacheControl   = @"s-maxage=180, max-ag
 #pragma mark - Credit Card Payments
 
 - (void)createTransactionToken:(nullable BFAPIDataLoadingCompletionBlock) block {
+    NSString *requestURL = @"https://secure.3gdirectpay.com/API/v5/";
+    
+    // conditionally disable authorization
+    [self disableAuthorizationForSingleRequest];
+    // switch to XML parser for a single request
+    [self XMLRequestSerializerForSingleRequest];
+    NSDictionary *dict = @{
+                           @"API3G": @{
+                                   @"Request": @"createToken",
+                                   @"Transaction": @{
+                                           @"CompanyRef": @"49FKEOA",
+                                           @"PaymentCurrency": @"USD",
+                                           @"BackURL": @"openshop://failure",
+                                           @"PaymentAmount": @"450.00",
+                                           @"CompanyRefUnique": @"0",
+                                           @"PTL": @"5",
+                                           @"RedirectURL": @"openshop://success"
+                                           },
+                                   @"CompanyToken": @"96813331-CD39-43BE-B682-F18965A5EA9F",
+                                   @"Services": @{
+                                           @"Service": @{
+                                                   @"ServiceDescription": @"Clothes",
+                                                   @"ServiceType": @"3879",
+                                                   @"ServiceDate": @"2013/12/20 19:00"
+                                                   }
+                                           },
+                                   @"customerEmail": @"sk@mailinator.com",
+                                   @"customerFirstName": @"Pjotr",
+                                   @"customerLastName": @"Sko",
+                                   @"customerAddress": @"Tuck 21",
+                                   @"customerCity": @"Ostrava",
+                                   @"customerCountry": @"CZ",
+                                   @"customerDialCode": @"CZ",
+                                   @"customerPhone": @"987678432",
+                                   @"customerZip": @"50030"
+                                   }
+                           };
+    DDLogDebug(@"XML: %@", [dict XMLString]);
+    [self POST:requestURL parameters:[dict XMLString] progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *xml = [NSDictionary dictionaryWithXMLData:responseObject];
+        DDLogDebug(@"success XML: %@", xml);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        DDLogDebug(@"failure XML: %@", error);
+    }];
 }
 
 

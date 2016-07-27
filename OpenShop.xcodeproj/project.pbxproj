@@ -101,7 +101,6 @@
 		5BFAE3461C22D17900829E54 /* BFViewControllerPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE3421C22D17900829E54 /* BFViewControllerPopAnimator.m */; };
 		5BFAE34B1C22DABF00829E54 /* BFPushPopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE34A1C22DABF00829E54 /* BFPushPopNavigationController.m */; };
 		5BFAE34F1C22EF9B00829E54 /* BFOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFAE34D1C22EF9B00829E54 /* BFOnboardingViewController.m */; };
-		5F7EBD4A387A1E2C0DBA54B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84617750551202D93956A36 /* libPods.a */; };
 		724A039916E78EE500084E16 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724A039816E78EE500084E16 /* QuartzCore.framework */; };
 		724A03BD16E7A2AA00084E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724A03BC16E7A2AA00084E16 /* SystemConfiguration.framework */; };
 		724A03BF16E7AD1900084E16 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724A03BE16E7AD1900084E16 /* MobileCoreServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -115,6 +114,7 @@
 		72DDF75A16E7485F00887646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DDF75916E7485F00887646 /* Foundation.framework */; };
 		72DDF75C16E7485F00887646 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DDF75B16E7485F00887646 /* CoreGraphics.framework */; };
 		72DDF76416E7485F00887646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DDF76316E7485F00887646 /* main.m */; };
+		82E3DBD3AFC6960BDABF2E0B /* libPods-OpenShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F41C545F6F462048D736B0ED /* libPods-OpenShop.a */; };
 		A1D4C13F1817D70C0093ED50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D4C13E1817D70C0093ED50 /* Images.xcassets */; };
 		A1DE2E661834D2B1003C7FA4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DE2E651834D2B1003C7FA4 /* ImageIO.framework */; };
 		A1DE2E681834D320003C7FA4 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DE2E671834D320003C7FA4 /* AssetsLibrary.framework */; };
@@ -189,6 +189,9 @@
 		ADF26D831C4D12500020777B /* BFOrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF26D821C4D12500020777B /* BFOrderFormViewController.m */; };
 		ADF26D871C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF26D861C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m */; };
 		ADF627841C60D59B00A10A2B /* BFDataResponseCartInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF627831C60D59B00A10A2B /* BFDataResponseCartInfo.m */; };
+		ADF7CBEA1D490926003CAE09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF7CBE91D490926003CAE09 /* GoogleService-Info.plist */; };
+		ADF7CBED1D4909C2003CAE09 /* BFGoogleService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF7CBEC1D4909C2003CAE09 /* BFGoogleService.m */; };
+		ADF7CBEE1D490C7E003CAE09 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD305C891B1CA9780059B7F9 /* CoreData.framework */; };
 		ADFA0D391C4E7A19002771A1 /* BFAddressTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFA0D381C4E7A19002771A1 /* BFAddressTableViewCellExtension.m */; };
 		BB0266AB1C5A9491005E5E98 /* UIWindow+BFOverlays.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0266AA1C5A9491005E5E98 /* UIWindow+BFOverlays.m */; };
 		BB0266AE1C5AAC4E005E5E98 /* BFOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0266AC1C5AAC4E005E5E98 /* BFOrdersViewController.m */; };
@@ -314,6 +317,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21A87F886E2681C44242A3DB /* Pods-OpenShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0841101BD3CF8300DC83E6 /* BFNCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFNCheckmarkView.m; sourceTree = "<group>"; };
 		5B0841111BD3CF8300DC83E6 /* BFNCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFNCheckmarkView.h; sourceTree = "<group>"; };
 		5B1229A81C29B6EE004F6B55 /* BFStoryboardNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFStoryboardNoAnimationSegue.m; sourceTree = "<group>"; };
@@ -504,7 +508,6 @@
 		5BFAE34A1C22DABF00829E54 /* BFPushPopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFPushPopNavigationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5BFAE34D1C22EF9B00829E54 /* BFOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFOnboardingViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5BFAE34E1C22EF9B00829E54 /* BFOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFOnboardingViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		63C670ED5E06519AC280894B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		724A039816E78EE500084E16 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		724A03BC16E7A2AA00084E16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		724A03BE16E7AD1900084E16 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -520,12 +523,12 @@
 		72DDF75F16E7485F00887646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72DDF76316E7485F00887646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		72DDF76516E7485F00887646 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Prefix.pch; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		812C0161AAE54C2161FEC3CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A1805ED6182A886000B3BB94 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		A1D4C13E1817D70C0093ED50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1DE2E651834D2B1003C7FA4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A1DE2E671834D320003C7FA4 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		A1DE2E691834D325003C7FA4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A213FB5B5A395E1570243A77 /* Pods-OpenShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.release.xcconfig"; sourceTree = "<group>"; };
 		AD014D0E1C3BF1DC00D9C7B5 /* BFAppLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFAppLogger.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AD014D0F1C3BF1DC00D9C7B5 /* BFAppLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFAppLogger.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AD0254321C4FCD2100FACB2B /* BFNoteTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFNoteTableViewCellExtension.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -663,6 +666,10 @@
 		ADF26D861C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFOrderFormShippingPaymentTableViewCellExtension.m; sourceTree = "<group>"; };
 		ADF627821C60D59B00A10A2B /* BFDataResponseCartInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFDataResponseCartInfo.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		ADF627831C60D59B00A10A2B /* BFDataResponseCartInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFDataResponseCartInfo.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ADF7CBE91D490926003CAE09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADF7CBEB1D4909C2003CAE09 /* BFGoogleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFGoogleService.h; sourceTree = "<group>"; };
+		ADF7CBEC1D4909C2003CAE09 /* BFGoogleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFGoogleService.m; sourceTree = "<group>"; };
+		ADF7CBEF1D490CAA003CAE09 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ADFA0D371C4E7A19002771A1 /* BFAddressTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFAddressTableViewCellExtension.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		ADFA0D381C4E7A19002771A1 /* BFAddressTableViewCellExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFAddressTableViewCellExtension.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		BB0266A91C5A9491005E5E98 /* UIWindow+BFOverlays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+BFOverlays.h"; sourceTree = "<group>"; };
@@ -887,7 +894,8 @@
 		BBFF81E01C4BB6D00055A2C6 /* BFProductVariantSize+BFNSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "BFProductVariantSize+BFNSelection.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		BBFF81E11C4BB6D00055A2C6 /* BFProductVariantSize+BFNSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "BFProductVariantSize+BFNSelection.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		BBFF81E51C4BC1330055A2C6 /* BFProductVariantColor+BFNSelection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFProductVariantColor+BFNSelection.h"; sourceTree = "<group>"; };
-		F84617750551202D93956A36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41C545F6F462048D736B0ED /* libPods-OpenShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF64EF6D0E3098C294B6B6CC /* Pods-OpenShop.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.testing.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.testing.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -895,6 +903,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724A03BD16E7A2AA00084E16 /* SystemConfiguration.framework in Frameworks */,
+				ADF7CBEE1D490C7E003CAE09 /* CoreData.framework in Frameworks */,
 				AD50D4E41BCFF7450059C939 /* CoreSpotlight.framework in Frameworks */,
 				A1DE2E6A1834D325003C7FA4 /* MessageUI.framework in Frameworks */,
 				A1DE2E681834D320003C7FA4 /* AssetsLibrary.framework in Frameworks */,
@@ -905,12 +915,11 @@
 				72B4DE8E17451BD500D61125 /* Accounts.framework in Frameworks */,
 				72B4DE8C17451BCA00D61125 /* AdSupport.framework in Frameworks */,
 				724A03BF16E7AD1900084E16 /* MobileCoreServices.framework in Frameworks */,
-				724A03BD16E7A2AA00084E16 /* SystemConfiguration.framework in Frameworks */,
 				724A039916E78EE500084E16 /* QuartzCore.framework in Frameworks */,
 				72DDF75816E7485F00887646 /* UIKit.framework in Frameworks */,
 				72DDF75A16E7485F00887646 /* Foundation.framework in Frameworks */,
 				72DDF75C16E7485F00887646 /* CoreGraphics.framework in Frameworks */,
-				5F7EBD4A387A1E2C0DBA54B7 /* libPods.a in Frameworks */,
+				82E3DBD3AFC6960BDABF2E0B /* libPods-OpenShop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,6 +1299,16 @@
 			name = Onboarding;
 			sourceTree = "<group>";
 		};
+		6D61B2E7B4769CB515EA32E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21A87F886E2681C44242A3DB /* Pods-OpenShop.debug.xcconfig */,
+				FF64EF6D0E3098C294B6B6CC /* Pods-OpenShop.testing.xcconfig */,
+				A213FB5B5A395E1570243A77 /* Pods-OpenShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		72DDF74B16E7485F00887646 = {
 			isa = PBXGroup;
 			children = (
@@ -1297,7 +1316,7 @@
 				AD2D32AC1C870C120091AE0E /* OpenShopUITests */,
 				72DDF75616E7485F00887646 /* Frameworks */,
 				72DDF75516E7485F00887646 /* Products */,
-				E02458C30EE8A63CFC2FFB7B /* Pods */,
+				6D61B2E7B4769CB515EA32E4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1313,6 +1332,7 @@
 		72DDF75616E7485F00887646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADF7CBEF1D490CAA003CAE09 /* libz.tbd */,
 				AD50D4E31BCFF7450059C939 /* CoreSpotlight.framework */,
 				ADE1DA2C1B57A267008F47CE /* MapKit.framework */,
 				AD305C891B1CA9780059B7F9 /* CoreData.framework */,
@@ -1331,7 +1351,7 @@
 				72DDF75716E7485F00887646 /* UIKit.framework */,
 				72DDF75916E7485F00887646 /* Foundation.framework */,
 				72DDF75B16E7485F00887646 /* CoreGraphics.framework */,
-				F84617750551202D93956A36 /* libPods.a */,
+				F41C545F6F462048D736B0ED /* libPods-OpenShop.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1364,6 +1384,7 @@
 		72DDF75E16E7485F00887646 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADF7CBE91D490926003CAE09 /* GoogleService-Info.plist */,
 				72DDF75F16E7485F00887646 /* Info.plist */,
 				72DDF76316E7485F00887646 /* main.m */,
 				72DDF76516E7485F00887646 /* Prefix.pch */,
@@ -1424,6 +1445,8 @@
 				AD72A5571C43FA310031533B /* BFRootService.m */,
 				AD7375161C47F4FC007AFC32 /* BFCoreSpotlightService.h */,
 				AD7375171C47F4FC007AFC32 /* BFCoreSpotlightService.m */,
+				ADF7CBEB1D4909C2003CAE09 /* BFGoogleService.h */,
+				ADF7CBEC1D4909C2003CAE09 /* BFGoogleService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -1886,15 +1909,6 @@
 			name = BFNSelection;
 			sourceTree = "<group>";
 		};
-		E02458C30EE8A63CFC2FFB7B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				63C670ED5E06519AC280894B /* Pods.debug.xcconfig */,
-				812C0161AAE54C2161FEC3CB /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1902,12 +1916,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72DDF77A16E7485F00887646 /* Build configuration list for PBXNativeTarget "OpenShop" */;
 			buildPhases = (
-				564375EE724CF806D8D5EA45 /* Check Pods Manifest.lock */,
+				04D200961807E87CE83BCFF2 /* [CP] Check Pods Manifest.lock */,
 				72DDF75016E7485F00887646 /* Sources */,
 				72DDF75116E7485F00887646 /* Frameworks */,
 				72DDF75216E7485F00887646 /* Resources */,
-				B731FD61E75DB730EA6126D7 /* Copy Pods Resources */,
-				74427AE1F9E4CD1E7D9A69AA /* Embed Pods Frameworks */,
+				7C45C3229F37FDFC246E8BAD /* [CP] Embed Pods Frameworks */,
+				28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1980,6 +1994,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF7CBEA1D490926003CAE09 /* GoogleService-Info.plist in Resources */,
 				AD9BA5DE1C887AB100221C82 /* Roboto-Bold.ttf in Resources */,
 				AD9BA5DF1C887AB100221C82 /* Roboto-Light.ttf in Resources */,
 				AD9BA5E01C887AB100221C82 /* Roboto-Medium.ttf in Resources */,
@@ -2005,14 +2020,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		564375EE724CF806D8D5EA45 /* Check Pods Manifest.lock */ = {
+		04D200961807E87CE83BCFF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2020,34 +2035,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		74427AE1F9E4CD1E7D9A69AA /* Embed Pods Frameworks */ = {
+		28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B731FD61E75DB730EA6126D7 /* Copy Pods Resources */ = {
+		7C45C3229F37FDFC246E8BAD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2083,6 +2098,7 @@
 				BB2B3D771C46517900FDD1FE /* BFWishlistButtonView.m in Sources */,
 				5BD993EA1BE7E25D00AE12C0 /* BFFacebookManager.m in Sources */,
 				BBBDC1A41C4264E700B629A4 /* BFProductsFlexibleToolbar.m in Sources */,
+				ADF7CBED1D4909C2003CAE09 /* BFGoogleService.m in Sources */,
 				BB31CD3A1C3D8F7300F85EAD /* BFInfoSettingsItemsTableViewCellExtension.m in Sources */,
 				BB9C265F1C4D590900272D13 /* BFProductPriceRange.m in Sources */,
 				5BA02F691BF3B68500BEBA1C /* BFCartDiscountItem.m in Sources */,
@@ -2466,22 +2482,20 @@
 		};
 		72DDF77B16E7485F00887646 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63C670ED5E06519AC280894B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 21A87F886E2681C44242A3DB /* Pods-OpenShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 25;
-				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -2495,22 +2509,20 @@
 		};
 		72DDF77C16E7485F00887646 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 812C0161AAE54C2161FEC3CB /* Pods.release.xcconfig */;
+			baseConfigurationReference = A213FB5B5A395E1570243A77 /* Pods-OpenShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 25;
-				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = businessfactory.openshop;
@@ -2638,22 +2650,20 @@
 		};
 		ADE3C5D71C871DB300094A49 /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63C670ED5E06519AC280894B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = FF64EF6D0E3098C294B6B6CC /* Pods-OpenShop.testing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 25;
-				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "$(inherited)";

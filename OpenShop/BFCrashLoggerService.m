@@ -7,20 +7,20 @@
 //
 
 #import "BFCrashLoggerService.h"
-#import <CrashlyticsLumberjack/CrashlyticsLogger.h>
+// #import <CrashlyticsLumberjack/CrashlyticsLogger.h>
 #import "BFAppLogger.h"
 
-@import Fabric;
-@import Crashlytics;
+// @import Fabric;
+// @import Crashlytics;
 
 @implementation BFCrashLoggerService
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Fabric initialization
-    [Fabric with:@[[Crashlytics class]]];
+//    [Fabric with:@[[Crashlytics class]]];
 
     // Add Crashlytics logger to CocoaLumberjack
-    [BFAppLogger addLogger:[CrashlyticsLogger sharedInstance]];
+//    [BFAppLogger addLogger:[CrashlyticsLogger sharedInstance]];
 
     return YES;
 }
