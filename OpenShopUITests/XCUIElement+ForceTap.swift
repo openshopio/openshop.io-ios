@@ -11,11 +11,11 @@ import XCTest
 /*Sends a tap event to a hittable/unhittable element.*/
 extension XCUIElement {
     func forceTapElement() {
-        if self.hittable {
+        if self.isHittable {
             self.tap()
         }
         else {
-            let coordinate: XCUICoordinate = self.coordinateWithNormalizedOffset(CGVectorMake(0.0, 0.0))
+            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx: 0.0, dy: 0.0))
             coordinate.tap()
         }
     }

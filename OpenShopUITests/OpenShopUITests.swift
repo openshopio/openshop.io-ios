@@ -26,7 +26,7 @@ class OpenShopUITests: XCTestCase {
     }
     
     func testScreenshots() {
-        XCUIDevice.sharedDevice().orientation = .Portrait
+        XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
         let existsPredicate = NSPredicate(format: "exists == 1")
         
@@ -57,25 +57,25 @@ class OpenShopUITests: XCTestCase {
         }
         
         // Banners screen
-        let firstBanner = app.tables.childrenMatchingType(.Cell).elementBoundByIndex(0)
-        expectationForPredicate(existsPredicate, evaluatedWithObject: firstBanner, handler: nil)
-        waitForExpectationsWithTimeout(10, handler: nil)
+        let firstBanner = app.tables.children(matching: .cell).element(boundBy: 0)
+        expectation(for: existsPredicate, evaluatedWith: firstBanner, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         // dismiss APNS alert
         firstBanner.forceTapElement()
         snapshot("Banners")
         firstBanner.tap()
 
         // Products screen
-        let firstProduct = app.cells.elementBoundByIndex(0)
-        expectationForPredicate(existsPredicate, evaluatedWithObject: firstProduct, handler: nil)
-        waitForExpectationsWithTimeout(10, handler: nil)
+        let firstProduct = app.cells.element(boundBy: 0)
+        expectation(for: existsPredicate, evaluatedWith: firstProduct, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         snapshot("Products")
         firstProduct.tap()
         
         // Add product to the cart
         let addToCartButton = app.tables.buttons["ADDTOCART"]
-        expectationForPredicate(existsPredicate, evaluatedWithObject: addToCartButton, handler: nil)
-        waitForExpectationsWithTimeout(10, handler: nil)
+        expectation(for: existsPredicate, evaluatedWith: addToCartButton, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         snapshot("Product Detail")
         addToCartButton.tap()
         sleep(2) // sleep for a while to give some time to the request
@@ -83,8 +83,8 @@ class OpenShopUITests: XCTestCase {
         // Cart screen
         let cartTabBar = app.tabBars.buttons["Cart"]
         let cartTabBarHittable = NSPredicate(format: "hittable == 1")
-        expectationForPredicate(cartTabBarHittable, evaluatedWithObject: cartTabBar, handler: nil)
-        waitForExpectationsWithTimeout(10, handler: nil)
+        expectation(for: cartTabBarHittable, evaluatedWith: cartTabBar, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         cartTabBar.forceTapElement()
         cartTabBar.forceTapElement()
         
