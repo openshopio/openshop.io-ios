@@ -1,13 +1,12 @@
-source 'https://bitbucket.org/touchartsro/cocoapods-specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '8.0'
 
 target 'OpenShop' do
-    pod 'AFNetworking', '~> 3.0'
+    #    pod 'AFNetworking', '~> 3.0'
     pod 'SSKeychain', '~> 1.2.3'
     # custom MMRecord repo fixes check for NULL before setting a primary key value for a child entity
-    pod 'MMRecord', :git => 'https://github.com/Skornos/MMRecord.git'
+    pod 'MMRecord/Core', :git => 'https://github.com/Skornos/MMRecord.git'
     pod 'MMRecord/SessionManagerServer', :git => 'https://github.com/Skornos/MMRecord.git'
     pod 'Mantle', '~> 2.0.5'
     pod 'MagicalRecord', '~> 2.3.2'
@@ -20,7 +19,7 @@ target 'OpenShop' do
     pod 'CRToast', '~> 0.0.9'
     pod 'MRProgress', '~> 0.8.2'
     pod 'DZNEmptyDataSet', '~> 1.7.3'
-    pod 'MGSwipeTableCell', '~> 1.5.3'
+    pod 'MGSwipeTableCell', '~> 1.5.4'
     pod 'pop', :git => 'https://github.com/facebook/pop.git'
     pod 'RETableViewManager', :git => 'https://github.com/Skornos/RETableViewManager.git'
     pod 'TPKeyboardAvoiding', '~> 1.2.11'
@@ -32,21 +31,24 @@ target 'OpenShop' do
     pod 'ActionSheetPicker-3.0', '~> 2.0.4'
     pod 'DTCoreText', '~> 1.6.17'
     pod 'XMLDictionary', '~> 1.4'
-
+    
     pod 'Google/Analytics'
     pod 'GoogleIDFASupport'
-
+    
     pod 'Onboard', :git => 'https://github.com/Skornos/Onboard.git'
     pod 'AFNetworkActivityLogger', :git => 'https://github.com/AFNetworking/AFNetworkActivityLogger.git', :branch => '3_0_0'
     pod 'CocoaLumberjack'
-
+    
     # clean status bar from the screenshots on simulator
     pod 'SimulatorStatusMagic', :configurations => ['Debug']
-
+    
     # Crashlytics Cocoapods
     # pod 'Fabric'
     # pod 'Crashlytics'
     # pod 'CrashlyticsLumberjack', '~> 2.0.0'
-
+    
 end
 
+target 'OpenShopUITests' do
+    
+end

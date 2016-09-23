@@ -105,8 +105,6 @@ static NSString *const productsSegueIdentifier      = @"productsSegue";
     // fetch banners
     __weak __typeof__(self) weakSelf = self;
     // pager info
-    [[BFAPIManager sharedManager] createTransactionToken:nil];
-    
     BFDataRequestPagerInfo *pagerInfo = [[BFDataRequestPagerInfo alloc]initWithOffset:@0 limit:@(bannersFetchPageSize)];
     [[BFAPIManager sharedManager]findBannersWithInfo:pagerInfo completionBlock:^(NSArray *records, id customResponse, NSError * error) {
         // error results

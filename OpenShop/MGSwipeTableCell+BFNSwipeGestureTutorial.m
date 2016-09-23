@@ -19,7 +19,9 @@
         swipeAnimation.duration = duration;
         [self showSwipe:MGSwipeDirectionRightToLeft animated:YES completion:nil];
         [self setSwipeOffset:offset animation:swipeAnimation completion:^(BOOL completed){
-            [weakSelf setSwipeOffset:0.0 animation:swipeAnimation completion:nil];
+            if (completed) {
+                [weakSelf setSwipeOffset:0.0 animation:swipeAnimation completion:nil];
+            }
         }];
     });
 }

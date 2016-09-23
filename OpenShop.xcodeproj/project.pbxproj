@@ -114,11 +114,12 @@
 		72DDF75A16E7485F00887646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DDF75916E7485F00887646 /* Foundation.framework */; };
 		72DDF75C16E7485F00887646 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DDF75B16E7485F00887646 /* CoreGraphics.framework */; };
 		72DDF76416E7485F00887646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DDF76316E7485F00887646 /* main.m */; };
-		82E3DBD3AFC6960BDABF2E0B /* libPods-OpenShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F41C545F6F462048D736B0ED /* libPods-OpenShop.a */; };
+		8AED2D3082E6B1455F1515C4 /* libPods-OpenShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCD2F26093F962D2F69F999 /* libPods-OpenShop.a */; };
 		A1D4C13F1817D70C0093ED50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D4C13E1817D70C0093ED50 /* Images.xcassets */; };
 		A1DE2E661834D2B1003C7FA4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DE2E651834D2B1003C7FA4 /* ImageIO.framework */; };
 		A1DE2E681834D320003C7FA4 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DE2E671834D320003C7FA4 /* AssetsLibrary.framework */; };
 		A1DE2E6A1834D325003C7FA4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DE2E691834D325003C7FA4 /* MessageUI.framework */; };
+		A6FB9DFBBCD028ABACA3350E /* libPods-OpenShopUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9927A258E418DB290A39F5 /* libPods-OpenShopUITests.a */; };
 		AD014D101C3BF1DC00D9C7B5 /* BFAppLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AD014D0F1C3BF1DC00D9C7B5 /* BFAppLogger.m */; };
 		AD0254341C4FCD2100FACB2B /* BFNoteTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0254331C4FCD2100FACB2B /* BFNoteTableViewCellExtension.m */; };
 		AD0254371C4FE28F00FACB2B /* BFTextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0254361C4FE28F00FACB2B /* BFTextViewTableViewCell.m */; };
@@ -317,7 +318,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21A87F886E2681C44242A3DB /* Pods-OpenShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.debug.xcconfig"; sourceTree = "<group>"; };
+		3E91C982EADBA595DBC5579A /* Pods-OpenShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0841101BD3CF8300DC83E6 /* BFNCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFNCheckmarkView.m; sourceTree = "<group>"; };
 		5B0841111BD3CF8300DC83E6 /* BFNCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFNCheckmarkView.h; sourceTree = "<group>"; };
 		5B1229A81C29B6EE004F6B55 /* BFStoryboardNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFStoryboardNoAnimationSegue.m; sourceTree = "<group>"; };
@@ -508,6 +509,8 @@
 		5BFAE34A1C22DABF00829E54 /* BFPushPopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFPushPopNavigationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5BFAE34D1C22EF9B00829E54 /* BFOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFOnboardingViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5BFAE34E1C22EF9B00829E54 /* BFOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFOnboardingViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		5CD42A2AA674FC247E75C682 /* Pods-OpenShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.release.xcconfig"; sourceTree = "<group>"; };
+		7032E4492AA8FD0EFF1ABA32 /* Pods-OpenShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests.release.xcconfig"; sourceTree = "<group>"; };
 		724A039816E78EE500084E16 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		724A03BC16E7A2AA00084E16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		724A03BE16E7AD1900084E16 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -528,7 +531,6 @@
 		A1DE2E651834D2B1003C7FA4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A1DE2E671834D320003C7FA4 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		A1DE2E691834D325003C7FA4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		A213FB5B5A395E1570243A77 /* Pods-OpenShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.release.xcconfig"; sourceTree = "<group>"; };
 		AD014D0E1C3BF1DC00D9C7B5 /* BFAppLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFAppLogger.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AD014D0F1C3BF1DC00D9C7B5 /* BFAppLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFAppLogger.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AD0254321C4FCD2100FACB2B /* BFNoteTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFNoteTableViewCellExtension.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -609,6 +611,7 @@
 		AD79BEF81C7EF25C00D128AF /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		AD7AD0C61C74737D00B14C89 /* BFEditCartProductTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFEditCartProductTableViewCellExtension.h; sourceTree = "<group>"; };
 		AD7AD0C71C74737D00B14C89 /* BFEditCartProductTableViewCellExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFEditCartProductTableViewCellExtension.m; sourceTree = "<group>"; };
+		AD9927A258E418DB290A39F5 /* libPods-OpenShopUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenShopUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9BA5D71C88201000221C82 /* XCUIElement+ForceTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+ForceTap.swift"; sourceTree = "<group>"; };
 		AD9BA5DA1C887A8A00221C82 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		AD9BA5DB1C887A8A00221C82 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -672,6 +675,7 @@
 		ADF7CBEF1D490CAA003CAE09 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ADFA0D371C4E7A19002771A1 /* BFAddressTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFAddressTableViewCellExtension.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		ADFA0D381C4E7A19002771A1 /* BFAddressTableViewCellExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFAddressTableViewCellExtension.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AFCD2F26093F962D2F69F999 /* libPods-OpenShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0266A91C5A9491005E5E98 /* UIWindow+BFOverlays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+BFOverlays.h"; sourceTree = "<group>"; };
 		BB0266AA1C5A9491005E5E98 /* UIWindow+BFOverlays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+BFOverlays.m"; sourceTree = "<group>"; };
 		BB0266AC1C5AAC4E005E5E98 /* BFOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFOrdersViewController.m; sourceTree = "<group>"; };
@@ -894,8 +898,9 @@
 		BBFF81E01C4BB6D00055A2C6 /* BFProductVariantSize+BFNSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "BFProductVariantSize+BFNSelection.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		BBFF81E11C4BB6D00055A2C6 /* BFProductVariantSize+BFNSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "BFProductVariantSize+BFNSelection.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		BBFF81E51C4BC1330055A2C6 /* BFProductVariantColor+BFNSelection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFProductVariantColor+BFNSelection.h"; sourceTree = "<group>"; };
-		F41C545F6F462048D736B0ED /* libPods-OpenShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF64EF6D0E3098C294B6B6CC /* Pods-OpenShop.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.testing.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.testing.xcconfig"; sourceTree = "<group>"; };
+		E34EABBF9DF63FAC611EDCB3 /* Pods-OpenShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.debug.xcconfig"; sourceTree = "<group>"; };
+		E5245A0B948FECC08080DFAB /* Pods-OpenShop.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShop.testing.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop.testing.xcconfig"; sourceTree = "<group>"; };
+		F3B89DD6A00448E623B4606B /* Pods-OpenShopUITests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShopUITests.testing.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests.testing.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -919,7 +924,7 @@
 				72DDF75816E7485F00887646 /* UIKit.framework in Frameworks */,
 				72DDF75A16E7485F00887646 /* Foundation.framework in Frameworks */,
 				72DDF75C16E7485F00887646 /* CoreGraphics.framework in Frameworks */,
-				82E3DBD3AFC6960BDABF2E0B /* libPods-OpenShop.a in Frameworks */,
+				8AED2D3082E6B1455F1515C4 /* libPods-OpenShop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,12 +932,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FB9DFBBCD028ABACA3350E /* libPods-OpenShopUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CB639B2D7E4E6D886775A07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E34EABBF9DF63FAC611EDCB3 /* Pods-OpenShop.debug.xcconfig */,
+				E5245A0B948FECC08080DFAB /* Pods-OpenShop.testing.xcconfig */,
+				5CD42A2AA674FC247E75C682 /* Pods-OpenShop.release.xcconfig */,
+				3E91C982EADBA595DBC5579A /* Pods-OpenShopUITests.debug.xcconfig */,
+				F3B89DD6A00448E623B4606B /* Pods-OpenShopUITests.testing.xcconfig */,
+				7032E4492AA8FD0EFF1ABA32 /* Pods-OpenShopUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B2125561C2C4BFB00B78A9A /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -1299,16 +1318,6 @@
 			name = Onboarding;
 			sourceTree = "<group>";
 		};
-		6D61B2E7B4769CB515EA32E4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				21A87F886E2681C44242A3DB /* Pods-OpenShop.debug.xcconfig */,
-				FF64EF6D0E3098C294B6B6CC /* Pods-OpenShop.testing.xcconfig */,
-				A213FB5B5A395E1570243A77 /* Pods-OpenShop.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		72DDF74B16E7485F00887646 = {
 			isa = PBXGroup;
 			children = (
@@ -1316,7 +1325,7 @@
 				AD2D32AC1C870C120091AE0E /* OpenShopUITests */,
 				72DDF75616E7485F00887646 /* Frameworks */,
 				72DDF75516E7485F00887646 /* Products */,
-				6D61B2E7B4769CB515EA32E4 /* Pods */,
+				4CB639B2D7E4E6D886775A07 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1351,7 +1360,8 @@
 				72DDF75716E7485F00887646 /* UIKit.framework */,
 				72DDF75916E7485F00887646 /* Foundation.framework */,
 				72DDF75B16E7485F00887646 /* CoreGraphics.framework */,
-				F41C545F6F462048D736B0ED /* libPods-OpenShop.a */,
+				AFCD2F26093F962D2F69F999 /* libPods-OpenShop.a */,
+				AD9927A258E418DB290A39F5 /* libPods-OpenShopUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1939,9 +1949,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD2D32B21C870C120091AE0E /* Build configuration list for PBXNativeTarget "OpenShopUITests" */;
 			buildPhases = (
+				A3BF65F9FE84860946295C2E /* [CP] Check Pods Manifest.lock */,
 				AD2D32A71C870C120091AE0E /* Sources */,
 				AD2D32A81C870C120091AE0E /* Frameworks */,
 				AD2D32A91C870C120091AE0E /* Resources */,
+				3FA8C801F049700529FC9C32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1961,7 +1973,7 @@
 			attributes = {
 				CLASSPREFIX = BF;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Business-Factory";
 				TargetAttributes = {
 					72DDF75316E7485F00887646 = {
@@ -2054,6 +2066,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
+=======
+		3FA8C801F049700529FC9C32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+>>>>>>> Updated build settings, Podfile
 		609DC77B15B4BF8B39C7398E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2084,18 +2114,27 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
 		8FB7C5FFE4C34BBD4312060C /* 📦 Copy Pods Resources */ = {
+=======
+		A3BF65F9FE84860946295C2E /* [CP] Check Pods Manifest.lock */ = {
+>>>>>>> Updated build settings, Podfile
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
 			name = "📦 Copy Pods Resources";
+=======
+			name = "[CP] Check Pods Manifest.lock";
+>>>>>>> Updated build settings, Podfile
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
@@ -2112,6 +2151,9 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
+=======
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+>>>>>>> Updated build settings, Podfile
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2432,24 +2474,32 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = shallow;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
@@ -2490,16 +2540,24 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = shallow;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
@@ -2510,6 +2568,7 @@
 				OTHER_SWIFT_FLAGS = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = (
@@ -2531,7 +2590,7 @@
 		};
 		72DDF77B16E7485F00887646 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21A87F886E2681C44242A3DB /* Pods-OpenShop.debug.xcconfig */;
+			baseConfigurationReference = E34EABBF9DF63FAC611EDCB3 /* Pods-OpenShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2540,6 +2599,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
@@ -2558,7 +2618,7 @@
 		};
 		72DDF77C16E7485F00887646 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A213FB5B5A395E1570243A77 /* Pods-OpenShop.release.xcconfig */;
+			baseConfigurationReference = 5CD42A2AA674FC247E75C682 /* Pods-OpenShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2567,6 +2627,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
@@ -2584,6 +2645,7 @@
 		};
 		AD2D32B31C870C120091AE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E91C982EADBA595DBC5579A /* Pods-OpenShopUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -2612,6 +2674,7 @@
 		};
 		AD2D32B41C870C120091AE0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7032E4492AA8FD0EFF1ABA32 /* Pods-OpenShopUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -2651,17 +2714,23 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = shallow;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2669,7 +2738,9 @@
 					"TESTING=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
@@ -2701,7 +2772,7 @@
 		};
 		ADE3C5D71C871DB300094A49 /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF64EF6D0E3098C294B6B6CC /* Pods-OpenShop.testing.xcconfig */;
+			baseConfigurationReference = E5245A0B948FECC08080DFAB /* Pods-OpenShop.testing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2710,6 +2781,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
@@ -2728,6 +2800,7 @@
 		};
 		ADE3C5D81C871DB300094A49 /* Testing */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B89DD6A00448E623B4606B /* Pods-OpenShopUITests.testing.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
