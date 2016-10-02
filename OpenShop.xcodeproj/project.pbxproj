@@ -1926,15 +1926,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72DDF77A16E7485F00887646 /* Build configuration list for PBXNativeTarget "OpenShop" */;
 			buildPhases = (
-				609DC77B15B4BF8B39C7398E /* [CP] Check Pods Manifest.lock */,
 				04D200961807E87CE83BCFF2 /* [CP] Check Pods Manifest.lock */,
 				72DDF75016E7485F00887646 /* Sources */,
 				72DDF75116E7485F00887646 /* Frameworks */,
 				72DDF75216E7485F00887646 /* Resources */,
-				7C45C3229F37FDFC246E8BAD /* [CP] Embed Pods Frameworks */,
 				28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */,
-				CC388FFA62F3B75FD28C4EBC /* 📦 Embed Pods Frameworks */,
-				8FB7C5FFE4C34BBD4312060C /* 📦 Copy Pods Resources */,
+				C3B6EB6D9168FBE10B51F8D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1949,11 +1946,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD2D32B21C870C120091AE0E /* Build configuration list for PBXNativeTarget "OpenShopUITests" */;
 			buildPhases = (
-				A3BF65F9FE84860946295C2E /* [CP] Check Pods Manifest.lock */,
+				BBF891C9857A100333D99800 /* [CP] Check Pods Manifest.lock */,
 				AD2D32A71C870C120091AE0E /* Sources */,
 				AD2D32A81C870C120091AE0E /* Frameworks */,
 				AD2D32A91C870C120091AE0E /* Resources */,
-				3FA8C801F049700529FC9C32 /* [CP] Copy Pods Resources */,
+				5C859E7AC925402275BD45E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2066,9 +2063,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
-=======
-		3FA8C801F049700529FC9C32 /* [CP] Copy Pods Resources */ = {
+		5C859E7AC925402275BD45E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2083,8 +2078,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
->>>>>>> Updated build settings, Podfile
-		609DC77B15B4BF8B39C7398E /* [CP] Check Pods Manifest.lock */ = {
+		BBF891C9857A100333D99800 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2099,7 +2093,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7C45C3229F37FDFC246E8BAD /* [CP] Embed Pods Frameworks */ = {
+		C3B6EB6D9168FBE10B51F8D0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2112,48 +2106,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
-		8FB7C5FFE4C34BBD4312060C /* 📦 Copy Pods Resources */ = {
-=======
-		A3BF65F9FE84860946295C2E /* [CP] Check Pods Manifest.lock */ = {
->>>>>>> Updated build settings, Podfile
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
-			name = "📦 Copy Pods Resources";
-=======
-			name = "[CP] Check Pods Manifest.lock";
->>>>>>> Updated build settings, Podfile
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-<<<<<<< 444a9fa0259e4c1a900d039fffe7ed21c56dcea8
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC388FFA62F3B75FD28C4EBC /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
-=======
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
->>>>>>> Updated build settings, Podfile
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
