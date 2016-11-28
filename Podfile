@@ -19,7 +19,7 @@ target 'OpenShop' do
     pod 'CRToast', '~> 0.0.9'
     pod 'MRProgress', '~> 0.8.2'
     pod 'DZNEmptyDataSet', '~> 1.7.3'
-    pod 'MGSwipeTableCell', '~> 1.5.4'
+    pod 'MGSwipeTableCell', '~> 1.5.3'
     pod 'pop', :git => 'https://github.com/facebook/pop.git'
     pod 'RETableViewManager', :git => 'https://github.com/Skornos/RETableViewManager.git'
     pod 'TPKeyboardAvoiding', '~> 1.2.11'
@@ -51,4 +51,12 @@ end
 
 target 'OpenShopUITests' do
     
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['GCC_NO_COMMON_BLOCKS'] = 'NO'
+        end
+    end
 end
