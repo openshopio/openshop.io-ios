@@ -55,7 +55,7 @@ bundle exec fastlane build
 This will build the project and create a new workspace file `OpenShop.xcworkspace` which includes all the CocoaPod dependencies. Make sure to open `OpenShop.xcworkspace` workspace file for app development and submission and ignore `OpenShop.xcodeproj`.
 
 ## Graphics template
-[Here](link to psd) you will find the PSD template which served as the guideline for implementing user interface in the OpenShop app.
+[Here](http://openshop.io/sources/openshop.io-ui_resources-ios.zip) you will find the PSD template which served as the guideline for implementing user interface in the OpenShop app.
 
 # Run the app
 The example OpenShop.io application you can download from this repository or [App Store](http://itunes.apple.com/app/id1088689646) runs on our custom sample data source (product, payments, shipping, branches,...). If you want to integrate your feed within the app take a look at the section [how to connect](#how-to-connect).
