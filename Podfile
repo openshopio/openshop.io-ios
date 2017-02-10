@@ -25,7 +25,7 @@ target 'OpenShop' do
     pod 'TPKeyboardAvoiding', '~> 1.2.11'
     pod 'BLKFlexibleHeightBar', '~> 1.0.2'
     pod 'Masonry', '~> 0.6.4'
-    pod 'IDMPhotoBrowser', '~> 1.8.1'
+    pod 'IDMPhotoBrowser'
     pod 'SwipeView', '~> 1.3.2'
     pod 'NMRangeSlider', :git => 'https://github.com/muZZkat/NMRangeSlider.git'
     pod 'ActionSheetPicker-3.0', '~> 2.0.4'
