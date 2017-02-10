@@ -319,6 +319,7 @@
 
 /* Begin PBXFileReference section */
 		3E91C982EADBA595DBC5579A /* Pods-OpenShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E02F2331E48987000B1C336 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../Library/Developer/Xcode/DerivedData/OpenShop-cpjdyctlggyrhbbwyxrjbzumlpwm/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
 		5B0841101BD3CF8300DC83E6 /* BFNCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFNCheckmarkView.m; sourceTree = "<group>"; };
 		5B0841111BD3CF8300DC83E6 /* BFNCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFNCheckmarkView.h; sourceTree = "<group>"; };
 		5B1229A81C29B6EE004F6B55 /* BFStoryboardNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFStoryboardNoAnimationSegue.m; sourceTree = "<group>"; };
@@ -1341,6 +1342,7 @@
 		72DDF75616E7485F00887646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E02F2331E48987000B1C336 /* libSDWebImage.a */,
 				ADF7CBEF1D490CAA003CAE09 /* libz.tbd */,
 				AD50D4E31BCFF7450059C939 /* CoreSpotlight.framework */,
 				ADE1DA2C1B57A267008F47CE /* MapKit.framework */,
@@ -1951,6 +1953,7 @@
 				AD2D32A81C870C120091AE0E /* Frameworks */,
 				AD2D32A91C870C120091AE0E /* Resources */,
 				5C859E7AC925402275BD45E4 /* [CP] Copy Pods Resources */,
+				E70239AADEAE08E0D3139CE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2045,7 +2048,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */ = {
@@ -2090,7 +2093,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C3B6EB6D9168FBE10B51F8D0 /* [CP] Embed Pods Frameworks */ = {
@@ -2106,6 +2109,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E70239AADEAE08E0D3139CE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
