@@ -31,8 +31,8 @@ DerivedData
 *.ipa
 
 # CocoaPods
-Pods/
-Podfile.lock
+# Pods/
+# Podfile.lock
 
 # CodeCoverage
 *.gcno
