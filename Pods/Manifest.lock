@@ -1,0 +1,302 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
+  - AFNetworkActivityLogger (3.0.0):
+    - AFNetworking/NSURLSession (~> 3.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BLKFlexibleHeightBar (1.0.2)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - CocoaLumberjack (2.4.0):
+    - CocoaLumberjack/Default (= 2.4.0)
+    - CocoaLumberjack/Extensions (= 2.4.0)
+  - CocoaLumberjack/Core (2.4.0)
+  - CocoaLumberjack/Default (2.4.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.4.0):
+    - CocoaLumberjack/Default
+  - CRToast (0.0.9)
+  - DACircularProgress (2.3.1)
+  - DTCoreText (1.6.21):
+    - DTCoreText/Core (= 1.6.21)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.13)
+  - DTFoundation/DTAnimatedGIF (1.7.13)
+  - DTFoundation/DTHTMLParser (1.7.13):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.13):
+    - DTFoundation/Core
+  - DZNEmptyDataSet (1.7.3)
+  - FBSDKCoreKit (4.10.1):
+    - Bolts (~> 1.5)
+  - FBSDKLoginKit (4.10.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.10.1):
+    - FBSDKCoreKit
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseCore (3.6.0):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google/Analytics (3.1.0):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - GoogleAnalytics (3.17.0)
+  - GoogleIDFASupport (3.14.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - IDMPhotoBrowser (1.8.4):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/CocoaLumberjack (2.3.2):
+    - CocoaLumberjack (~> 2.0)
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.3.2)
+  - MagicalRecord/ShorthandMethodAliases (2.3.2)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (0.6.4)
+  - MGSwipeTableCell (1.5.6)
+  - MMRecord/Core (1.4.1)
+  - MMRecord/SessionManagerServer (1.4.1):
+    - AFNetworking (>= 2.0)
+    - MMRecord/Core
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - MZAppearance (1.1.6)
+  - MZFormSheetPresentationController (2.3.2):
+    - MZAppearance
+  - NMRangeSlider (1.2.2)
+  - Onboard (2.1.5)
+  - pop (1.0.10)
+  - REFormattedNumberField (1.1.6)
+  - RETableViewManager (1.6):
+    - REFormattedNumberField (~> 1.1.5)
+    - REValidation (~> 0.1.4)
+  - REValidation (0.1.4)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SimulatorStatusMagic (2.2)
+  - SSKeychain (1.2.3)
+  - SwipeView (1.3.2)
+  - TPKeyboardAvoiding (1.2.11)
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.0.4)
+  - AFNetworkActivityLogger (from `https://github.com/AFNetworking/AFNetworkActivityLogger.git`, branch `3_0_0`)
+  - BLKFlexibleHeightBar (~> 1.0.2)
+  - CocoaLumberjack
+  - CRToast (~> 0.0.9)
+  - DTCoreText (~> 1.6.17)
+  - DZNEmptyDataSet (~> 1.7.3)
+  - FBSDKCoreKit (~> 4.10.0)
+  - FBSDKLoginKit (~> 4.10.0)
+  - FBSDKShareKit (~> 4.10.0)
+  - Google/Analytics
+  - GoogleIDFASupport
+  - IDMPhotoBrowser (~> 1.8.1)
+  - MagicalRecord (~> 2.3.2)
+  - MagicalRecord/CocoaLumberjack
+  - MagicalRecord/ShorthandMethodAliases
+  - Mantle (~> 2.0.5)
+  - Masonry (~> 0.6.4)
+  - MGSwipeTableCell (~> 1.5.3)
+  - MMRecord/Core (from `https://github.com/Skornos/MMRecord.git`)
+  - MMRecord/SessionManagerServer (from `https://github.com/Skornos/MMRecord.git`)
+  - MRProgress (~> 0.8.2)
+  - MZFormSheetPresentationController (~> 2.3.0)
+  - NMRangeSlider (from `https://github.com/muZZkat/NMRangeSlider.git`)
+  - Onboard (from `https://github.com/Skornos/Onboard.git`)
+  - pop (from `https://github.com/facebook/pop.git`)
+  - RETableViewManager (from `https://github.com/Skornos/RETableViewManager.git`)
+  - SDWebImage (~> 3.8.0)
+  - SimulatorStatusMagic
+  - SSKeychain (~> 1.2.3)
+  - SwipeView (~> 1.3.2)
+  - TPKeyboardAvoiding (~> 1.2.11)
+  - XMLDictionary (~> 1.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - BLKFlexibleHeightBar
+    - Bolts
+    - CocoaLumberjack
+    - CRToast
+    - DACircularProgress
+    - DTCoreText
+    - DTFoundation
+    - DZNEmptyDataSet
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - Google
+    - GoogleAnalytics
+    - GoogleIDFASupport
+    - GoogleToolboxForMac
+    - IDMPhotoBrowser
+    - MagicalRecord
+    - Mantle
+    - Masonry
+    - MGSwipeTableCell
+    - MRProgress
+    - MZAppearance
+    - MZFormSheetPresentationController
+    - REFormattedNumberField
+    - REValidation
+    - SDWebImage
+    - SimulatorStatusMagic
+    - SSKeychain
+    - SwipeView
+    - TPKeyboardAvoiding
+    - XMLDictionary
+
+EXTERNAL SOURCES:
+  AFNetworkActivityLogger:
+    :branch: 3_0_0
+    :git: https://github.com/AFNetworking/AFNetworkActivityLogger.git
+  MMRecord:
+    :git: https://github.com/Skornos/MMRecord.git
+  NMRangeSlider:
+    :git: https://github.com/muZZkat/NMRangeSlider.git
+  Onboard:
+    :git: https://github.com/Skornos/Onboard.git
+  pop:
+    :git: https://github.com/facebook/pop.git
+  RETableViewManager:
+    :git: https://github.com/Skornos/RETableViewManager.git
+
+CHECKOUT OPTIONS:
+  AFNetworkActivityLogger:
+    :commit: b7cce59a369788c409d218e8dab7f381a858cee4
+    :git: https://github.com/AFNetworking/AFNetworkActivityLogger.git
+  MMRecord:
+    :commit: 36a63cd16d658465edccb499e7a84bd40f72ebc1
+    :git: https://github.com/Skornos/MMRecord.git
+  NMRangeSlider:
+    :commit: 56e86760bfac4b0747cf1df55ed6669aff263855
+    :git: https://github.com/muZZkat/NMRangeSlider.git
+  Onboard:
+    :commit: cf8beb42acd643ca2f81d612fafb61a6fcf267cd
+    :git: https://github.com/Skornos/Onboard.git
+  pop:
+    :commit: a43d402bc85527102a965cdc07cbbd557bdccdb7
+    :git: https://github.com/facebook/pop.git
+  RETableViewManager:
+    :commit: 57495cae8b1a40cb1673d198d3616c302076b881
+    :git: https://github.com/Skornos/RETableViewManager.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
+  AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
+  DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
+  FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
+  FBSDKShareKit: 2fd887cce0056bdda91f99b2021d724a4fed8e88
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleIDFASupport: aaf8c10bd429abb1c15349d5252244f5eda8ead1
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  IDMPhotoBrowser: b574fe3229754e701f32df271afbc4ac7e4e1997
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  MMRecord: cf9d401cabb645b2b6e76e89d4ddd32699151484
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
+  MZFormSheetPresentationController: bba52eb65feb3b70ae83ed28fd20991802d4adeb
+  NMRangeSlider: 02bb205d0c7f9bea09b5cf00fbcbc2bc2e3e10ff
+  Onboard: c58adaef5a377b0c45b4754c5cbe17d4627898c7
+  pop: 40b9f1875c80f6e613958a4a44bf98b1576389f1
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
+  RETableViewManager: 9667ecb29c005c32df40a1dd1828224840a351a2
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SimulatorStatusMagic: 0389a805fa8bd001e2977c4046730bdbd6642861
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  SwipeView: bd67cfaf7760c036438446b3ccb28a3b84fce009
+  TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+
+PODFILE CHECKSUM: 778abdac940e509a7bcd678389c89be8ed6cb178
+
+COCOAPODS: 1.5.3
