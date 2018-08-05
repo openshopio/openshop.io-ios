@@ -9,7 +9,7 @@
 
 We as a Facebook Marketing Partner company have experienced neverending struggles with Facebook and Google integration on side of our partners. It usually took weeks or months to implement all neccessary SDKs, features, measurements and events. That's the reason why we have decided to provide an open-source solution bringing marketing on the first place. Our mission is to fulfill all potential of Facebook Ads, Google Analytics and other marketing channels for an extraordinary mobile shopping experience.
 
-*Visit out website on [openshop.io](openshop.io)*
+*Visit out website on [openshop.io](https://openshop.io)*
 
 Do you want to see the app in action? 
 
