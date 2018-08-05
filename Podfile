@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'OpenShop' do
     #    pod 'AFNetworking', '~> 3.0'
@@ -25,6 +25,7 @@ target 'OpenShop' do
     pod 'TPKeyboardAvoiding', '~> 1.2.11'
     pod 'BLKFlexibleHeightBar', '~> 1.0.2'
     pod 'Masonry', '~> 0.6.4'
+    pod 'SDWebImage', '~> 3.8.0'
     pod 'IDMPhotoBrowser', '~> 1.8.1'
     pod 'SwipeView', '~> 1.3.2'
     pod 'NMRangeSlider', :git => 'https://github.com/muZZkat/NMRangeSlider.git'

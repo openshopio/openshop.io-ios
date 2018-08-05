@@ -1931,7 +1931,6 @@
 				72DDF75116E7485F00887646 /* Frameworks */,
 				72DDF75216E7485F00887646 /* Resources */,
 				28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */,
-				C3B6EB6D9168FBE10B51F8D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1950,7 +1949,6 @@
 				AD2D32A71C870C120091AE0E /* Sources */,
 				AD2D32A81C870C120091AE0E /* Frameworks */,
 				AD2D32A91C870C120091AE0E /* Resources */,
-				5C859E7AC925402275BD45E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2039,13 +2037,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenShop-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */ = {
@@ -2054,28 +2055,72 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-handle-highlighted.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-handle-highlighted@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-handle.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-handle@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-track.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-track@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-trackBackground.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-trackCrossedOver.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default-trackCrossedOver@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme/slider-default_trackBackground@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-handle.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-handle@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-track.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-track@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-trackBackground.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-trackBackground@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-trackCrossedOver.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/DefaultTheme7/slider-default7-trackCrossedOver@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-handle-highlighted.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-handle-highlighted@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-handle.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-handle@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-track.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-track@2x.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-trackBackground.png",
+				"${PODS_ROOT}/NMRangeSlider/NMRangeSlider/MetalTheme/slider-metal-trackBackground@2x.png",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RETableViewManager/RETableViewManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPBLocalizations.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-handle-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-handle-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-handle.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-handle@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-track.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-track@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-trackBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-trackCrossedOver.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default-trackCrossedOver@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default_trackBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-handle.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-handle@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-track.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-track@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-trackBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-trackBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-trackCrossedOver.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-default7-trackCrossedOver@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-handle-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-handle-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-handle.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-handle@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-track.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-track@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-trackBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slider-metal-trackBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RETableViewManager.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C859E7AC925402275BD45E4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BBF891C9857A100333D99800 /* [CP] Check Pods Manifest.lock */ = {
@@ -2084,28 +2129,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenShopUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C3B6EB6D9168FBE10B51F8D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2555,7 +2588,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
@@ -2583,7 +2616,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -2737,7 +2770,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenShop/Prefix.pch;
 				INFOPLIST_FILE = OpenShop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
