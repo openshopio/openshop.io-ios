@@ -59,7 +59,7 @@ class OpenShopUITests: XCTestCase {
         // Banners screen
         let firstBanner = app.tables.children(matching: .cell).element(boundBy: 0)
         expectation(for: existsPredicate, evaluatedWith: firstBanner, handler: nil)
-        waitForExpectations(timeout: 10, handler: nil)
+        waitForExpectations(timeout: 20, handler: nil)
         // dismiss APNS alert
         firstBanner.forceTapElement()
         snapshot("Banners")
