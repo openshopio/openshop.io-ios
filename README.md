@@ -35,7 +35,7 @@ We are trying to minimize the effort necessary to ship your ecommerce mobile sol
 OpenShop.io uses CocoaPods as a dependency manager for OpenShop.io project. To run the project please follow these steps:
 
 ## Requirements
-* iOS 8.0+
+* iOS 9.0+
 * Xcode 7.2+ for app development and distribution to Apple App Store
 
 ## Workspace Setup
