@@ -160,6 +160,7 @@
 		AD79BEF61C7EEAC800D128AF /* BFBranchOpeningHours.m in Sources */ = {isa = PBXBuildFile; fileRef = AD79BEF41C7EEAC800D128AF /* BFBranchOpeningHours.m */; };
 		AD79BEF91C7EF25C00D128AF /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = AD79BEF81C7EF25C00D128AF /* NSArray+Map.m */; };
 		AD7AD0C81C74737D00B14C89 /* BFEditCartProductTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7AD0C71C74737D00B14C89 /* BFEditCartProductTableViewCellExtension.m */; };
+		AD88A106211824630001C20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD88A105211824630001C20B /* GoogleService-Info.plist */; };
 		AD9BA5D81C88201000221C82 /* XCUIElement+ForceTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BA5D71C88201000221C82 /* XCUIElement+ForceTap.swift */; };
 		AD9BA5DE1C887AB100221C82 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD9BA5DA1C887A8A00221C82 /* Roboto-Bold.ttf */; };
 		AD9BA5DF1C887AB100221C82 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD9BA5DB1C887A8A00221C82 /* Roboto-Light.ttf */; };
@@ -190,7 +191,6 @@
 		ADF26D831C4D12500020777B /* BFOrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF26D821C4D12500020777B /* BFOrderFormViewController.m */; };
 		ADF26D871C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF26D861C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m */; };
 		ADF627841C60D59B00A10A2B /* BFDataResponseCartInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF627831C60D59B00A10A2B /* BFDataResponseCartInfo.m */; };
-		ADF7CBEA1D490926003CAE09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF7CBE91D490926003CAE09 /* GoogleService-Info.plist */; };
 		ADF7CBED1D4909C2003CAE09 /* BFGoogleService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF7CBEC1D4909C2003CAE09 /* BFGoogleService.m */; };
 		ADF7CBEE1D490C7E003CAE09 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD305C891B1CA9780059B7F9 /* CoreData.framework */; };
 		ADFA0D391C4E7A19002771A1 /* BFAddressTableViewCellExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFA0D381C4E7A19002771A1 /* BFAddressTableViewCellExtension.m */; };
@@ -611,6 +611,7 @@
 		AD79BEF81C7EF25C00D128AF /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		AD7AD0C61C74737D00B14C89 /* BFEditCartProductTableViewCellExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFEditCartProductTableViewCellExtension.h; sourceTree = "<group>"; };
 		AD7AD0C71C74737D00B14C89 /* BFEditCartProductTableViewCellExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFEditCartProductTableViewCellExtension.m; sourceTree = "<group>"; };
+		AD88A105211824630001C20B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD9927A258E418DB290A39F5 /* libPods-OpenShopUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenShopUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9BA5D71C88201000221C82 /* XCUIElement+ForceTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+ForceTap.swift"; sourceTree = "<group>"; };
 		AD9BA5DA1C887A8A00221C82 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -669,7 +670,6 @@
 		ADF26D861C4D26620020777B /* BFOrderFormShippingPaymentTableViewCellExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFOrderFormShippingPaymentTableViewCellExtension.m; sourceTree = "<group>"; };
 		ADF627821C60D59B00A10A2B /* BFDataResponseCartInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BFDataResponseCartInfo.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		ADF627831C60D59B00A10A2B /* BFDataResponseCartInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BFDataResponseCartInfo.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		ADF7CBE91D490926003CAE09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADF7CBEB1D4909C2003CAE09 /* BFGoogleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFGoogleService.h; sourceTree = "<group>"; };
 		ADF7CBEC1D4909C2003CAE09 /* BFGoogleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFGoogleService.m; sourceTree = "<group>"; };
 		ADF7CBEF1D490CAA003CAE09 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -1394,7 +1394,7 @@
 		72DDF75E16E7485F00887646 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ADF7CBE91D490926003CAE09 /* GoogleService-Info.plist */,
+				AD88A105211824630001C20B /* GoogleService-Info.plist */,
 				72DDF75F16E7485F00887646 /* Info.plist */,
 				72DDF76316E7485F00887646 /* main.m */,
 				72DDF76516E7485F00887646 /* Prefix.pch */,
@@ -2005,11 +2005,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADF7CBEA1D490926003CAE09 /* GoogleService-Info.plist in Resources */,
 				AD9BA5DE1C887AB100221C82 /* Roboto-Bold.ttf in Resources */,
 				AD9BA5DF1C887AB100221C82 /* Roboto-Light.ttf in Resources */,
 				AD9BA5E01C887AB100221C82 /* Roboto-Medium.ttf in Resources */,
 				AD9BA5E11C887AB100221C82 /* Roboto-Regular.ttf in Resources */,
+				AD88A106211824630001C20B /* GoogleService-Info.plist in Resources */,
 				7253B0D11769C4AC004C6554 /* Localizable.strings in Resources */,
 				BBBDC1B01C4298D500B629A4 /* BFLoadingCollectionReusableView.xib in Resources */,
 				A1D4C13F1817D70C0093ED50 /* Images.xcassets in Resources */,

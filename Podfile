@@ -32,8 +32,8 @@ target 'OpenShop' do
     pod 'ActionSheetPicker-3.0', '~> 2.0.4'
     pod 'DTCoreText', '~> 1.6.17'
     pod 'XMLDictionary', '~> 1.4'
-    
-    pod 'Google/Analytics'
+
+    pod 'Firebase/Core'
     pod 'GoogleIDFASupport'
     
     pod 'Onboard', :git => 'https://github.com/Skornos/Onboard.git'

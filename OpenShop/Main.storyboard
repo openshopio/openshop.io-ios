@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFBannerTableViewCellIdentifier" id="dQe-Dv-TbF" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFBannerTableViewCellIdentifier" id="dQe-Dv-TbF" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="dQe-Dv-TbF" id="0tB-6a-DeX">
@@ -115,7 +115,7 @@
                                 <color key="backgroundColor" red="0.93588387966156006" green="0.93545281887054443" blue="0.95613247156143188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFCategoryTableViewCellIdentifier" id="rej-kz-2UG" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFCategoryTableViewCellIdentifier" id="rej-kz-2UG" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="rej-kz-2UG" id="FMv-Wu-nRL">
@@ -123,7 +123,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95c-gM-0ET">
-                                                    <rect key="frame" x="50" y="11" width="305" height="21"/>
+                                                    <rect key="frame" x="50" y="11" width="530" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="D8N-rf-ota"/>
                                                     </constraints>
@@ -147,7 +147,7 @@
                                             <outlet property="headerlabel" destination="95c-gM-0ET" id="3cg-WO-Za8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFStaticCategoryTableViewCellIdentifier" id="gtb-ow-dan" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFStaticCategoryTableViewCellIdentifier" id="gtb-ow-dan" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="99.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="gtb-ow-dan" id="Y0o-fL-qCz">
@@ -162,7 +162,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-1x-eyW">
-                                                    <rect key="frame" x="70" y="11" width="285" height="21"/>
+                                                    <rect key="frame" x="70" y="11" width="510" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="6Fc-39-EWT"/>
                                                     </constraints>
@@ -261,7 +261,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFOrdersTableViewCellIdentifier" rowHeight="60" id="kIb-UU-Wln" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFOrdersTableViewCellIdentifier" rowHeight="60" id="kIb-UU-Wln" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="kIb-UU-Wln" id="whP-wb-CDC">
@@ -1565,7 +1565,7 @@ kde chcete nakupovat</string>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFSearchQueryTableViewCellIdentifier" id="Zi5-gW-2OT" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFSearchQueryTableViewCellIdentifier" id="Zi5-gW-2OT" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="Zi5-gW-2OT" id="aG6-KR-92j">
@@ -1671,7 +1671,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="20" width="600" height="515"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFEditCartProductViewCellIdentifier" rowHeight="64" id="P5h-CK-bfX" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFEditCartProductViewCellIdentifier" rowHeight="64" id="P5h-CK-bfX" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P5h-CK-bfX" id="iOI-hm-uz8">
@@ -1679,13 +1679,13 @@ kde chcete nakupovat</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Růžová" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-lf-XTi">
-                                                    <rect key="frame" x="142.5" y="24" width="191.5" height="18"/>
+                                                    <rect key="frame" x="210" y="23.5" width="349" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cft-oA-yUI">
-                                                    <rect key="frame" x="30" y="22" width="102.5" height="20"/>
+                                                    <rect key="frame" x="30" y="22" width="170" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1872,7 +1872,7 @@ kde chcete nakupovat</string>
                                     </variation>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFCartProductTableViewCell" rowHeight="102" id="Jbb-Ys-eJw" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFCartProductTableViewCell" rowHeight="102" id="Jbb-Ys-eJw" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jbb-Ys-eJw" id="XCR-lj-z4c">
@@ -1892,13 +1892,13 @@ kde chcete nakupovat</string>
                                                     </variation>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-5L-d6Q">
-                                                    <rect key="frame" x="102.5" y="16" width="181.5" height="18"/>
+                                                    <rect key="frame" x="102.5" y="16" width="406.5" height="17.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="modré / XXL / " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-og-1qK">
-                                                    <rect key="frame" x="102.5" y="67" width="181.5" height="18"/>
+                                                    <rect key="frame" x="102.5" y="67" width="406.5" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1913,7 +1913,7 @@ kde chcete nakupovat</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qi-Jh-Ksl">
-                                                    <rect key="frame" x="102.5" y="42" width="181.5" height="17"/>
+                                                    <rect key="frame" x="102.5" y="41.5" width="406.5" height="17.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1944,7 +1944,7 @@ kde chcete nakupovat</string>
                                             <outlet property="subheaderLabel" destination="4Qi-Jh-Ksl" id="SV4-fB-kNl"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFCartDiscountTableViewCell" rowHeight="72" id="ISA-s2-LbG" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFCartDiscountTableViewCell" rowHeight="72" id="ISA-s2-LbG" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="157.5" width="600" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISA-s2-LbG" id="mqh-oM-khf">
@@ -1952,13 +1952,13 @@ kde chcete nakupovat</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleva na všechno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oI-5Z-EzL">
-                                                    <rect key="frame" x="30" y="17" width="110" height="18"/>
+                                                    <rect key="frame" x="30" y="17" width="110" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 Kč" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-uQ-RJg">
-                                                    <rect key="frame" x="30" y="37" width="44" height="18"/>
+                                                    <rect key="frame" x="30" y="37" width="44" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.91096580028533936" green="0.0" blue="0.3120763897895813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2052,7 +2052,7 @@ kde chcete nakupovat</string>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.91096580028533936" green="0.0" blue="0.3120763897895813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFOrderShippingTableViewCell" rowHeight="86" id="Oe7-1u-uK6" customClass="BFSelectableTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFOrderShippingTableViewCell" rowHeight="86" id="Oe7-1u-uK6" customClass="BFSelectableTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oe7-1u-uK6" id="xXt-kd-zqg">
@@ -2076,7 +2076,7 @@ kde chcete nakupovat</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doručení do druhého dne. Lorem ipsum sit dolor amet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbQ-0c-ctJ">
-                                                    <rect key="frame" x="19" y="42" width="266" height="28"/>
+                                                    <rect key="frame" x="19" y="42" width="491" height="28"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2115,7 +2115,7 @@ kde chcete nakupovat</string>
                                             <outlet property="verticalView" destination="ZuA-5F-Nhc" id="Qtc-da-TMg"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="BFOrderPersonalPickupTableViewCell" rowHeight="76" id="UA4-hT-hSc" customClass="BFSelectableTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="BFOrderPersonalPickupTableViewCell" rowHeight="76" id="UA4-hT-hSc" customClass="BFSelectableTableViewCell">
                                         <rect key="frame" x="0.0" y="141.5" width="600" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UA4-hT-hSc" id="pAS-SI-3pL">
@@ -2129,8 +2129,8 @@ kde chcete nakupovat</string>
                                                         <constraint firstAttribute="width" constant="4" id="g5z-nr-F2w"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="889 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2c-39-Em2">
-                                                    <rect key="frame" x="490" y="29" width="60" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="889 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2c-39-Em2">
+                                                    <rect key="frame" x="490" y="28.5" width="60" height="18.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="Vko-oj-5t6"/>
                                                     </constraints>
@@ -2148,7 +2148,7 @@ kde chcete nakupovat</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tady jsme doma. Osobní vyzvednutí. Lorem ipsum sit dolor amet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-7r-Gek">
-                                                    <rect key="frame" x="19" y="42" width="236" height="18"/>
+                                                    <rect key="frame" x="19" y="42" width="461" height="18"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2254,13 +2254,13 @@ kde chcete nakupovat</string>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1259 Kč" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKH-Na-F3R">
-                                            <rect key="frame" x="360" y="3" width="230" height="22"/>
+                                            <rect key="frame" x="360" y="3" width="230" height="21.5"/>
                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cena s DPH" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUH-9A-80R">
-                                            <rect key="frame" x="360" y="30" width="230" height="17"/>
+                                            <rect key="frame" x="360" y="29.5" width="230" height="17.5"/>
                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -2315,7 +2315,7 @@ kde chcete nakupovat</string>
                                     </variation>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderFormDisclosureTableViewCell" rowHeight="42" id="4O7-W9-uxL" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderFormDisclosureTableViewCell" rowHeight="42" id="4O7-W9-uxL" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4O7-W9-uxL" id="xaq-Fj-nOx">
@@ -2402,26 +2402,26 @@ kde chcete nakupovat</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-Df-NCT" customClass="BFLabel">
-                                                    <rect key="frame" x="30" y="13" width="190" height="19"/>
+                                                    <rect key="frame" x="30" y="13" width="324.5" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-VO-JFD" customClass="BFLabel">
-                                                    <rect key="frame" x="241" y="13" width="104" height="19"/>
+                                                    <rect key="frame" x="375.5" y="13" width="194.5" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldc-c4-tXH" userLabel="Delimiter">
-                                                    <rect key="frame" x="225" y="11" width="1" height="50"/>
+                                                    <rect key="frame" x="359.5" y="11" width="1" height="50"/>
                                                     <color key="backgroundColor" red="0.93597579002380371" green="0.93615555763244629" blue="0.93594586849212646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="1" id="hYo-sN-2nh"/>
                                                     </constraints>
                                                 </view>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John Doe" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hxn-Du-8yx" customClass="BFTextField">
-                                                    <rect key="frame" x="20" y="32" width="200" height="20"/>
+                                                    <rect key="frame" x="20" y="31.5" width="334.5" height="20"/>
                                                     <color key="tintColor" red="0.96078431369999995" green="0.51372549020000002" blue="0.27058823529999998" alpha="0.79674030169999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -2438,7 +2438,7 @@ kde chcete nakupovat</string>
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="john@doe.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nZI-pb-GKN" customClass="BFTextField">
-                                                    <rect key="frame" x="231" y="32" width="124" height="20"/>
+                                                    <rect key="frame" x="365.5" y="31.5" width="214.5" height="20"/>
                                                     <color key="tintColor" red="0.96078431369999995" green="0.51372549020000002" blue="0.27058823529999998" alpha="0.79674030169999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -2488,7 +2488,7 @@ kde chcete nakupovat</string>
                                             <outlet property="mainTextField" destination="Hxn-Du-8yx" id="Sef-2h-p9b"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderFormNoteTableViewCell" rowHeight="76" id="QQI-gy-kJ6" customClass="BFTextViewTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderFormNoteTableViewCell" rowHeight="76" id="QQI-gy-kJ6" customClass="BFTextViewTableViewCell">
                                         <rect key="frame" x="0.0" y="241.5" width="600" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QQI-gy-kJ6" id="lve-zF-TsH">
@@ -2607,7 +2607,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="40" width="600" height="495"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryTotalTableViewCell" id="5fj-9V-jQK" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryTotalTableViewCell" id="5fj-9V-jQK" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5fj-9V-jQK" id="vBd-7s-UFI">
@@ -2640,7 +2640,7 @@ kde chcete nakupovat</string>
                                             <outlet property="subheaderLabel" destination="hgB-l2-sau" id="07a-eM-JV7"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryAddressTableViewCell" id="Ph9-KZ-rmi" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryAddressTableViewCell" id="Ph9-KZ-rmi" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="99.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ph9-KZ-rmi" id="r5h-Tg-FSX">
@@ -2673,7 +2673,7 @@ kde chcete nakupovat</string>
                                             <outlet property="subheaderLabel" destination="da1-MN-sNU" id="AtK-jX-yri"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryPriceTableViewCell" id="LnX-3T-pyc" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryPriceTableViewCell" id="LnX-3T-pyc" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="143.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LnX-3T-pyc" id="1Bg-lC-Kix">
@@ -2715,7 +2715,7 @@ kde chcete nakupovat</string>
                                             <outlet property="subheaderLabel" destination="JC4-TA-70K" id="7mJ-rV-pdc"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryShippingPaymentTableViewCell" id="AKV-Lk-0O3" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BFOrderSummaryShippingPaymentTableViewCell" id="AKV-Lk-0O3" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="187.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AKV-Lk-0O3" id="i9o-h4-1be">
@@ -2893,7 +2893,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="20" width="600" height="515"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFOrderPaymentTableViewCell" rowHeight="98" id="vwL-7j-Gpl" customClass="BFSelectableTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFOrderPaymentTableViewCell" rowHeight="98" id="vwL-7j-Gpl" customClass="BFSelectableTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="600" height="98"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vwL-7j-Gpl" id="xDR-LL-cTq">
@@ -2917,7 +2917,7 @@ kde chcete nakupovat</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Údaje pro platbu Vám budou zaslány po dokončení objednávky. Lorem ipsum sit dolor amet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8g-xq-kgR">
-                                                    <rect key="frame" x="30" y="42" width="255" height="40"/>
+                                                    <rect key="frame" x="30" y="42" width="480" height="40"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -3171,7 +3171,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFMoreTableViewCellIdentifier" id="Pmw-6r-MCX" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFMoreTableViewCellIdentifier" id="Pmw-6r-MCX" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="Pmw-6r-MCX" id="i4Q-JB-Fid">
@@ -3346,7 +3346,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFSettingsTableViewCellIdentifier" id="Muu-4P-L9e" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFSettingsTableViewCellIdentifier" id="Muu-4P-L9e" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="Muu-4P-L9e" id="OFY-P6-s3b">
@@ -3458,23 +3458,23 @@ kde chcete nakupovat</string>
                                     <action selector="closeButtonClicked:" destination="7e8-nV-1L3" eventType="touchUpInside" id="siS-qO-sey"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwE-B3-DZY" userLabel="InfoView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JwE-B3-DZY" userLabel="InfoView">
                                 <rect key="frame" x="0.0" y="151" width="300" height="199"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Praha – Výdejna radosti Dejvická" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84I-GY-bbu">
-                                        <rect key="frame" x="10" y="10" width="280" height="23"/>
+                                        <rect key="frame" x="10" y="10" width="280" height="22.5"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chrudimská 2364/4, 130 00 Praha 3 Vinohrady" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxJ-er-PRv">
-                                        <rect key="frame" x="10" y="38" width="280" height="37"/>
+                                        <rect key="frame" x="10" y="37.5" width="280" height="37"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                         <color key="textColor" red="0.35985839366912842" green="0.36328813433647156" blue="0.3758220374584198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="L81-0G-Vpa">
-                                        <rect key="frame" x="20" y="165" width="260" height="20"/>
+                                        <rect key="frame" x="20" y="164.5" width="260" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="SPB-aa-Qrc"/>
                                         </constraints>
@@ -3483,7 +3483,7 @@ kde chcete nakupovat</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-c5-OI1" customClass="BFBranchTransportView">
-                                        <rect key="frame" x="10" y="85" width="280" height="70"/>
+                                        <rect key="frame" x="10" y="84.5" width="280" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="129" translatesAutoresizingMaskIntoConstraints="NO" id="jn5-zs-6vg">
                                                 <rect key="frame" x="35" y="10" width="245" height="55"/>
@@ -3582,7 +3582,7 @@ kde chcete nakupovat</string>
                                     <action selector="pageChanged:" destination="7e8-nV-1L3" eventType="valueChanged" id="JGj-WC-Z9k"/>
                                 </connections>
                             </pageControl>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4n-o8-oQX">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4n-o8-oQX">
                                 <rect key="frame" x="0.0" y="28" width="300" height="123"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hVz-d0-XQt"/>
@@ -3758,7 +3758,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFSortTableViewCellIdentifier" id="Sk3-xt-mTN" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFSortTableViewCellIdentifier" id="Sk3-xt-mTN" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="Sk3-xt-mTN" id="bOH-YQ-be7">
@@ -4017,7 +4017,7 @@ kde chcete nakupovat</string>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rME-gz-tur">
-                                            <rect key="frame" x="290" y="50" width="20" height="20"/>
+                                            <rect key="frame" x="177.5" y="50" width="20" height="20"/>
                                         </activityIndicatorView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4027,7 +4027,7 @@ kde chcete nakupovat</string>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFProductDetailButtonRightAlignedTableViewCellIdentifier" rowHeight="50" id="G9g-Iq-F5H" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFProductDetailButtonRightAlignedTableViewCellIdentifier" rowHeight="50" id="G9g-Iq-F5H" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="235.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="G9g-Iq-F5H" id="yDT-ha-MzI">
@@ -4090,7 +4090,7 @@ kde chcete nakupovat</string>
                                             <outlet property="actionButton" destination="HsO-wg-QAY" id="z6S-2a-2dJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFProductDetailButtonLeftAlignedTableViewCellIdentifier" rowHeight="50" id="0vI-gQ-tNt" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFProductDetailButtonLeftAlignedTableViewCellIdentifier" rowHeight="50" id="0vI-gQ-tNt" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="285.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="0vI-gQ-tNt" id="Bx0-k3-tep">
@@ -4153,7 +4153,7 @@ kde chcete nakupovat</string>
                                             <outlet property="actionButton" destination="MTy-I1-jYE" id="MuE-CF-Su6"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFProductDetailRelatedTableViewCellIdentifier" rowHeight="220" id="IhO-gM-2qX" customClass="BFProductsTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFProductDetailRelatedTableViewCellIdentifier" rowHeight="220" id="IhO-gM-2qX" customClass="BFProductsTableViewCell">
                                         <rect key="frame" x="0.0" y="335.5" width="375" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="IhO-gM-2qX" id="eH5-Gc-wxp">
@@ -4341,7 +4341,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFOrderDetailItemTableViewCellIdentifier" rowHeight="60" id="isZ-bI-BtM" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFOrderDetailItemTableViewCellIdentifier" rowHeight="60" id="isZ-bI-BtM" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="isZ-bI-BtM" id="gYB-iG-YP1">
@@ -4415,7 +4415,7 @@ kde chcete nakupovat</string>
                                             <outlet property="subheaderLabel" destination="sxo-yz-cLK" id="Su7-oz-2qF"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFOrderDetailItemsTableViewCellIdentifier" rowHeight="240" id="Qz2-SA-gYK" customClass="BFProductsTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFOrderDetailItemsTableViewCellIdentifier" rowHeight="240" id="Qz2-SA-gYK" customClass="BFProductsTableViewCell">
                                         <rect key="frame" x="0.0" y="115.5" width="375" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="Qz2-SA-gYK" id="5Mg-qT-wBk">
@@ -4683,14 +4683,14 @@ kde chcete nakupovat</string>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMk-mK-Dy3">
-                                            <rect key="frame" x="290" y="0.0" width="20" height="100"/>
+                                            <rect key="frame" x="177.5" y="0.0" width="20" height="100"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="Xfe-8D-8pd"/>
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-9I-eV2" customClass="BFButton">
-                                            <rect key="frame" x="310" y="25" width="270" height="50"/>
+                                            <rect key="frame" x="197.5" y="25" width="157.5" height="50"/>
                                             <color key="backgroundColor" red="0.91096580028533936" green="0.0" blue="0.3120763897895813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="46" id="XH0-Jn-pMb"/>
@@ -4712,7 +4712,7 @@ kde chcete nakupovat</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-k7-83k" customClass="BFButton">
-                                            <rect key="frame" x="20" y="25" width="270" height="50"/>
+                                            <rect key="frame" x="20" y="25" width="157.5" height="50"/>
                                             <color key="backgroundColor" red="0.75163710117340088" green="0.74977028369903564" blue="0.77079027891159058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="3Mf-pU-z7D"/>
@@ -4759,7 +4759,7 @@ kde chcete nakupovat</string>
                                     </variation>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BFFilterSelectionItemTableViewCellIdentifier" id="t1X-KI-glv" customClass="BFTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BFFilterSelectionItemTableViewCellIdentifier" id="t1X-KI-glv" customClass="BFTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="t1X-KI-glv" id="Ti9-jr-oag">
@@ -4816,7 +4816,7 @@ kde chcete nakupovat</string>
                                             <outlet property="subheaderLabel" destination="4gn-1C-5Ea" id="dWS-GV-ZTO"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFFilterPriceTableViewCellIdentifier" rowHeight="70" id="06y-bq-Ki7" customClass="BFTableViewRangeSliderCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BFFilterPriceTableViewCellIdentifier" rowHeight="70" id="06y-bq-Ki7" customClass="BFTableViewRangeSliderCell">
                                         <rect key="frame" x="0.0" y="99.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="06y-bq-Ki7" id="x9B-fK-qhl">
@@ -4968,7 +4968,7 @@ kde chcete nakupovat</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFSelectionTableViewCellIdentifier" id="1Wl-Hf-js2" customClass="BFSeparatorTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BFSelectionTableViewCellIdentifier" id="1Wl-Hf-js2" customClass="BFSeparatorTableViewCell">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Wl-Hf-js2" id="GVW-TS-uqP">
@@ -5350,7 +5350,7 @@ kde chcete nakupovat</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="z3D-vf-cds"/>
-        <segue reference="NdI-0V-B8c"/>
+        <segue reference="Os9-gY-Yxf"/>
         <segue reference="QUD-HK-yGf"/>
         <segue reference="DJj-sJ-oEP"/>
         <segue reference="dv6-rf-L8H"/>

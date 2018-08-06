@@ -8,7 +8,8 @@
 
 #import "BFAnalyticsGoogle.h"
 #import "BFProduct.h"
-#import <Google/Analytics.h>
+
+@import Firebase;
 
 static NSString * const trackerName = @"foo";
 static NSString * const trackerUA   = @"UA-73690730-2";
@@ -17,17 +18,15 @@ static NSString * const trackerUA   = @"UA-73690730-2";
 
 + (void)logPurchasedProduct:(BFProduct *)product amount:(NSNumber *)amount quantity:(NSNumber *)quantity category:(NSString *)category sku:(NSString *)sku transactionId:(NSString *)transactionId
 {
-    id tracker = [[GAI sharedInstance] trackerWithName:trackerName trackingId:trackerUA];
-    // Enable IDFA collection.
-    [tracker setAllowIDFACollection:YES];
-    [tracker send:[[GAIDictionaryBuilder createItemWithTransactionId:transactionId                             // (NSString) Transaction ID
-                                                                name:product.name                              // (NSString) Product Name
-                                                                 sku:sku                                       // (NSString) Product SKU
-                                                            category:category                                  // (NSString) Product category
-                                                               price:product.price                             // (NSNumber)  Product price
-                                                            quantity:quantity                                  // (NSInteger)  Product quantity
-                                                        currencyCode:product.currency]                         // (NSString) Currency code
-                   build]];
+    [FIRAnalytics logEventWithName:kFIREventEcommercePurchase
+                        parameters:@{
+                                     kFIRParameterItemID:transactionId,
+                                     kFIRParameterItemName:product.name,
+                                     kFIRParameterItemCategory:category,
+                                     kFIRParameterPrice:product.price,
+                                     kFIRParameterQuantity:quantity,
+                                     kFIRParameterCurrency:product.currency
+                                     }];
 }
 
 @end

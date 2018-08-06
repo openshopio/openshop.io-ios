@@ -1,8 +1,0 @@
-framework module GGLAnalytics {
-
-  export *
-
-  umbrella header "GGLAnalytics.h"
-
-  header "GGLContext+Analytics.h"
-}

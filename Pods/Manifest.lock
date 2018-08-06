@@ -58,24 +58,47 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.10.1):
     - FBSDKCoreKit
-  - FirebaseAnalytics (3.9.0):
-    - FirebaseCore (~> 3.6)
-    - FirebaseInstanceID (~> 1.0)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseCore (3.6.0):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseInstanceID (1.0.10):
-    - FirebaseCore (~> 3.6)
-  - Google/Analytics (3.1.0):
-    - Google/Core
-    - GoogleAnalytics (~> 3.12)
-  - Google/Core (3.1.0):
-    - FirebaseAnalytics (~> 3.2)
-  - GoogleAnalytics (3.17.0)
+  - Firebase/Core (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.1.0)
+  - Firebase/CoreOnly (5.5.0):
+    - FirebaseCore (= 5.1.0)
+  - FirebaseAnalytics (5.1.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.0):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.2.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+  - GoogleAppMeasurement (5.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
   - GoogleIDFASupport (3.14.0)
-  - GoogleToolboxForMac/Defines (2.1.4)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
-    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleUtilities/AppDelegateSwizzler (5.2.1):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.2.1)
+  - GoogleUtilities/Logger (5.2.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.2.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.2.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.2.1)"
+  - GoogleUtilities/Reachability (5.2.1):
+    - GoogleUtilities/Logger
   - IDMPhotoBrowser (1.8.4):
     - DACircularProgress
     - pop
@@ -127,6 +150,11 @@ PODS:
   - MZAppearance (1.1.6)
   - MZFormSheetPresentationController (2.3.2):
     - MZAppearance
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
   - NMRangeSlider (1.2.2)
   - Onboard (2.1.5)
   - pop (1.0.10)
@@ -155,7 +183,7 @@ DEPENDENCIES:
   - FBSDKCoreKit (~> 4.10.0)
   - FBSDKLoginKit (~> 4.10.0)
   - FBSDKShareKit (~> 4.10.0)
-  - Google/Analytics
+  - Firebase/Core
   - GoogleIDFASupport
   - IDMPhotoBrowser (~> 1.8.1)
   - MagicalRecord (~> 2.3.2)
@@ -194,13 +222,13 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
+    - Firebase
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
-    - Google
-    - GoogleAnalytics
+    - GoogleAppMeasurement
     - GoogleIDFASupport
-    - GoogleToolboxForMac
+    - GoogleUtilities
     - IDMPhotoBrowser
     - MagicalRecord
     - Mantle
@@ -209,6 +237,7 @@ SPEC REPOS:
     - MRProgress
     - MZAppearance
     - MZFormSheetPresentationController
+    - nanopb
     - REFormattedNumberField
     - REValidation
     - SDWebImage
@@ -268,13 +297,13 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
   FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
   FBSDKShareKit: 2fd887cce0056bdda91f99b2021d724a4fed8e88
-  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
-  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
-  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
-  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
-  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
+  FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
+  FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
+  FirebaseInstanceID: 8cd2c6cfe7b9ab65ce7e248f6da7f26f6775b9be
+  GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
   GoogleIDFASupport: aaf8c10bd429abb1c15349d5252244f5eda8ead1
-  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GoogleUtilities: 8d9fa00248c475b606fd20b562242060a20117a2
   IDMPhotoBrowser: b574fe3229754e701f32df271afbc4ac7e4e1997
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
@@ -284,6 +313,7 @@ SPEC CHECKSUMS:
   MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
   MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
   MZFormSheetPresentationController: bba52eb65feb3b70ae83ed28fd20991802d4adeb
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   NMRangeSlider: 02bb205d0c7f9bea09b5cf00fbcbc2bc2e3e10ff
   Onboard: c58adaef5a377b0c45b4754c5cbe17d4627898c7
   pop: 40b9f1875c80f6e613958a4a44bf98b1576389f1
@@ -297,6 +327,6 @@ SPEC CHECKSUMS:
   TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
   XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
 
-PODFILE CHECKSUM: 778abdac940e509a7bcd678389c89be8ed6cb178
+PODFILE CHECKSUM: 7a4b27bf79aee1f3ec68da243f735d9d94f84e28
 
 COCOAPODS: 1.5.3
