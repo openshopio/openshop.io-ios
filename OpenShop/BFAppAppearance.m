@@ -75,7 +75,7 @@
     // navigation bar back indicator
     [self customizeNavBarBackIndicatorImage:[[UIImage imageNamed:@"BackButtonIcon"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] hidesBackButton:YES];
     // activity view controller appearance
-    [[UIView appearanceWhenContainedIn: [UIActivityViewController class], nil] setTintColor: [UIColor BFN_pinkColor]];
+    [[UIView appearanceWhenContainedInInstancesOfClasses:@[[UIActivityViewController class]]] setTintColor: [UIColor BFN_pinkColor]];
 }
 
 
@@ -104,7 +104,7 @@
                      shadowImage:(UIImage *)shadowImage
               containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
     
-    UITabBar *appearance = !containerClass ? [UITabBar appearance] : [UITabBar appearanceWhenContainedIn:containerClass, nil];
+    UITabBar *appearance = !containerClass ? [UITabBar appearance] : [UITabBar appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     [appearance setBarTintColor:tintColor];
     [appearance setTintColor:selectedImageTintColor];
@@ -132,7 +132,7 @@
                              shadowOffset:(CGSize)shadowOffset
                        containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
 
-    UITabBarItem *appearance = !containerClass ? [UITabBarItem appearance] : [UITabBarItem appearanceWhenContainedIn:containerClass, nil];
+    UITabBarItem *appearance = !containerClass ? [UITabBarItem appearance] : [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     
     // properties
     NSShadow *shadow = [[NSShadow alloc] init];
@@ -173,7 +173,7 @@
                      shadowImage:(UIImage *)shadowImage
               containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
     
-    UINavigationBar *appearance = !containerClass ? [UINavigationBar appearance] : [UINavigationBar appearanceWhenContainedIn:containerClass, nil];
+    UINavigationBar *appearance = !containerClass ? [UINavigationBar appearance] : [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     [appearance setBarTintColor:tintColor];
     [appearance setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
@@ -206,7 +206,7 @@
                          shadowOffset:(CGSize)shadowOffset
                    containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
     
-    UINavigationBar *appearance = !containerClass ? [UINavigationBar appearance] : [UINavigationBar appearanceWhenContainedIn:containerClass, nil];
+    UINavigationBar *appearance = !containerClass ? [UINavigationBar appearance] : [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     NSMutableDictionary *properties = [[NSMutableDictionary alloc]initWithDictionary:@{NSFontAttributeName : font,
                                                                                       NSForegroundColorAttributeName : foregroundColor
@@ -229,7 +229,7 @@
 + (void)customizeNavBarBackIndicatorImage:(UIImage *)backIndicatorImage
                           hidesBackButton:(BOOL)hidesBackButton
                        containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
-    UINavigationBar *appearance = !containerClass ? [UINavigationBar appearance] : [UINavigationBar appearanceWhenContainedIn:containerClass, nil];
+    UINavigationBar *appearance = !containerClass ? [UINavigationBar appearance] : [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     [appearance setBackIndicatorImage:backIndicatorImage];
     [appearance setBackIndicatorTransitionMaskImage:backIndicatorImage];
@@ -250,7 +250,7 @@
                                    barMetrics:(UIBarMetrics)barMetrics
                            containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
     
-    UIBarButtonItem *appearance = !containerClass ? [UIBarButtonItem appearance] : [UIBarButtonItem appearanceWhenContainedIn:containerClass, nil];
+    UIBarButtonItem *appearance = !containerClass ? [UIBarButtonItem appearance] : [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     [appearance setBackgroundImage:backgroundImage forState:controlState barMetrics:barMetrics];
 }
@@ -283,7 +283,7 @@
                                     forState:(UIControlState)controlState
                           containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
 
-    UIBarButtonItem *appearance = !containerClass ? [UIBarButtonItem appearance] : [UIBarButtonItem appearanceWhenContainedIn:containerClass, nil];
+    UIBarButtonItem *appearance = !containerClass ? [UIBarButtonItem appearance] : [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = shadowColor;
@@ -311,7 +311,7 @@
                                        barMetrics:(UIBarMetrics)barMetrics
                                containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
     
-    UIBarButtonItem *appearance = !containerClass ? [UIBarButtonItem appearance] : [UIBarButtonItem appearanceWhenContainedIn:containerClass, nil];
+    UIBarButtonItem *appearance = !containerClass ? [UIBarButtonItem appearance] : [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     [appearance setBackButtonBackgroundImage:backgroundImage forState:controlState barMetrics:barMetrics];
 }
@@ -330,7 +330,7 @@
                     pageIndicatorTintColor:(UIColor *)pageIndicatorTintColor
                         containedInClasses:(Class <UIAppearanceContainer>)containerClass, ... {
     
-    UIPageControl *appearance = !containerClass ? [UIPageControl appearance] : [UIPageControl appearanceWhenContainedIn:containerClass, nil];
+    UIPageControl *appearance = !containerClass ? [UIPageControl appearance] : [UIPageControl appearanceWhenContainedInInstancesOfClasses:@[containerClass]];
     // properties
     [appearance setBackgroundColor:backgroundColor];
     [appearance setCurrentPageIndicatorTintColor:currentPageIndicatorTintColor];
