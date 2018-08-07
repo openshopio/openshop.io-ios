@@ -253,9 +253,9 @@ static NSString *const segueParameterWishlistItemID = @"wishlistItemID";
 
 + (void)customizeAppearance {
     // grouped table view background
-    [[UICollectionView appearanceWhenContainedIn:self, nil] setBackgroundView:[UIView new]];
-    [[UICollectionView appearanceWhenContainedIn:self, nil].backgroundView setBackgroundColor:[UIColor whiteColor]];
-    [UICollectionView appearanceWhenContainedIn:self, nil].alwaysBounceVertical = true;
+    [[UICollectionView appearanceWhenContainedInInstancesOfClasses:@[self]] setBackgroundView:[UIView new]];
+    [[UICollectionView appearanceWhenContainedInInstancesOfClasses:@[self]].backgroundView setBackgroundColor:[UIColor whiteColor]];
+    [UICollectionView appearanceWhenContainedInInstancesOfClasses:@[self]].alwaysBounceVertical = true;
 }
 
 
