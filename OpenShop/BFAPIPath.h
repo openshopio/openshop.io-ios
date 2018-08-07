@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * API service host URL.
  */
-static NSString *const BFAPIRootURL                             = @"http://77.93.198.186";
+static NSString *const BFAPIRootURL                             = @"http://private-4bdb8-bfashionapibfversion.apiary-mock.com";
 /**
  * API service default version.
  */
-static NSString *const BFAPIDefaultVersion                      = @"v1.2";
+static NSString *const BFAPIDefaultVersion                      = @"";
 
 /**
  * API service user registration request path.
