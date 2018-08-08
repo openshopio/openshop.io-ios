@@ -337,8 +337,8 @@
         UIAlertController *alertController = [UIAlertController alertControllerWithError:[BFError errorWithDomain:self.domain code:self.code userInfo:[self updatedUserInfo]] preferredStyle:UIAlertControllerStyleAlert completionBlock:block];
         [sender presentViewController:alertController animated:YES completion:nil];
     } else {
-        UIAlertView *alertView = [[UIAlertView alloc]initWithError:[BFError errorWithDomain:self.domain code:self.code userInfo:[self updatedUserInfo]] completionBlock:block];
-        [alertView show];
+        UIAlertController * alert = [UIAlertController alertControllerWithError:[BFError errorWithDomain:self.domain code:self.code userInfo:[self updatedUserInfo]] preferredStyle:UIAlertControllerStyleAlert completionBlock:block];
+        [sender presentViewController:alert animated:YES completion:nil];
     }
 }
 

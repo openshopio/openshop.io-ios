@@ -11,7 +11,7 @@
 /**
  * Dimming layer background default alpha value.
  */
-static CGFloat const defaultHighlightedOverlayAlpha = 0.4f;
+static CGFloat const defaultHighlightedOverlayAlpha = 0.4;
 
 
 @interface BFDimControl () 

@@ -14,8 +14,8 @@
 /**
  * Products toolbar content transformation - scale.
  */
-static CGFloat const toolbarContentTransformationScaleX        = 0.2f;
-static CGFloat const toolbarContentTransformationScaleY        = 0.2f;
+static CGFloat const toolbarContentTransformationScaleX        = 0.2;
+static CGFloat const toolbarContentTransformationScaleY        = 0.2;
 /**
  * Products toolbar content transformation - translation.
  */
@@ -44,7 +44,7 @@ static CGFloat const toolbarButtonSize                         = 40.0;
 /**
  * Products toolbar background grayscale value.
  */
-static CGFloat const toolbarBackgroundGrayscale                = 0.95f;
+static CGFloat const toolbarBackgroundGrayscale                = 0.95;
 /**
  * Products toolbar hit test edge insets.
  */

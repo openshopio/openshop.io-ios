@@ -27,7 +27,7 @@
 /**
  * Delay in seconds for presenting success overlay.
  */
-static CGFloat const productSucessDismissDelay = 1.4f;
+static CGFloat const productSucessDismissDelay = 1.4;
 /**
  * Delay in seconds for presenting failure overlay.
  */
@@ -75,7 +75,7 @@ static CGFloat const cellSwipeOffset                               = -50.0;
 /**
  * Table view cell swipe gesture tutorial duration (seconds).
  */
-static CGFloat const cellSwipeDuration                             = 0.5f;
+static CGFloat const cellSwipeDuration                             = 0.5;
 /**
  * Table view cell swipe gesture tutorial delay (seconds).
  */

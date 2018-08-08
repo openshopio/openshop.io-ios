@@ -12,7 +12,7 @@
 /**
  * Category state indicator image (arrow) rotating animation duration.
  */
-static CGFloat const stateIndicatorAnimationDuration  = 0.25f;
+static CGFloat const stateIndicatorAnimationDuration  = 0.25;
 
 
 @interface BFTableViewCategoryHeaderFooterView ()

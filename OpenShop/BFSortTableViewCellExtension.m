@@ -45,7 +45,7 @@ static CGFloat const sortOptionsEmptyFooterViewHeight        = 15.0;
 /**
  * Sort option selection overlay dismiss delay.
  */
-static CGFloat const selectionFinishDelay                    = 0.5f;
+static CGFloat const selectionFinishDelay                    = 0.5;
 
 
 

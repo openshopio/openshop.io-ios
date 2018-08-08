@@ -12,7 +12,7 @@
 /**
  * Default border width.
  */
-static CGFloat const defaultBorderWidth  = 0.5f;
+static CGFloat const defaultBorderWidth  = 0.5;
 /**
  * Default popup arrow width.
  */

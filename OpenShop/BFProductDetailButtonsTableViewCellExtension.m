@@ -379,7 +379,7 @@ static CGFloat const buttonBorderWidth                                    = 1.0;
         // form sheet styles
         [[MZFormSheetPresentationController appearance] setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.3f]];
         formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyleSlideFromBottom;
-        formSheetController.shadowRadius = 0.5f;
+        formSheetController.shadowRadius = 0.5;
         
         // custom presentation handlers
         formSheetController.presentationController.dismissalTransitionWillBeginCompletionHandler = ^(UIViewController *presentedFSViewController) {

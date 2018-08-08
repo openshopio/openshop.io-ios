@@ -289,7 +289,7 @@ static NSString *const segueParameterProductInfo         = @"productInfo";
     
     // segmented control title text
     NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
-    style.lineHeightMultiple = 1.2f;
+    style.lineHeightMultiple = 1.2;
     style.lineBreakMode = NSLineBreakByTruncatingTail;
     style.alignment = NSTextAlignmentCenter;
     [[UISegmentedControl appearanceWhenContainedIn:self, nil] setTitleTextAttributes:@{

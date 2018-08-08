@@ -19,8 +19,8 @@ static CGFloat const wishlistButtonScaleAnimationVelocityY  = 5.0;
 /**
  * Wishlist button scale animation starting size.
  */
-static CGFloat const wishlistButtonScaleAnimationStartX     = 0.4f;
-static CGFloat const wishlistButtonScaleAnimationStartY     = 0.4f;
+static CGFloat const wishlistButtonScaleAnimationStartX     = 0.4;
+static CGFloat const wishlistButtonScaleAnimationStartY     = 0.4;
 /**
  * Wishlist button scale animation final size.
  */

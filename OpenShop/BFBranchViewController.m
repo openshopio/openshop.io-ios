@@ -31,7 +31,7 @@ static NSString *const pageControlPopAnimationKey         = @"viewTranslateSprin
 /**
  * The shop branch info labels fade animation duration.
  */
-static CGFloat const labelFadeAnimationDuration           = 0.5f;
+static CGFloat const labelFadeAnimationDuration           = 0.5;
 /**
  * The shop branch info labels fade animation identificatiom.
  */
@@ -39,7 +39,7 @@ static NSString *const labelFadeAnimationKey              = @"fadeAnimation";
 /**
  * The shop branch transition duration.
  */
-static CGFloat const branchTransitionDuration             = 0.3f;
+static CGFloat const branchTransitionDuration             = 0.3;
 /**
  * The shop branch map annotation reuse identifier.
  */

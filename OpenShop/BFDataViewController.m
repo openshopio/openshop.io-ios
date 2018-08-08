@@ -120,7 +120,7 @@
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
     NSString *titleText = _emptyDataTitle ?: BFLocalizedString(kTranslationNoItems, @"No item");
     NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
-    paragraph.lineHeightMultiple = 1.2f;
+    paragraph.lineHeightMultiple = 1.2;
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;
     paragraph.alignment = NSTextAlignmentCenter;
     

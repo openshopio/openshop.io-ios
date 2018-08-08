@@ -47,8 +47,8 @@
 #pragma mark - Range Slider
 
 - (void)updateSliderLabels {
-    CGPoint lowerCenter = CGPointMake(self.rangeSlider.lowerCenter.x + self.rangeSlider.frame.origin.x, self.rangeSlider.center.y - self.rangeSlider.frame.size.height/2.0f);
-    CGPoint upperCenter = CGPointMake(self.rangeSlider.upperCenter.x + self.rangeSlider.frame.origin.x, self.rangeSlider.center.y - self.rangeSlider.frame.size.height/2.0f);
+    CGPoint lowerCenter = CGPointMake(self.rangeSlider.lowerCenter.x + self.rangeSlider.frame.origin.x, self.rangeSlider.center.y - self.rangeSlider.frame.size.height/2.0);
+    CGPoint upperCenter = CGPointMake(self.rangeSlider.upperCenter.x + self.rangeSlider.frame.origin.x, self.rangeSlider.center.y - self.rangeSlider.frame.size.height/2.0);
     
     // calculate label positions
     float distance = fabs(lowerCenter.x - upperCenter.x);
