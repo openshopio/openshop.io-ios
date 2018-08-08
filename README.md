@@ -14,7 +14,7 @@ We as a Facebook Marketing Partner company have experienced neverending struggle
 Do you want to see the app in action? 
 
 <a href="http://itunes.apple.com/app/id1088689646">
-<img src="http://s12.postimg.org/87quj2uop/Download_on_the_App_Store_Badge_US_UK_135x40.png"/>
+<img src="https://i.imgur.com/g5pSlzX.png"/>
 </a>
 
 # Features
