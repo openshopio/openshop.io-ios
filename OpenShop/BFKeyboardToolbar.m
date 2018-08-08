@@ -108,11 +108,11 @@
     UIBarButtonItem *fixedSpaceButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                                                                       target:nil
                                                                                       action:nil];
-    fixedSpaceButton.width = 20.0f;
+    fixedSpaceButton.width = 20.0;
     UIBarButtonItem *marginSpaceButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
                                                                                        target:nil
                                                                                        action:nil];
-    marginSpaceButton.width = 5.0f;
+    marginSpaceButton.width = 5.0;
     
     [self setItems:@[marginSpaceButton,
                      prevButton,

@@ -70,7 +70,7 @@
     // product image view
     UIImageView *cellImageView = ((BFCollectionViewCell *)cell).imageContentView;
     // hide incoming view
-    cellImageView.alpha = 0.0f;
+    cellImageView.alpha = 0.0;
     
     // replacing view controller final frame
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
@@ -81,7 +81,7 @@
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         CGRect cellImageViewframe = [containerView convertRect:cellImageView.frame fromView:cellImageView.superview];
         // update alpha to fade in
-        toViewController.view.alpha = 0.6f;
+        toViewController.view.alpha = 0.6;
         CGFloat aspectSize = CGRectGetHeight(cellImageViewframe) / CGRectGetHeight(imageSnapshot.frame);
         CGFloat destinationWidth = aspectSize * CGRectGetWidth(imageSnapshot.frame);
         CGRect destinationRect = CGRectMake(CGRectGetMidX(cellImageViewframe)-destinationWidth/2, CGRectGetMinY(cellImageViewframe), destinationWidth, CGRectGetHeight(cellImageViewframe));
@@ -97,7 +97,7 @@
         productHeaderView.imageSwipeView.hidden = NO;
         // show replaced view controller
         fromViewController.view.hidden = NO;
-        toViewController.view.alpha = 1.0f;
+        toViewController.view.alpha = 1.0;
         // finish transition
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];

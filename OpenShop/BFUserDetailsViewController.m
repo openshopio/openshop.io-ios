@@ -28,7 +28,7 @@ static NSString *const groupedHeaderViewNibName  = @"BFTableViewGroupedHeaderFoo
 /**
  * User details header view content horizontal margin.
  */
-static CGFloat const horizontalCellContentMargin = 15.0f;
+static CGFloat const horizontalCellContentMargin = 15.0;
 
 
 @interface BFUserDetailsViewController ()

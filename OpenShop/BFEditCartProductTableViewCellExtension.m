@@ -43,15 +43,15 @@ static NSString *const buttonFooterViewNibName                                  
 /**
  * color and size item table view cell height.
  */
-static CGFloat const editCartProductItemCellHeight                                = 42.0f;
+static CGFloat const editCartProductItemCellHeight                                = 42.0;
 /**
  * color and size items header view height.
  */
-static CGFloat const editCartProductItemsHeaderViewHeight                         = 50.0f;
+static CGFloat const editCartProductItemsHeaderViewHeight                         = 50.0;
 /**
  * color and size items empty footer view height.
  */
-static CGFloat const editCartProductItemsEmptyFooterViewHeight                    = 15.0f;
+static CGFloat const editCartProductItemsEmptyFooterViewHeight                    = 15.0;
 /**
  * Color cell tag for later reuse.
  */

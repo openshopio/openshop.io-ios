@@ -42,8 +42,8 @@
     // translate image if its size is less than the rectangle size
     if (imageOriginalSize.width <= rectangleSize.width && imageOriginalSize.height <= rectangleSize.height) {
         // image origin
-        CGFloat newOriginX = (rectangleSize.width - imageOriginalSize.width) / 2.0f;
-        CGFloat newOriginY = (rectangleSize.height - imageOriginalSize.height) / 2.0f;
+        CGFloat newOriginX = (rectangleSize.width - imageOriginalSize.width) / 2.0;
+        CGFloat newOriginY = (rectangleSize.height - imageOriginalSize.height) / 2.0;
         // image size
         CGFloat newHeight = imageOriginalSize.height;
         CGFloat newWidth = imageOriginalSize.width;

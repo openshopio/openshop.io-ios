@@ -166,7 +166,7 @@ typedef NS_ENUM(NSInteger, BFOrderDetailsItem) {
 }
 
 - (CGFloat)getHeaderHeight {
-    return self.finishedLoading ? orderDetailsHeaderViewHeight : 0.0f;
+    return self.finishedLoading ? orderDetailsHeaderViewHeight : 0.0;
 }
 
 - (CGFloat)getFooterHeight {

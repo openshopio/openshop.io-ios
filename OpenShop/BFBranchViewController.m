@@ -19,11 +19,11 @@
 /**
  * The page control pop animation starting margin.
  */
-static CGFloat const pageControlPopAnimationMargin        = 30.0f;
+static CGFloat const pageControlPopAnimationMargin        = 30.0;
 /**
  * The page control pop animation bounciness.
  */
-static CGFloat const pageControlPopAnimationBounciness    = 14.0f;
+static CGFloat const pageControlPopAnimationBounciness    = 14.0;
 /**
  * The page control pop animation identification.
  */

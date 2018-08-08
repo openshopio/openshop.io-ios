@@ -19,28 +19,28 @@ static CGFloat const toolbarContentTransformationScaleY        = 0.2f;
 /**
  * Products toolbar content transformation - translation.
  */
-static CGFloat const toolbarContentTransformationTranslationX  = 0.0f;
-static CGFloat const toolbarContentTransformationTranslationY  = -25.0f;
+static CGFloat const toolbarContentTransformationTranslationX  = 0.0;
+static CGFloat const toolbarContentTransformationTranslationY  = -25.0;
 /**
  * Products toolbar content final alpha value.
  */
-static CGFloat const toolbarContentFinalLayoutAlpha            = 0.0f;
+static CGFloat const toolbarContentFinalLayoutAlpha            = 0.0;
 /**
  * Products toolbar content margin.
  */
-static CGFloat const toolbarContentMarginRight                 = 30.0f;
+static CGFloat const toolbarContentMarginRight                 = 30.0;
 /**
  * Products toolbar filter button left margin.
  */
-static CGFloat const toolbarContentFilterButtonImageMarginLeft = 15.0f;
+static CGFloat const toolbarContentFilterButtonImageMarginLeft = 15.0;
 /**
  * Products toolbar items spacing.
  */
-static CGFloat const toolbarItemSpacing                        = 10.0f;
+static CGFloat const toolbarItemSpacing                        = 10.0;
 /**
  * Products toolbar button size.
  */
-static CGFloat const toolbarButtonSize                         = 40.0f;
+static CGFloat const toolbarButtonSize                         = 40.0;
 /**
  * Products toolbar background grayscale value.
  */
@@ -48,7 +48,7 @@ static CGFloat const toolbarBackgroundGrayscale                = 0.95f;
 /**
  * Products toolbar hit test edge insets.
  */
-static CGFloat const toolbarButtonHitTestEdgeInset             = 10.0f;
+static CGFloat const toolbarButtonHitTestEdgeInset             = 10.0;
 
 
 
@@ -93,7 +93,7 @@ static CGFloat const toolbarButtonHitTestEdgeInset             = 10.0f;
     self.backgroundColor  = [UIColor colorWithWhite:toolbarBackgroundGrayscale alpha:1.0f];
     self.tintColor = [UIColor blackColor];
     self.hidden = true;
-    self.minimumBarHeight = 0.0f;
+    self.minimumBarHeight = 0.0;
     _filtering = false;
     
     // initialization

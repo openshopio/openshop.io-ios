@@ -16,19 +16,19 @@ static CGFloat const defaultBorderWidth  = 0.5f;
 /**
  * Default popup arrow width.
  */
-static CGFloat const defaultArrowWidth   = 40.0f;
+static CGFloat const defaultArrowWidth   = 40.0;
 /**
  * Default popup arrow height.
  */
-static CGFloat const defaultArrowHeight  = 20.0f;
+static CGFloat const defaultArrowHeight  = 20.0;
 /**
  * Default corner radius.
  */
-static CGFloat const defaultCornerRadius = 0.0f;
+static CGFloat const defaultCornerRadius = 0.0;
 /**
  * Default margin.
  */
-static CGFloat const defaultMargin       = 2.0f;
+static CGFloat const defaultMargin       = 2.0;
 
 
 

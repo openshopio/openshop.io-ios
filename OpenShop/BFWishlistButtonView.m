@@ -14,8 +14,8 @@
 /**
  * Wishlist button scale animation velocity.
  */
-static CGFloat const wishlistButtonScaleAnimationVelocityX  = 5.0f;
-static CGFloat const wishlistButtonScaleAnimationVelocityY  = 5.0f;
+static CGFloat const wishlistButtonScaleAnimationVelocityX  = 5.0;
+static CGFloat const wishlistButtonScaleAnimationVelocityY  = 5.0;
 /**
  * Wishlist button scale animation starting size.
  */
@@ -24,17 +24,17 @@ static CGFloat const wishlistButtonScaleAnimationStartY     = 0.4f;
 /**
  * Wishlist button scale animation final size.
  */
-static CGFloat const wishlistButtonScaleAnimationEndX       = 1.0f;
-static CGFloat const wishlistButtonScaleAnimationEndY       = 1.0f;
+static CGFloat const wishlistButtonScaleAnimationEndX       = 1.0;
+static CGFloat const wishlistButtonScaleAnimationEndY       = 1.0;
 /**
  * Wishlist button enlarge animation final size.
  */
-static CGFloat const wishlistButtonEnlargeAnimationEndX     = 1.0f;
-static CGFloat const wishlistButtonEnlargeAnimationEndY     = 1.0f;
+static CGFloat const wishlistButtonEnlargeAnimationEndX     = 1.0;
+static CGFloat const wishlistButtonEnlargeAnimationEndY     = 1.0;
 /**
  * Wishlist button scale animation bounciness.
  */
-static CGFloat const wishlistButtonScaleAnimationBounciness = 20.0f;
+static CGFloat const wishlistButtonScaleAnimationBounciness = 20.0;
 /**
  * Wishlist button scale animation identification.
  */

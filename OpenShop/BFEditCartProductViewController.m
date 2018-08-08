@@ -18,7 +18,7 @@
 /**
  * Delay in seconds for presenting failure overlay.
  */
-static CGFloat const orderFailureDismissDelay = 2.0f;
+static CGFloat const orderFailureDismissDelay = 2.0;
 /**
  * Storyboard embed footer button segue identifier.
  */

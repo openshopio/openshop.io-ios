@@ -17,11 +17,11 @@
 /**
  *  Order items empty footer view height.
  */
-static CGFloat const orderItemsEmptyFooterViewHeight         = 15.0f;
+static CGFloat const orderItemsEmptyFooterViewHeight         = 15.0;
 /**
  * Order items table view cell height.
  */
-static CGFloat const orderItemsCellHeight                    = 240.0f;
+static CGFloat const orderItemsCellHeight                    = 240.0;
 /**
  * Order items table view cell reuse identifier.
  */
@@ -37,7 +37,7 @@ static NSString *const orderItemsHeaderViewNibName           = @"BFTableViewGrou
 /**
  * Order items header view height.
  */
-static CGFloat const orderDetailsHeaderViewHeight            = 50.0f;
+static CGFloat const orderDetailsHeaderViewHeight            = 50.0;
 /**
  * Presenting segue product data model parameter.
  */
@@ -111,7 +111,7 @@ static NSString *const segueParameterProduct                 = @"product";
 }
 
 - (CGFloat)getHeaderHeight {
-    return ([self.orderItems count] > 0) ? orderDetailsHeaderViewHeight : 0.0f;
+    return ([self.orderItems count] > 0) ? orderDetailsHeaderViewHeight : 0.0;
 }
 
 - (CGFloat)getFooterHeight {

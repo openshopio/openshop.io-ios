@@ -17,7 +17,7 @@
 /**
  * Product description empty header view height.
  */
-static CGFloat const productDetailEmptyHeaderFooterViewHeight      = 2.0f;
+static CGFloat const productDetailEmptyHeaderFooterViewHeight      = 2.0;
 /**
  * Product description table view cell reuse identifier.
  */
@@ -25,10 +25,10 @@ static NSString *const productDetailDescriptionCellReuseIdentifier = @"BFProduct
 /**
  * Product description text view margins.
  */
-static CGFloat const productDetailDescriptionTextViewMarginTop     = 20.0f;
-static CGFloat const productDetailDescriptionTextViewMarginLeft    = 20.0f;
-static CGFloat const productDetailDescriptionTextViewMarginRight   = 20.0f;
-static CGFloat const productDetailDescriptionTextViewMarginBottom  = 20.0f;
+static CGFloat const productDetailDescriptionTextViewMarginTop     = 20.0;
+static CGFloat const productDetailDescriptionTextViewMarginLeft    = 20.0;
+static CGFloat const productDetailDescriptionTextViewMarginRight   = 20.0;
+static CGFloat const productDetailDescriptionTextViewMarginBottom  = 20.0;
 
 
 

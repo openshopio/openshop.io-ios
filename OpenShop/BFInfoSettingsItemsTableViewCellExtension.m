@@ -44,19 +44,19 @@ static NSString *const segueParameterInfoPage                      = @"infoPage"
 /**
  * Info settings item table view cell height.
  */
-static CGFloat const infoSettingsItemCellHeight                    = 42.0f;
+static CGFloat const infoSettingsItemCellHeight                    = 42.0;
 /**
  * Info settings items header view height.
  */
-static CGFloat const infoSettingsItemsHeaderViewHeight             = 40.0f;
+static CGFloat const infoSettingsItemsHeaderViewHeight             = 40.0;
 /**
  * Button footer view height.
  */
-static CGFloat const buttonFooterViewHeight                        = 100.0f;
+static CGFloat const buttonFooterViewHeight                        = 100.0;
 /**
  * Info settings items empty footer view height.
  */
-static CGFloat const infoSettingsItemsEmptyFooterViewHeight        = 15.0f;
+static CGFloat const infoSettingsItemsEmptyFooterViewHeight        = 15.0;
 
 
 

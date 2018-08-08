@@ -38,15 +38,15 @@ static NSString *const buttonFooterViewNibName                              = @"
 /**
  * shipping and payment item table view cell height.
  */
-static CGFloat const shippingAndPaymentItemCellHeight                    = 42.0f;
+static CGFloat const shippingAndPaymentItemCellHeight                    = 42.0;
 /**
  * shipping and payment items header view height.
  */
-static CGFloat const shippingAndPaymentItemsHeaderViewHeight             = 50.0f;
+static CGFloat const shippingAndPaymentItemsHeaderViewHeight             = 50.0;
 /**
  * shipping and payment items empty footer view height.
  */
-static CGFloat const shippingAndPaymentItemsEmptyFooterViewHeight        = 15.0f;
+static CGFloat const shippingAndPaymentItemsEmptyFooterViewHeight        = 15.0;
 
 @interface BFOrderFormShippingPaymentTableViewCellExtension ()
 

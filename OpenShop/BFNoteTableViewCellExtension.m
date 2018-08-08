@@ -39,11 +39,11 @@ static CGFloat const extensionCellHeight                           = 44.5f;
 /**
  * Extension header view height.
  */
-static CGFloat const extensionHeaderViewHeight                     = 30.0f;
+static CGFloat const extensionHeaderViewHeight                     = 30.0;
 /**
  * Extension footer view height.
  */
-static CGFloat const extensionEmptyFooterViewHeight                = 10.0f;
+static CGFloat const extensionEmptyFooterViewHeight                = 10.0;
 
 @interface BFNoteTableViewCellExtension ()
 

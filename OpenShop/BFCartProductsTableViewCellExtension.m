@@ -31,7 +31,7 @@ static CGFloat const productSucessDismissDelay = 1.4f;
 /**
  * Delay in seconds for presenting failure overlay.
  */
-static CGFloat const productFailureDismissDelay = 2.0f;
+static CGFloat const productFailureDismissDelay = 2.0;
 /**
  * Presenting segue product information parameter.
  */
@@ -59,19 +59,19 @@ static NSString *const extensionHeaderViewReuseIdentifier          = @"BFTableVi
 /**
  * Extension table view cell height.
  */
-static CGFloat const extensionCellHeight                           = 102.0f;
+static CGFloat const extensionCellHeight                           = 102.0;
 /**
  * Extension header view height.
  */
-static CGFloat const extensionHeaderViewHeight                     = 20.0f;
+static CGFloat const extensionHeaderViewHeight                     = 20.0;
 /**
  * Extension footer view height.
  */
-static CGFloat const extensionEmptyFooterViewHeight                = 25.0f;
+static CGFloat const extensionEmptyFooterViewHeight                = 25.0;
 /**
  * Table view cell swipe gesture tutorial offset.
  */
-static CGFloat const cellSwipeOffset                               = -50.0f;
+static CGFloat const cellSwipeOffset                               = -50.0;
 /**
  * Table view cell swipe gesture tutorial duration (seconds).
  */
@@ -79,7 +79,7 @@ static CGFloat const cellSwipeDuration                             = 0.5f;
 /**
  * Table view cell swipe gesture tutorial delay (seconds).
  */
-static CGFloat const cellSwipeDelay                                = 1.0f;
+static CGFloat const cellSwipeDelay                                = 1.0;
 
 @interface BFCartProductsTableViewCellExtension ()
 

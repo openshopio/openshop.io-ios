@@ -32,15 +32,15 @@ static NSString *const segueParameterProductInfo              = @"productInfo";
 /**
  * Search query table view cell height.
  */
-static CGFloat const searchSuggestionsCellHeight                    = 42.0f;
+static CGFloat const searchSuggestionsCellHeight                    = 42.0;
 /**
  * Search queries header view height.
  */
-static CGFloat const searchSuggestionsHeaderViewHeight            = 50.0f;
+static CGFloat const searchSuggestionsHeaderViewHeight            = 50.0;
 /**
  * Search queries empty footer view height.
  */
-static CGFloat const searchSuggestionsEmptyFooterViewHeight       = 15.0f;
+static CGFloat const searchSuggestionsEmptyFooterViewHeight       = 15.0;
 
 
 

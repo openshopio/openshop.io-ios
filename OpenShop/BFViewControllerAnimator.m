@@ -12,23 +12,23 @@
 /**
  * View controller default transition duration.
  */
-static double const BFViewControllerAnimationDefaultDuration = 0.3f;
+static double const BFViewControllerAnimationDefaultDuration = 0.3;
 /**
  * Replacing view controller default alpha value at transition start.
  */
-static CGFloat const BFViewControllerAnimationFromVCDefaultAlphaStart = 1.0f;
+static CGFloat const BFViewControllerAnimationFromVCDefaultAlphaStart = 1.0;
 /**
  * Replacing view controller default alpha value at the end of the transition.
  */
-static CGFloat const BFViewControllerAnimationFromVCDefaultAlphaEnd = 0.0f;
+static CGFloat const BFViewControllerAnimationFromVCDefaultAlphaEnd = 0.0;
 /**
  * Replaced view controller default alpha value at transition start.
  */
-static CGFloat const BFViewControllerAnimationToVCDefaultAlphaStart = 0.0f;
+static CGFloat const BFViewControllerAnimationToVCDefaultAlphaStart = 0.0;
 /**
  * Replaced view controller default alpha value at the end of the transition.
  */
-static CGFloat const BFViewControllerAnimationToVCDefaultAlphaEnd = 1.0f;
+static CGFloat const BFViewControllerAnimationToVCDefaultAlphaEnd = 1.0;
 
 
 @interface BFViewControllerAnimator ()

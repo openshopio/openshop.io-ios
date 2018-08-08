@@ -28,15 +28,15 @@ static NSString *const filterSelectionItemHeaderViewNibName          = @"BFTable
 /**
  * Filter selection item table view cell height.
  */
-static CGFloat const filterSelectionItemCellHeight                   = 46.0f;
+static CGFloat const filterSelectionItemCellHeight                   = 46.0;
 /**
  * Filter selection item header view height.
  */
-static CGFloat const filterSelectionItemHeaderViewHeight             = 50.0f;
+static CGFloat const filterSelectionItemHeaderViewHeight             = 50.0;
 /**
  * Filter selection item empty footer view height.
  */
-static CGFloat const filterSelectionItemEmptyFooterViewHeight        = 15.0f;
+static CGFloat const filterSelectionItemEmptyFooterViewHeight        = 15.0;
 /**
  * Presenting segue selection items parameter.
  */

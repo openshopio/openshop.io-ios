@@ -14,7 +14,7 @@
 /**
  * Text content container line fragment padding.
  */
-static CGFloat const textContentPadding = 20.0f;
+static CGFloat const textContentPadding = 20.0;
 
 
 @implementation BFInfoPageViewController

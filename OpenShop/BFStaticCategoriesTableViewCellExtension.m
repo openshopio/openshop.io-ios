@@ -33,19 +33,19 @@ static NSString *const segueParameterProductInfo                        = @"prod
 /**
  * Static category table view cell height.
  */
-static CGFloat const staticCategoryCellHeight                           = 47.0f;
+static CGFloat const staticCategoryCellHeight                           = 47.0;
 /**
  * Static categories table view loading footer view height.
  */
-static CGFloat const staticCategoriesLoadingFooterViewHeight            = 40.0f;
+static CGFloat const staticCategoriesLoadingFooterViewHeight            = 40.0;
 /**
  * Static categories table view separator footer view height.
  */
-static CGFloat const staticCategoriesSeparatorFooterViewHeight          = 1.0f;
+static CGFloat const staticCategoriesSeparatorFooterViewHeight          = 1.0;
 /**
  * Static categories empty header view height.
  */
-static CGFloat const staticCategoriesEmptyHeaderViewHeight              = 2.0f;
+static CGFloat const staticCategoriesEmptyHeaderViewHeight              = 2.0;
 
 
 @interface BFStaticCategoriesTableViewCellExtension ()

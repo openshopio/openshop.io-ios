@@ -34,15 +34,15 @@ static NSString *const buttonFooterViewNibName                     = @"BFTableVi
 /**
  * Extension table view cell height.
  */
-static CGFloat const extensionCellHeight                           = 37.0f;
+static CGFloat const extensionCellHeight                           = 37.0;
 /**
  * Extension header view height.
  */
-static CGFloat const extensionHeaderViewHeight                     = 50.0f;
+static CGFloat const extensionHeaderViewHeight                     = 50.0;
 /**
  * Extension footer view height.
  */
-static CGFloat const extensionEmptyFooterViewHeight                = 35.0f;
+static CGFloat const extensionEmptyFooterViewHeight                = 35.0;
 
 @interface BFOrderSummaryAddressTableViewCellExtension ()
 

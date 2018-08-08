@@ -32,15 +32,15 @@ static NSString *const userProfileItemsHeaderViewNibName         = @"BFTableView
 /**
  * User profile item table view cell height.
  */
-static CGFloat const userProfileItemCellHeight                   = 42.0f;
+static CGFloat const userProfileItemCellHeight                   = 42.0;
 /**
  * User profile items header view height.
  */
-static CGFloat const userProfileItemsHeaderViewHeight            = 50.0f;
+static CGFloat const userProfileItemsHeaderViewHeight            = 50.0;
 /**
  * User profile items empty footer view height.
  */
-static CGFloat const userProfileItemsEmptyFooterViewHeight       = 15.0f;
+static CGFloat const userProfileItemsEmptyFooterViewHeight       = 15.0;
 
 
 

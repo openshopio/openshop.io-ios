@@ -28,11 +28,11 @@ static NSString *const ordersLoadingFooterViewNibName          = @"BFTableViewLo
 /**
  * Orders loading footer view height.
  */
-static CGFloat const ordersLoadingFooterViewHeight             = 50.0f;
+static CGFloat const ordersLoadingFooterViewHeight             = 50.0;
 /**
  * Order item table view cell height.
  */
-static CGFloat const orderItemHeight                           = 60.0f;
+static CGFloat const orderItemHeight                           = 60.0;
 /**
  * Presenting segue order data model parameter.
  */
@@ -131,7 +131,7 @@ static NSString *const segueParameterProduct                   = @"order";
 }
 
 - (CGFloat)getFooterHeight {
-    return self.showsFooter ? ordersLoadingFooterViewHeight : 0.0f;
+    return self.showsFooter ? ordersLoadingFooterViewHeight : 0.0;
 }
 
 - (void)didSelectRowAtIndex:(NSInteger)index {

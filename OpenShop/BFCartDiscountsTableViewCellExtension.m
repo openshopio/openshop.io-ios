@@ -31,15 +31,15 @@ static NSString *const extensionHeaderViewReuseIdentifier          = @"BFTableVi
 /**
  * Extension table view cell height.
  */
-static CGFloat const extensionCellHeight                           = 72.0f;
+static CGFloat const extensionCellHeight                           = 72.0;
 /**
  * Extension header view height.
  */
-static CGFloat const extensionHeaderViewHeight                     = 30.0f;
+static CGFloat const extensionHeaderViewHeight                     = 30.0;
 /**
  * Extension footer view height.
  */
-static CGFloat const extensionEmptyFooterViewHeight                = 15.0f;
+static CGFloat const extensionEmptyFooterViewHeight                = 15.0;
 
 @interface BFCartDiscountsTableViewCellExtension ()
 

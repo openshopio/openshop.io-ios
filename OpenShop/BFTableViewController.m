@@ -109,7 +109,7 @@
         id<BFTableViewCellExtension> extension = (id<BFTableViewCellExtension>)[self extensionAtIndex:indexPath.section];
         return [extension getHeightForRowAtIndex:indexPath.row];
     }
-    return 0.0f;
+    return 0.0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {

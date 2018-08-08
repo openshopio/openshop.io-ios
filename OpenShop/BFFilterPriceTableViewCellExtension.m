@@ -34,15 +34,15 @@ static NSString *const filterPriceHeaderViewNibName          = @"BFTableViewGrou
 /**
  * Filter price range table view cell height.
  */
-static CGFloat const filterPriceCellHeight                   = 90.0f;
+static CGFloat const filterPriceCellHeight                   = 90.0;
 /**
  * Filter price range header view height.
  */
-static CGFloat const filterPriceHeaderViewHeight             = 50.0f;
+static CGFloat const filterPriceHeaderViewHeight             = 50.0;
 /**
  * Filter price range empty footer view height.
  */
-static CGFloat const filterPriceEmptyFooterViewHeight        = 15.0f;
+static CGFloat const filterPriceEmptyFooterViewHeight        = 15.0;
 
 
 @interface BFFilterPriceTableViewCellExtension ()
@@ -96,7 +96,7 @@ static CGFloat const filterPriceEmptyFooterViewHeight        = 15.0f;
             cell.rangeSlider.upperValue = [self.productPriceRange.max floatValue];
             cell.rangeSlider.lowerValue = [self.productPriceRange.min floatValue];
         }
-        cell.rangeSlider.stepValue = 1.0f;
+        cell.rangeSlider.stepValue = 1.0;
         
         // range selection
         __weak __typeof__(self) weakSelf = self;

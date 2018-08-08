@@ -53,8 +53,8 @@
     // calculate label positions
     float distance = fabs(lowerCenter.x - upperCenter.x);
     if(![@(upperCenter.x) isEqualToNumber:@(lowerCenter.x)] && distance < self.lowerValueLabel.frame.size.width) {
-        lowerCenter.x -= (self.lowerValueLabel.frame.size.width-distance)/2.0f;
-        upperCenter.x += (self.lowerValueLabel.frame.size.width-distance)/2.0f;
+        lowerCenter.x -= (self.lowerValueLabel.frame.size.width-distance)/2.0;
+        upperCenter.x += (self.lowerValueLabel.frame.size.width-distance)/2.0;
     }
     
     self.lowerValueLeftConstraint.constant = lowerCenter.x - self.lowerValueLabel.frame.size.width/2;

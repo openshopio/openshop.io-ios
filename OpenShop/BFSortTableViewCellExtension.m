@@ -33,15 +33,15 @@ static NSString *const sortOptionsHeaderViewNibName          = @"BFTableViewGrou
 /**
  * Sort option table view cell height.
  */
-static CGFloat const sortOptionCellHeight                    = 42.0f;
+static CGFloat const sortOptionCellHeight                    = 42.0;
 /**
  * Sort options header view height.
  */
-static CGFloat const sortOptionsHeaderViewHeight             = 50.0f;
+static CGFloat const sortOptionsHeaderViewHeight             = 50.0;
 /**
  * Sort options empty footer view height.
  */
-static CGFloat const sortOptionsEmptyFooterViewHeight        = 15.0f;
+static CGFloat const sortOptionsEmptyFooterViewHeight        = 15.0;
 /**
  * Sort option selection overlay dismiss delay.
  */

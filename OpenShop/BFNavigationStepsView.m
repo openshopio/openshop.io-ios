@@ -51,7 +51,7 @@
     UIColor *selectedFrameBackgroundColor = [UIColor BFN_pinkColor];
     UIColor *unselectedFrameBackgroundColor = [UIColor whiteColor];
     
-    CGFloat offset = 10.0f;
+    CGFloat offset = 10.0;
     
     CGFloat frameWidth = CGRectGetWidth(myframe);
     CGFloat frameHeight = CGRectGetHeight(myframe);

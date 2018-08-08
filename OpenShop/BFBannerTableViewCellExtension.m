@@ -26,11 +26,11 @@ static NSString *const segueParameterProductInfo        = @"productInfo";
 /**
  * Banner default height.
  */
-static CGFloat const bannerPlaceholderHeight            = 100.0f;
+static CGFloat const bannerPlaceholderHeight            = 100.0;
 /**
  * Banner bottom padding.
  */
-static CGFloat const bannerPadding                      = 10.0f;
+static CGFloat const bannerPadding                      = 10.0;
 /**
  * Banner caching interval (seconds).
  */

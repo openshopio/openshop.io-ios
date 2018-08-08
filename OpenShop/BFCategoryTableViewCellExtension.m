@@ -28,11 +28,11 @@ static NSString *const segueParameterProductInfo         = @"productInfo";
 /**
  * Category table view cell height.
  */
-static CGFloat const categoryCellHeight                  = 42.0f;
+static CGFloat const categoryCellHeight                  = 42.0;
 /**
  * Top level category table view header view height.
  */
-static CGFloat const categoryHeaderViewHeight            = 42.0f;
+static CGFloat const categoryHeaderViewHeight            = 42.0;
 
 
 @interface BFCategoryTableViewCellExtension ()
