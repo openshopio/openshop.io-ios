@@ -241,13 +241,13 @@ static NSUInteger const minOccurencesOfMostSearchedQueries = 3;
 
 + (void)customizeAppearance {
     // search bar
-    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setFont:[UIFont BFN_robotoRegularWithSize:13]];
-    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setDefaultTextAttributes:@{NSFontAttributeName: [UIFont BFN_robotoRegularWithSize:13]}];
-    [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:@{
+    [[UITextField appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setFont:[UIFont BFN_robotoRegularWithSize:13]];
+    [[UITextField appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setDefaultTextAttributes:@{NSFontAttributeName: [UIFont BFN_robotoRegularWithSize:13]}];
+    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitleTextAttributes:@{
                                                              NSFontAttributeName : [UIFont BFN_robotoMediumWithSize:14],
                                                              NSForegroundColorAttributeName : [UIColor BFN_pinkColor]
                                                              } forState:UIControlStateNormal];
-    [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitle:BFLocalizedString(kTranslationCancel, @"Cancel")];
+    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:BFLocalizedString(kTranslationCancel, @"Cancel")];
 }
 
 
