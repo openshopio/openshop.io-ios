@@ -4187,7 +4187,7 @@ kde chcete nakupovat</string>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BFProductSmallCollectionViewCellIdentifier" id="Pm1-IC-dwK" customClass="BFCollectionViewCell">
-                                                            <rect key="frame" x="16" y="-3" width="130" height="173"/>
+                                                            <rect key="frame" x="16" y="-1.5" width="130" height="173"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="173"/>
