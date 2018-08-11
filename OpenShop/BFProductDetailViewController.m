@@ -60,11 +60,11 @@ static CGFloat const toastNotificationImageSize               = 14.0;
 /**
  * Product detail table view header height.
  */
-#define productDetailHeaderHeight CGRectGetHeight([[UIScreen mainScreen] applicationFrame]) * 0.6
+#define productDetailHeaderHeight CGRectGetHeight([[UIScreen mainScreen] bounds]) * 0.6
 /**
  * Product detail table view footer height.
  */
-#define productDetailFooterHeight CGRectGetHeight([[UIScreen mainScreen] applicationFrame]) * 0.2
+#define productDetailFooterHeight CGRectGetHeight([[UIScreen mainScreen] bounds]) * 0.2
 
 
 
