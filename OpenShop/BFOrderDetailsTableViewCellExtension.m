@@ -115,22 +115,23 @@ typedef NS_ENUM(NSInteger, BFOrderDetailsItem) {
             // item value
             cell.subheaderLabel.text = self.order.clientName ?: @"";
             break;
-        case BFOrderDetailsItemDate:
+        case BFOrderDetailsItemDate:{
             // item name
             cell.headerlabel.text = BFLocalizedString(kTranslationOrderDateCreated, @"Date created");
             // item value
-            cell.subheaderLabel.text = self.order.date ? [NSString stringWithFormat:@"%@", self.order.orderRemoteID] : @"";
-            break;
-        case BFOrderDetailsItemTotalPrice: {
-            // item name
-            cell.headerlabel.text = BFLocalizedString(kTranslationOrderTotalPrice, @"Total");
-            // item value
+            //cell.subheaderLabel.text = self.order.date ? [NSString stringWithFormat:@"%@", self.order.orderRemoteID] : @"";
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             dateFormatter.dateStyle = NSDateFormatterMediumStyle;
             dateFormatter.timeStyle = NSDateFormatterNoStyle;
             cell.subheaderLabel.text = self.order.date ? (NSString *)[dateFormatter stringFromDate:(NSDate *)self.order.date] : @"";
             break;
-        }
+    }
+        case BFOrderDetailsItemTotalPrice:
+            // item name
+            cell.headerlabel.text = BFLocalizedString(kTranslationOrderTotalPrice, @"Total");
+            // item value
+            cell.subheaderLabel.text = self.order.totalPriceFormatted ? [NSString stringWithFormat:@"%@", self.order.totalPriceFormatted] : @"";
+            break;
         case BFOrderDetailsItemShippingName:
             // item name
             cell.headerlabel.text = BFLocalizedString(kTranslationOrderShippingName, @"Shipping");
