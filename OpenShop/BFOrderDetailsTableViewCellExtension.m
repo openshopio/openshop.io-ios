@@ -119,7 +119,6 @@ typedef NS_ENUM(NSInteger, BFOrderDetailsItem) {
             // item name
             cell.headerlabel.text = BFLocalizedString(kTranslationOrderDateCreated, @"Date created");
             // item value
-            //cell.subheaderLabel.text = self.order.date ? [NSString stringWithFormat:@"%@", self.order.orderRemoteID] : @"";
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             dateFormatter.dateStyle = NSDateFormatterMediumStyle;
             dateFormatter.timeStyle = NSDateFormatterNoStyle;
